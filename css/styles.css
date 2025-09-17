@@ -201,6 +201,44 @@ a:hover {
     list-style: none;
     padding: 0;
 }
+/* Estilo para as Barras de Progresso */
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #4a4a4a;
+    border-radius: 5px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    transition: width 0.5s ease;
+    border-radius: 5px;
+}
+
+.progress-fill.beginner {
+    background-color: #ff6347; /* Vermelho para iniciante */
+    width: 30%;
+}
+
+.progress-fill.intermediate {
+    background-color: #ffd700; /* Amarelo para intermediário */
+    width: 60%;
+}
+
+.progress-fill.advanced {
+    background-color: #3cb371; /* Verde para avançado */
+    width: 90%;
+}
+
+/* Opcional: Remova o estilo da lista <ul> da sua Tech Stack */
+.tech-block ul {
+    list-style: none;
+    padding: 0;
+}
 
 .project-card {
     background-color: #383838;
