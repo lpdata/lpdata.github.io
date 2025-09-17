@@ -105,12 +105,14 @@ a:hover {
     padding: 20px;
 }
 
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #007bff;
-    margin-bottom: 20px;
+.main-hero-image {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+    max-width: 800px; /* Limita o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que ela ocupe sua própria linha */
+    margin: 0 auto 30px auto; /* Centraliza a imagem e adiciona espaço abaixo */
+    border-radius: 8px; /* Adiciona cantos levemente arredondados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave */
 }
 
 .quick-access-buttons .button {
