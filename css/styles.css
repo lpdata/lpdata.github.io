@@ -25,6 +25,11 @@ h2 {
     margin-top: 1.5em;
 }
 
+p {
+    line-height: 1.6; /* Deixa o texto mais fácil de ler */
+    margin-bottom: 25px; /* Adiciona 25 pixels de espaço abaixo de cada parágrafo */
+}
+
 a {
     color: #007bff;
     text-decoration: none;
