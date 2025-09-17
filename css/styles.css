@@ -107,12 +107,11 @@ a:hover {
 
 .main-hero-image {
     width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
-    max-width: 300px; /* Limita o tamanho máximo da imagem */
+    max-width: 350px; /* Limita o tamanho máximo da imagem */
     height: auto; /* Mantém a proporção da imagem */
     display: block; /* Garante que ela ocupe sua própria linha */
     margin: 0 auto 30px auto; /* Centraliza a imagem e adiciona espaço abaixo */
-    border-radius: 8px; /* Adiciona cantos levemente arredondados */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave */
+    
 }
 
 .quick-access-buttons .button {
