@@ -3,240 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Letícia Pacheco | lpdata.ai</title>
+    <title>Leticia Pacheco | lpdata.ai</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header id="inicio">
-        <div class="header-content">
-            <img src="https://via.placeholder.com/150" alt="Foto profissional de Leticia Pacheco" class="profile-photo">
-            
-            <h1 id="frase-do-dia"></h1>
-            <p>Meu propósito é transformar dados e inteligência artificial em instrumentos de evolução contínua. Acredito que toda organização pode alcançar um novo patamar de inovação e competitividade quando sabe extrair o verdadeiro valor da informação e é nesse caminho que quero atuar: ajudando empresas a romper barreiras, alcançar resultados inéditos e, ao mesmo tempo, canalizar essa força para gerar impacto humano verdadeiro, capaz de abrir novas possibilidades para a sociedade.</p>
-            
-            <div class="quick-access-buttons">
-                <a href="#portfolio" class="button">Portfólio</a>
-                <a href="#tech-stack" class="button">Tech Stack</a>
-                <a href="#contato" class="button">Contato</a>
-            </div>
-
-            <div class="highlights">
-                <span>Dados</span> • <span>Estatística</span> • <span>IA</span> • <span>Inovação</span>
-            </div>
-        </div>
+    <header class="tab-nav">
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="active-tab" data-tab="inicio">Início</a></li>
+                <li><a href="#historia" data-tab="historia">História & Propósito</a></li>
+                <li><a href="#formacao" data-tab="formacao">Formação Acadêmica</a></li>
+                <li><a href="#trajetoria" data-tab="trajetoria">Trajetória Profissional</a></li>
+                <li><a href="#tech-stack" data-tab="tech-stack">Tech Stack</a></li>
+                <li><a href="#portfolio" data-tab="portfolio">Projetos & Portfólio</a></li>
+                <li><a href="#certificacoes" data-tab="certificacoes">Certificações</a></li>
+                <li><a href="#insights" data-tab="insights">Insights & Conteúdo</a></li>
+                <li><a href="#galeria" data-tab="galeria">Galeria</a></li>
+                <li><a href="#hobbies" data-tab="hobbies">Vida & Hobbies</a></li>
+                <li><a href="#contato" data-tab="contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section id="historia">
-            <h2>História & Propósito</h2>
-            <p>Escreva sua narrativa de jornada pessoal aqui.</p>
-            <p><strong>Valores:</strong> Inovação, Impacto Humano, Evolução Contínua.</p>
-            <p><strong>Visão de Futuro:</strong> Minha visão para dados e IA é...</p>
-            </section>
-
-        <section id="formacao">
-            <h2>Formação Acadêmica</h2>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <h3>Graduações, MBA e Mestrado</h3>
-                    <ul>
-                        <li><p><strong>[Nome do Curso]</strong> | [Instituição] | [Ano]</p></li>
-                    </ul>
-                </div>
-                <div class="grid-item">
-                    <h3>Iniciação Científica & Pesquisas</h3>
-                    <p>Detalhes sobre sua pesquisa e estudos futuros.</p>
-                </div>
-                <div class="grid-item">
-                    <h3>Disciplinas de Destaque</h3>
-                    <ul>
-                        <li>Machine Learning I</li>
-                        <li>Visualização de Dados</li>
-                        <li>Programação</li>
-                    </ul>
-                </div>
-                <div class="grid-item">
-                    <h3>Artigos & Publicações</h3>
-                    <p>Vincular Lattes: <a href="URL_LATTES">Link para Lattes</a></p>
-                    <p>ORCID: <a href="URL_ORCID">Link para ORCID</a></p>
+    <main class="content-container">
+        <section id="inicio" class="content-section active-content">
+            <div class="section-inner">
+                <div class="header-content">
+                    <img src="https://via.placeholder.com/150" alt="Foto profissional de Leticia Pacheco" class="profile-photo">
+                    <h1 id="frase-do-dia"></h1>
+                    <p>Meu propósito é transformar dados e inteligência artificial em instrumentos de evolução contínua. Acredito que toda organização pode alcançar um novo patamar de inovação e competitividade quando sabe extrair o verdadeiro valor da informação e é nesse caminho que quero atuar: ajudando empresas a romper barreiras, alcançar resultados inéditos e, ao mesmo tempo, canalizar essa força para gerar impacto humano verdadeiro, capaz de abrir novas possibilidades para a sociedade.</p>
+                    <div class="quick-access-buttons">
+                        <a href="#portfolio" class="button">Portfólio</a>
+                        <a href="#tech-stack" class="button">Tech Stack</a>
+                        <a href="#contato" class="button">Contato</a>
+                    </div>
+                    <div class="highlights">
+                        <span>Dados</span> • <span>Estatística</span> • <span>IA</span> • <span>Inovação</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="trajetoria">
-            <h2>Trajetória Profissional</h2>
-            <div class="job-history">
+        <section id="historia" class="content-section">
+            <div class="section-inner">
+                <h2>História & Propósito</h2>
+                <p>Escreva sua narrativa de jornada pessoal aqui.</p>
+                <p><strong>Valores:</strong> Inovação, Impacto Humano, Evolução Contínua.</p>
+                <p><strong>Visão de Futuro:</strong> Minha visão para dados e IA é...</p>
+            </div>
+        </section>
+
+        <section id="formacao" class="content-section">
+            <div class="section-inner">
+                <h2>Formação Acadêmica</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h3>Graduações, MBA e Mestrado</h3>
+                        <ul>
+                            <li><p><strong>[Nome do Curso]</strong> | [Instituição] | [Ano]</p></li>
+                        </ul>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Iniciação Científica & Pesquisas</h3>
+                        <p>Detalhes sobre sua pesquisa e estudos futuros.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Disciplinas de Destaque</h3>
+                        <ul>
+                            <li>Machine Learning I</li>
+                            <li>Visualização de Dados</li>
+                            <li>Programação</li>
+                        </ul>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Artigos & Publicações</h3>
+                        <p>Vincular Lattes: <a href="URL_LATTES">Link para Lattes</a></p>
+                        <p>ORCID: <a href="URL_ORCID">Link para ORCID</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trajetoria" class="content-section">
+            <div class="section-inner">
+                <h2>Trajetória Profissional</h2>
+                <div class="job-history">
+                    <article>
+                        <h3>[Cargo] na [Empresa]</h3>
+                        <p class="periodo">[Ano de Início] - [Ano de Fim]</p>
+                        <p>Descrição de suas atividades, responsabilidades e conquistas.</p>
+                        <p class="palavras-chave">Palavras-chave: [palavra1, palavra2, ...]</p>
+                    </article>
+                </div>
+                <h3>Consultoria e Freelances</h3>
+                <p>Descreva suas experiências de consultoria e marca pessoal.</p>
+                <h3>Voluntariado</h3>
                 <article>
-                    <h3>[Cargo] na [Empresa]</h3>
+                    <h4>[Posição Voluntária] em [Local]</h4>
                     <p class="periodo">[Ano de Início] - [Ano de Fim]</p>
-                    <p>Descrição de suas atividades, responsabilidades e conquistas.</p>
-                    <p class="palavras-chave">Palavras-chave: [palavra1, palavra2, ...]</p>
+                    <p>Descrição das atividades voluntárias.</p>
                 </article>
             </div>
-            
-            <h3>Consultoria e Freelances</h3>
-            <p>Descreva suas experiências de consultoria e marca pessoal.</p>
-            
-            <h3>Voluntariado</h3>
-            <article>
-                <h4>[Posição Voluntária] em [Local]</h4>
-                <p class="periodo">[Ano de Início] - [Ano de Fim]</p>
-                <p>Descrição das atividades voluntárias.</p>
-            </article>
         </section>
 
-        <section id="tech-stack">
-            <h2>Tech Stack</h2>
-            <div class="tech-blocks">
-                <div class="tech-block">
-                    <h3>Linguagens</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>R</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="tech-block">
-                    <h3>BI & Visualização</h3>
-                    <ul>
-                        <li>Qlik Sense (principal)</li>
-                        <li>Power BI</li>
-                        <li>Excel Avançado</li>
-                    </ul>
-                </div>
-                <div class="tech-block">
-                    <h3>Cloud & Infra</h3>
-                    <ul>
-                        <li>Azure</li>
-                        <li>AWS</li>
-                        <li>Google Cloud</li>
-                    </ul>
-                </div>
-                <div class="tech-block">
-                    <h3>Estatística & ML</h3>
-                    <ul>
-                        <li>Pandas</li>
-                        <li>Scikit-learn</li>
-                        <li>RStudio</li>
-                    </ul>
-                </div>
-                <div class="tech-block">
-                    <h3>Automação & Workflow</h3>
-                    <ul>
-                        <li>Power Automate</li>
-                        <li>VS Code</li>
-                        <li>GitHub</li>
-                        <li>OneDrive/SharePoint</li>
-                    </ul>
-                </div>
-                <div class="tech-block">
-                    <h3>Ferramentas Ágeis</h3>
-                    <ul>
-                        <li>Scrum</li>
-                        <li>Kanban</li>
-                        <li>Notion</li>
-                    </ul>
-                </div>
-                <div class="tech-block">
-                    <h3>Conhecimentos Diversos</h3>
-                    <ul>
-                        <li>AutoCAD</li>
-                        <li>Sketchup</li>
-                        <li>Canva</li>
-                        <li>Corel Draw</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio">
-            <h2>Projetos & Portfólio</h2>
-            <div class="project-card">
-                <h3>RetenX</h3>
-                <p><strong>Problema:</strong> Descreva o problema.</p>
-                <p><strong>Solução:</strong> Modelo de retenção estudantil, dashboards e insights.</p>
-                <p><strong>Impacto:</strong> Descreva o impacto.</p>
-                <p><strong>Ferramentas usadas:</strong> [Ferramenta 1], [Ferramenta 2], etc.</p>
-            </div>
-            <div class="project-card">
-                <h3>ReconeX</h3>
-                <p><strong>Problema:</strong> Descreva o problema.</p>
-                <p><strong>Solução:</strong> Monitoramento de NPS e transferências.</p>
-                <p><strong>Impacto:</strong> Descreva o impacto.</p>
-                <p><strong>Ferramentas usadas:</strong> [Ferramenta 1], [Ferramenta 2], etc.</p>
-            </div>
-            <div class="project-card">
-                <h3>Ouvidoria</h3>
-                <p><strong>Problema:</strong> Descreva o problema.</p>
-                <p><strong>Solução:</strong> Dashboard + fluxo de automação.</p>
-                <p><strong>Impacto:</strong> Descreva o impacto.</p>
-                <p><strong>Ferramentas usadas:</strong> [Ferramenta 1], [Ferramenta 2], etc.</p>
-            </div>
-        </section>
-
-        <section id="certificacoes">
-            <h2>Certificações & Reconhecimentos</h2>
-            <div class="certification-container">
-                <div class="certification-item">
-                    <img src="https://via.placeholder.com/200" alt="Certificação Microsoft AI-102">
-                    <h3>Microsoft AI-102</h3>
-                    <p>Voucher conquistado.</p>
-                </div>
-                <div class="certification-item">
-                    <img src="https://via.placeholder.com/200" alt="Certificação Microsoft AI-900">
-                    <h3>Microsoft AI-900</h3>
-                </div>
-                <div class="certification-item">
-                    <img src="https://via.placeholder.com/200" alt="Destaque Elas na IA">
-                    <h3>Elas na IA</h3>
-                    <p>Destaque como aluna referência.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="insights">
-            <h2>Insights & Conteúdo</h2>
-            <div class="content-posts">
-                <article>
-                    <h3>[Título da Aula ou Artigo]</h3>
-                    <p>Descrição ou resumo do conteúdo.</p>
-                    </article>
-            </div>
-        </section>
-
-        <section id="galeria">
-            <h2>Galeria Visual</h2>
-            <div class="gallery-grid">
-                <img src="https://via.placeholder.com/300" alt="Foto de evento">
-                <img src="https://via.placeholder.com/300" alt="Captura de dashboard">
-                <img src="https://via.placeholder.com/300" alt="Imagem de projeto criativo">
-            </div>
-        </section>
-
-        <section id="hobbies">
-            <h2>Vida & Hobbies</h2>
-            <div class="hobbies-content">
-                <div class="hobby-item">
-                    <h3>Paixão por Carros</h3>
-                    <p>Carros esportivos e mecânica.</p>
+        <section id="tech-stack" class="content-section">
+            <div class="section-inner">
+                <h2>Tech Stack</h2>
+                <div class="tech-blocks">
+                    <div class="tech-block">
+                        <h3>Linguagens</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>R</li>
+                            <li>SQL</li>
+                        </ul>
                     </div>
-                <div class="hobby-item">
-                    <h3>Viagens Marcantes</h3>
-                    <p>Descreva suas viagens favoritas.</p>
+                    <div class="tech-block">
+                        <h3>BI & Visualização</h3>
+                        <ul>
+                            <li>Qlik Sense (principal)</li>
+                            <li>Power BI</li>
+                            <li>Excel Avançado</li>
+                        </ul>
+                    </div>
+                    <div class="tech-block">
+                        <h3>Cloud & Infra</h3>
+                        <ul>
+                            <li>Azure</li>
+                            <li>AWS</li>
+                            <li>Google Cloud</li>
+                        </ul>
+                    </div>
+                    <div class="tech-block">
+                        <h3>Estatística & ML</h3>
+                        <ul>
+                            <li>Pandas</li>
+                            <li>Scikit-learn</li>
+                            <li>RStudio</li>
+                        </ul>
+                    </div>
+                    <div class="tech-block">
+                        <h3>Automação & Workflow</h3>
+                        <ul>
+                            <li>Power Automate</li>
+                            <li>VS Code</li>
+                            <li>GitHub</li>
+                            <li>OneDrive/SharePoint</li>
+                        </ul>
+                    </div>
+                    <div class="tech-block">
+                        <h3>Ferramentas Ágeis</h3>
+                        <ul>
+                            <li>Scrum</li>
+                            <li>Kanban</li>
+                            <li>Notion</li>
+                        </ul>
+                    </div>
+                    <div class="tech-block">
+                        <h3>Conhecimentos Diversos</h3>
+                        <ul>
+                            <li>AutoCAD</li>
+                            <li>Sketchup</li>
+                            <li>Canva</li>
+                            <li>Corel Draw</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contato">
-            <h2>Conecte-se Comigo</h2>
-            <p>E-mail: <a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a></p>
-            <p>Telefone: <a href="tel:+559999999999">+55 (99) 99999-9999</a></p>
-            <div class="social-links">
-                <a href="URL_DO_SEU_LINKEDIN">LinkedIn</a>
-                <a href="URL_DO_SEU_GITHUB">GitHub</a>
-                <a href="URL_DO_SEU_YOUTUBE">YouTube</a>
-                <a href="URL_DO_SEU_DISCORD">Discord</a>
+        <section id="portfolio" class="content-section">
+            <div class="section-inner">
+                <h2>Projetos & Portfólio</h2>
+                <div class="project-card">
+                    <h3>RetenX</h3>
+                    <p><strong>Problema:</strong> Descreva o problema.</p>
+                    <p><strong>Solução:</strong> Modelo de retenção estudantil, dashboards e insights.</p>
+                    <p><strong>Impacto:</strong> Descreva o impacto.</p>
+                    <p><strong>Ferramentas usadas:</strong> [Ferramenta 1], [Ferramenta 2], etc.</p>
+                </div>
+                <div class="project-card">
+                    <h3>ReconeX</h3>
+                    <p><strong>Problema:</strong> Descreva o problema.</p>
+                    <p><strong>Solução:</strong> Monitoramento de NPS e transferências.</p>
+                    <p><strong>Impacto:</strong> Descreva o impacto.</p>
+                    <p><strong>Ferramentas usadas:</strong> [Ferramenta 1], [Ferramenta 2], etc.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Ouvidoria</h3>
+                    <p><strong>Problema:</strong> Descreva o problema.</p>
+                    <p><strong>Solução:</strong> Dashboard + fluxo de automação.</p>
+                    <p><strong>Impacto:</strong> Descreva o impacto.</p>
+                    <p><strong>Ferramentas usadas:</strong> [Ferramenta 1], [Ferramenta 2], etc.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificacoes" class="content-section">
+            <div class="section-inner">
+                <h2>Certificações & Reconhecimentos</h2>
+                <div class="certification-container">
+                    <div class="certification-item">
+                        <img src="https://via.placeholder.com/200" alt="Certificação Microsoft AI-102">
+                        <h3>Microsoft AI-102</h3>
+                        <p>Voucher conquistado.</p>
+                    </div>
+                    <div class="certification-item">
+                        <img src="https://via.placeholder.com/200" alt="Certificação Microsoft AI-900">
+                        <h3>Microsoft AI-900</h3>
+                    </div>
+                    <div class="certification-item">
+                        <img src="https://via.placeholder.com/200" alt="Destaque Elas na IA">
+                        <h3>Elas na IA</h3>
+                        <p>Destaque como aluna referência.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="insights" class="content-section">
+            <div class="section-inner">
+                <h2>Insights & Conteúdo</h2>
+                <div class="content-posts">
+                    <article>
+                        <h3>[Título da Aula ou Artigo]</h3>
+                        <p>Descrição ou resumo do conteúdo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="content-section">
+            <div class="section-inner">
+                <h2>Galeria Visual</h2>
+                <div class="gallery-grid">
+                    <img src="https://via.placeholder.com/300" alt="Foto de evento">
+                    <img src="https://via.placeholder.com/300" alt="Captura de dashboard">
+                    <img src="https://via.placeholder.com/300" alt="Imagem de projeto criativo">
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies" class="content-section">
+            <div class="section-inner">
+                <h2>Vida & Hobbies</h2>
+                <div class="hobbies-content">
+                    <div class="hobby-item">
+                        <h3>Paixão por Carros</h3>
+                        <p>Carros esportivos e mecânica.</p>
+                    </div>
+                    <div class="hobby-item">
+                        <h3>Viagens Marcantes</h3>
+                        <p>Descreva suas viagens favoritas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="content-section">
+            <div class="section-inner">
+                <h2>Conecte-se Comigo</h2>
+                <p>E-mail: <a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a></p>
+                <p>Telefone: <a href="tel:+559999999999">+55 (99) 99999-9999</a></p>
+                <div class="social-links">
+                    <a href="URL_DO_SEU_LINKEDIN">LinkedIn</a>
+                    <a href="URL_DO_SEU_GITHUB">GitHub</a>
+                    <a href="URL_DO_SEU_YOUTUBE">YouTube</a>
+                    <a href="URL_DO_SEU_DISCORD">Discord</a>
+                </div>
             </div>
         </section>
     </main>
@@ -244,6 +279,8 @@
     <footer>
         <p>&copy; 2025 Leticia Pacheco. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
