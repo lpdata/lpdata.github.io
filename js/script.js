@@ -34,3 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mostra a seção inicial ao carregar a página
     showSection('#inicio');
 });
+
+// Lógica para expandir/colapsar os itens
+document.querySelectorAll('.expand-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const details = button.closest('.expandable-item').querySelector('.details');
+        const isVisible = details.classList.contains('visible');
+
+        if (isVisible) {
+            details.classList.remove('visible');
+            button.textContent = '+ Saiba mais';
+        } else {
+            details.classList.add('visible');
+            button.textContent = '- Fechar';
+        }
+    });
+});
