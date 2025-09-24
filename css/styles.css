@@ -312,6 +312,27 @@ a:hover {
     cursor: pointer;
 }
 
+/* Estilo para Itens Expansíveis */
+.expandable-item {
+    margin-bottom: 20px;
+    background-color: #383838;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.expandable-item h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
 .expand-btn {
     background-color: #007bff;
     color: white;
@@ -328,14 +349,13 @@ a:hover {
 }
 
 .details {
-    margin-top: 15px;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-out, padding 0.5s ease-out;
 }
 
 .details.visible {
-    max-height: 1000px;
+    max-height: 1000px; /* Valor grande o suficiente para o conteúdo */
     padding-top: 15px;
 }
 
