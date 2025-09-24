@@ -296,6 +296,55 @@ a:hover {
 footer {
     text-align: center;
     padding: 20px;
+
+    /* Estilo para Itens Expansíveis */
+.expandable-item {
+    margin-bottom: 20px;
+    background-color: #383838;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.expandable-item h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.expand-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.expand-btn:hover {
+    background-color: #0056b3;
+}
+
+.details {
+    margin-top: 15px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    padding: 0;
+}
+
+.details.visible {
+    max-height: 1000px; /* Valor grande o suficiente para o conteúdo */
+    padding: 15px;
+}
     background-color: #1a1a1a;
     border-top: 1px solid #333;
 }
