@@ -18,11 +18,15 @@ h1 {
     margin-bottom: 0.5em;
 }
 
+/* Alteração para criar a barra de destaque nos títulos h2 */
 h2 {
-    font-size: 2em;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 0.3em;
+    font-size: 2.2em;
+    font-weight: 700;
+    background-color: #007bff; /* Cor da barra de fundo */
+    padding: 10px 20px; /* Espaço ao redor do texto */
+    border-radius: 8px; /* Borda arredondada */
     margin-top: 1.5em;
+    margin-bottom: 25px;
 }
 
 p {
@@ -305,9 +309,9 @@ a:hover {
 }
 
 .summary {
-    display: flex; /* Mantém o layout flexível para os títulos */
-    flex-direction: column; /* Coloca os itens em coluna */
-    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     cursor: pointer;
 }
 
@@ -320,7 +324,7 @@ a:hover {
     cursor: pointer;
     font-size: 0.9em;
     transition: background-color 0.3s;
-    margin-top: 10px; /* Adiciona espaço entre o texto e o botão */
+    margin-top: 10px;
 }
 
 .expand-btn:hover {
