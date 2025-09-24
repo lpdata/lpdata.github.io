@@ -26,8 +26,8 @@ h2 {
 }
 
 p {
-    line-height: 1.6; /* Deixa o texto mais fácil de ler */
-    margin-bottom: 25px; /* Adiciona 25 pixels de espaço abaixo de cada parágrafo */
+    line-height: 1.6;
+    margin-bottom: 25px;
 }
 
 a {
@@ -86,7 +86,7 @@ a:hover {
 }
 
 .content-section {
-    display: none; /* Esconde todas as seções por padrão */
+    display: none;
     background-color: #2c2c2c;
     padding: 40px;
     border-radius: 8px;
@@ -95,7 +95,7 @@ a:hover {
 }
 
 .content-section.active-content {
-    display: block; /* Mostra apenas a seção ativa */
+    display: block;
 }
 
 .section-inner {
@@ -103,20 +103,17 @@ a:hover {
     margin: 0 auto;
 }
 
-/* Demais estilos das seções (já presentes no seu código) */
-
 .header-content {
     text-align: center;
     padding: 20px;
 }
 
 .main-hero-image {
-    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
-    max-width: 350px; /* Limita o tamanho máximo da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Garante que ela ocupe sua própria linha */
-    margin: 0 auto 30px auto; /* Centraliza a imagem e adiciona espaço abaixo */
-    
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto 30px auto;
 }
 
 .quick-access-buttons .button {
@@ -201,6 +198,7 @@ a:hover {
     list-style: none;
     padding: 0;
 }
+
 /* Estilo para as Barras de Progresso */
 .skill-item {
     margin-bottom: 20px;
@@ -220,17 +218,17 @@ a:hover {
 }
 
 .progress-fill.beginner {
-    background-color: #ff6347; /* Vermelho para iniciante */
+    background-color: #ff6347;
     width: 30%;
 }
 
 .progress-fill.intermediate {
-    background-color: #ffd700; /* Amarelo para intermediário */
+    background-color: #ffd700;
     width: 60%;
 }
 
 .progress-fill.advanced {
-    background-color: #3cb371; /* Verde para avançado */
+    background-color: #3cb371;
     width: 90%;
 }
 
@@ -293,11 +291,7 @@ a:hover {
     border-radius: 5px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-
-    /* Estilo para Itens Expansíveis */
+/* Estilo para Itens Expansíveis */
 .expandable-item {
     margin-bottom: 20px;
     background-color: #383838;
@@ -338,13 +332,16 @@ footer {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-out, padding 0.5s ease-out;
-    padding: 0;
 }
 
 .details.visible {
-    max-height: 1000px; /* Valor grande o suficiente para o conteúdo */
-    padding: 15px;
+    max-height: 1000px;
+    padding-top: 15px;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
     background-color: #1a1a1a;
     border-top: 1px solid #333;
 }
