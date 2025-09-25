@@ -10,7 +10,6 @@ body {
 
 h1, h3 {
     font-weight: 600;
-    color: #0E0B16;
 }
 
 h1 {
@@ -32,7 +31,6 @@ h2 {
 .internal-title {
     font-size: 1.8em;
     font-weight: 700;
-    color: #0E0B16;
     background-color: transparent;
     padding: 0;
     margin-top: 1em;
@@ -106,6 +104,7 @@ a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    color: #E7DFDD;
 }
 
 .content-section.active-content {
@@ -115,12 +114,15 @@ a:hover {
 .section-inner {
     max-width: 800px;
     margin: 0 auto;
-    color: #E7DFDD; /* AQUI ESTÁ A CORREÇÃO PRINCIPAL */
 }
 
 .header-content {
     text-align: center;
     padding: 20px;
+}
+
+.header-content h1, .header-content h3 {
+    color: #E7DFDD;
 }
 
 .main-hero-image {
@@ -358,5 +360,5 @@ footer {
     padding: 20px;
     background-color: #0E0B16;
     border-top: 1px solid #1A1A1A;
-    color: #E7DFDD; /* AQUI ESTÁ A OUTRA CORREÇÃO PRINCIPAL */
+    color: #E7DFDD;
 }
