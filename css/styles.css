@@ -3,14 +3,14 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0E0B16;
-    color: #E7DFDD;
+    background-color: #E7DFDD;
+    color: #0E0B16;
     line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1, h3 {
     font-weight: 600;
-    color: #E7DFDD;
+    color: #0E0B16;
 }
 
 h1 {
@@ -26,12 +26,13 @@ h2 {
     border-radius: 8px;
     margin-top: 1.5em;
     margin-bottom: 25px;
+    color: #E7DFDD;
 }
 
 .internal-title {
     font-size: 1.8em;
     font-weight: 700;
-    color: #E7DFDD;
+    color: #0E0B16;
     background-color: transparent;
     padding: 0;
     margin-top: 1em;
@@ -55,7 +56,7 @@ a:hover {
 
 /* Navegação por Abas (Tabbed Navigation) */
 .tab-nav {
-    background-color: #1a1a1a;
+    background-color: #0E0B16;
     position: sticky;
     top: 0;
     width: 100%;
@@ -82,7 +83,7 @@ a:hover {
 }
 
 .tab-nav ul li a:hover {
-    background-color: #1a1a1a;
+    background-color: #1A1A1A;
 }
 
 .tab-nav ul li a.active-tab {
@@ -100,7 +101,7 @@ a:hover {
 
 .content-section {
     display: none;
-    background-color: #1a1a1a;
+    background-color: #0E0B16;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -145,7 +146,7 @@ a:hover {
 
 .highlights span {
     display: inline-block;
-    background-color: #1a1a1a;
+    background-color: #1A1A1A;
     color: #E7DFDD;
     padding: 5px 10px;
     border-radius: 20px;
@@ -160,7 +161,7 @@ a:hover {
 }
 
 .grid-item {
-    background-color: #1a1a1a;
+    background-color: #0E0B16;
     padding: 20px;
     border-radius: 5px;
 }
@@ -172,7 +173,7 @@ a:hover {
 .job-history article {
     margin-bottom: 20px;
     padding: 15px;
-    background-color: #1a1a1a;
+    background-color: #0E0B16;
     border-left: 4px solid #4717F6;
     border-radius: 5px;
 }
@@ -196,7 +197,7 @@ a:hover {
 }
 
 .tech-block {
-    background-color: #1a1a1a;
+    background-color: #0E0B16;
     padding: 20px;
     border-radius: 8px;
     flex: 1;
@@ -218,7 +219,7 @@ a:hover {
 }
 
 .progress-bar {
-    background-color: #4a4a4a;
+    background-color: #1A1A1A;
     border-radius: 5px;
     height: 10px;
     overflow: hidden;
@@ -251,7 +252,7 @@ a:hover {
 }
 
 .project-card {
-    background-color: #1a1a1a;
+    background-color: #0E0B16;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -267,7 +268,7 @@ a:hover {
 
 .certification-item {
     text-align: center;
-    background-color: #1a1a1a;
+    background-color: #0E0B16;
     padding: 15px;
     border-radius: 8px;
 }
@@ -306,7 +307,7 @@ a:hover {
 /* Estilo para Itens Expansíveis */
 .expandable-item {
     margin-bottom: 20px;
-    background-color: #1a1a1a;
+    background-color: #0E0B16;
     padding: 15px;
     border-radius: 8px;
     border-left: 4px solid #4717F6;
@@ -355,5 +356,5 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #0E0B16;
-    border-top: 1px solid #1a1a1a;
+    border-top: 1px solid #1A1A1A;
 }
