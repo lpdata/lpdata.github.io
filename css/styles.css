@@ -106,6 +106,7 @@ a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    color: #E7DFDD; /* AQUI ESTÁ A CORREÇÃO PRINCIPAL */
 }
 
 .content-section.active-content {
