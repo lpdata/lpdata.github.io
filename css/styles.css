@@ -86,7 +86,7 @@ a:hover {
     border: 3px solid #4717F6;
 }
 
-.sidebar-content h1, .sidebar-content h2, .sidebar-content h3 {
+.sidebar-content h1, .sidebar-content h3 {
     color: #E7DFDD;
 }
 
@@ -187,7 +187,7 @@ a:hover {
     padding: 40px;
     box-shadow: none;
     margin-bottom: 20px;
-    color: #0E0B16;
+    color: #0E0B16; /* Cor do texto no fundo claro */
 }
 
 .content-section.active-content {
@@ -202,6 +202,10 @@ a:hover {
 .header-content {
     text-align: center;
     padding: 20px;
+}
+
+.header-content h1, .header-content h3 {
+    color: #0E0B16;
 }
 
 .main-hero-image {
@@ -389,15 +393,16 @@ a:hover {
 /* Estilo para Itens Expansíveis */
 .expandable-item {
     margin-bottom: 20px;
-    background-color: transparent;
     padding: 15px;
     border-radius: 8px;
     border-left: 4px solid #4717F6;
+    background-color: transparent; /* Remove o fundo da caixa */
 }
 
 .expandable-item h4 {
     margin-top: 0;
     margin-bottom: 5px;
+    color: #0E0B16;
 }
 
 .summary {
