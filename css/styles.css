@@ -77,11 +77,11 @@ a:hover {
     padding-bottom: 20px;
 }
 
-/* Estilo da foto (sem borda) */
+/* Estilo da foto (sem borda e sem cortar) */
 .profile-photo {
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    object-fit: contain; /* Ajusta a imagem para caber sem cortar */
     margin-bottom: 20px;
 }
 
@@ -91,7 +91,7 @@ a:hover {
     color: #E7DFDD;
 }
 
-/* Estilo do cargo (com mais destaque) */
+/* Estilo do cargo (com mais destaque e legível) */
 .job-title {
     font-size: 1em;
     font-weight: 700;
@@ -100,7 +100,7 @@ a:hover {
     background-color: transparent;
     padding: 0;
     border-radius: 0;
-    color: #A239CA;
+    color: #E7DFDD;
 }
 
 .contact-info, .social-links {
@@ -129,6 +129,7 @@ a:hover {
 
 .social-links a {
     color: #E7DFDD;
+    font-weight: 400;
 }
 
 .social-links a:hover {
@@ -226,7 +227,7 @@ a:hover {
     display: inline-block;
     background-color: #4717F6;
     color: #E7DFDD;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
     margin: 5px;
     transition: background-color 0.3s;
@@ -387,13 +388,7 @@ a:hover {
 }
 
 .social-links a {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 1.2em;
-    background-color: #4717F6;
-    color: #E7DFDD;
-    padding: 10px 15px;
-    border-radius: 5px;
+    color: #0E0B16;
 }
 
 /* Estilo para Itens Expansíveis */
