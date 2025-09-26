@@ -1,90 +1,120 @@
-/* Estilos Gerais */
+/*=====================================
+  ESTILOS GERAIS DA PÁGINA (BODY)
+=====================================*/
 body {
+    /* Define a família de fontes para o site */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* Remove margens e preenchimentos padrão do navegador */
     margin: 0;
     padding: 0;
+    /* Fundo da página: STARK (#E7DFDD) - Cor clara */
     background-color: #E7DFDD;
+    /* Espaçamento entre linhas para melhor leitura */
     line-height: 1.6;
-    color: #0E0B16;
+    /* Cor do texto padrão em todo o BODY (texto escuro para fundo claro) */
+    color: #0E0B16; 
 }
 
+/* Estilo geral para todos os títulos (H1 e H3) */
 h1, h3 {
+    /* Define o peso da fonte (semi-negrito) */
     font-weight: 600;
 }
 
+/* Estilo para o título principal da seção (Geralmente o seu nome ou título) */
 h1 {
-    font-size: 2.5em;
+    font-size: 2.5em; /* Tamanho maior */
     margin-bottom: 0.5em;
 }
 
+/* Estilo para os títulos de seção (H2) que têm a barra de destaque */
 h2 {
     font-size: 2.2em;
     font-weight: 700;
+    /* Cor de fundo da barra: Azul Forte Original (#007bff) */
     background-color: #007bff;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 8px; /* Cantos arredondados */
     margin-top: 1.5em;
     margin-bottom: 25px;
+    /* Cor do texto: STARK (#E7DFDD) - Clara, para contrastar com a barra azul */
     color: #E7DFDD;
 }
 
+/* Estilo específico para títulos internos menores (como "Bem-vindo(a)!✨") */
 .internal-title {
     font-size: 1.8em;
     font-weight: 700;
-    background-color: transparent;
+    background-color: transparent; /* Sem cor de fundo */
     padding: 0;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
+/* Estilo para parágrafos */
 p {
     line-height: 1.6;
     margin-bottom: 25px;
 }
 
+/* Estilo padrão para todos os links (a) */
 a {
+    /* Cor do link: Azul Secundário/Cyan (#00bcd4) */
     color: #00bcd4;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: color 0.3s ease; /* Efeito suave ao passar o mouse */
 }
 
 a:hover {
+    /* Cor do link ao passar o mouse: Azul Forte Original (#007bff) */
     color: #007bff;
 }
 
-/* Novo Layout de Duas Colunas */
+/*=====================================
+  LAYOUT PRINCIPAL (DUAS COLUNAS)
+=====================================*/
 .two-column-layout {
+    /* Usa Flexbox para criar o layout de duas colunas (Sidebar e Conteúdo) */
     display: flex;
+    /* Garante que o layout ocupe pelo menos a altura total da tela */
     min-height: 100vh;
 }
 
+/* Configuração da BARRA LATERAL FIXA */
 .fixed-sidebar {
     width: 280px;
+    /* Fundo da Sidebar: VOID (#0E0B16) - Escuro */
     background-color: #0E0B16;
+    /* Cor do texto da Sidebar: STARK (#E7DFDD) - Claro */
     color: #E7DFDD;
+    /* Torna a barra fixa, independentemente da rolagem */
     position: fixed;
     height: 100vh;
     padding: 20px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Organiza o conteúdo em coluna (topo ao rodapé) */
     align-items: center;
     text-align: center;
 }
 
 .sidebar-content {
+    /* Permite que esta seção cresça e empurre o rodapé para baixo */
     flex-grow: 1;
     padding-bottom: 20px;
 }
 
+/* Estilo da foto de perfil */
 .profile-photo {
     width: 150px;
     height: 150px;
-    object-fit: contain;
+    /* Garante que a imagem caiba completamente no espaço sem cortar (mantendo a proporção) */
+    object-fit: contain; 
     margin-bottom: 20px;
 }
 
 .sidebar-content h1, .sidebar-content h3 {
+    /* Garante que os títulos na sidebar sejam brancos/claros */
     color: #E7DFDD;
 }
 
@@ -93,6 +123,7 @@ a:hover {
     margin: 0;
 }
 
+/* Estilo do cargo na Sidebar (Job Title) */
 .job-title {
     font-size: 1em;
     font-weight: 700;
@@ -104,6 +135,7 @@ a:hover {
     color: #E7DFDD;
 }
 
+/* Seções de Contato e Links Sociais na Sidebar */
 .contact-info, .social-links {
     text-align: left;
     margin-bottom: 20px;
@@ -111,12 +143,14 @@ a:hover {
 }
 
 .contact-info h3, .social-links h3 {
+    /* Linha de separação: Azul Forte Original (#007bff) */
     border-bottom: 1px solid #007bff;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-.contact-info p {
+.contact-info p, .social-links p {
+    /* Usa Flexbox para alinhar o ícone/emoji e o texto lado a lado */
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -124,56 +158,41 @@ a:hover {
 }
 
 .contact-info .emoji, .social-links i {
+    /* Espaçamento entre o ícone e o texto/link */
     margin-right: 10px;
-    width: 20px;
+    /* Define uma largura para que todos os ícones fiquem alinhados */
+    width: 20px; 
     text-align: center;
 }
 
-.social-links p {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-weight: 400;
-}
-
-/* Cores dos Ícones Oficiais */
-.social-links i {
-    margin-right: 10px;
-    width: 20px;
-    text-align: center;
-    font-size: 1.1em;
-}
-
-.social-links .fa-linkedin {
-    color: #0A66C2;
-}
-.social-links .fa-github {
-    color: #E7DFDD;
-}
-.social-links .fa-youtube {
-    color: #FF0000;
-}
-.social-links .fa-discord {
-    color: #5865F2;
-}
-.social-links .fa-graduation-cap {
-    color: #E7DFDD;
-}
-.social-links .fa-id-card {
-    color: #A6CE39;
-}
-
+/* Corrigindo a cor dos links dentro da Sidebar (o texto) */
 .social-links a {
-    color: #00bcd4;
+    color: #00bcd4; /* Cor do link */
     text-decoration: none;
     font-weight: normal;
     display: inline;
 }
 
 .social-links a:hover {
-    color: #007bff;
+    color: #007bff; /* Azul Forte no hover */
 }
 
+/* Cores dos Ícones Oficiais (Font Awesome) */
+.social-links i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+.social-links .fa-linkedin { color: #0A66C2; } /* LinkedIn Azul */
+.social-links .fa-github { color: #E7DFDD; } /* GitHub Branco/Claro para contraste */
+.social-links .fa-youtube { color: #FF0000; } /* YouTube Vermelho */
+.social-links .fa-discord { color: #5865F2; } /* Discord Roxo */
+.social-links .fa-graduation-cap { color: #E7DFDD; } /* Lattes Cor Clara */
+.social-links .fa-id-card { color: #A6CE39; } /* ORCID Verde/Claro */
+
+
+/* Rodapé da Barra Lateral (Direitos Autorais) */
 .sidebar-footer {
     width: 100%;
     text-align: center;
@@ -182,14 +201,20 @@ a:hover {
     color: #E7DFDD;
 }
 
+/* Área Principal de Conteúdo (a parte que rola) */
 .main-content-area {
-    margin-left: 280px;
-    flex-grow: 1;
+    /* Empurra o conteúdo para a direita, deixando espaço para a sidebar */
+    margin-left: 280px; 
+    /* Permite que a área principal ocupe o restante do espaço */
+    flex-grow: 1; 
 }
 
-/* Navegação por Abas (Tabbed Navigation) */
+/*=====================================
+  NAVEGAÇÃO POR ABAS (TAB NAV)
+=====================================*/
 .tab-nav {
     background-color: #0E0B16;
+    /* Mantém a navegação colada no topo da área principal */
     position: sticky;
     top: 0;
     width: 100%;
@@ -219,37 +244,46 @@ a:hover {
     background-color: #1A1A1A;
 }
 
+/* Aba ATIVA */
 .tab-nav ul li a.active-tab {
     background-color: #007bff;
+    /* Linha de destaque na aba ativa: Azul Secundário/Cyan (#00bcd4) */
     border-bottom: 3px solid #00bcd4;
     color: #E7DFDD;
 }
 
-/* Seções de Conteúdo */
+/*=====================================
+  SEÇÕES DE CONTEÚDO
+=====================================*/
+
 .content-section {
     display: none;
-    background-color: transparent;
+    /* Fundo Transparente: Conteúdo ocupa largura total no fundo claro do body */
+    background-color: transparent; 
     padding: 40px;
-    box-shadow: none;
+    box-shadow: none; /* Remove a sombra da caixa */
     margin-bottom: 20px;
-    color: #0E0B16;
+    /* Cor do texto: VOID (#0E0B16) - Escuro, para o fundo claro do body */
+    color: #0E0B16; 
 }
 
 .content-section.active-content {
-    display: block;
+    display: block; /* Mostra a aba ativa */
 }
 
 .section-inner {
+    /* Limita a largura do texto para melhor leitura (mesmo que a seção seja full-width) */
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Estilo do Rodapé de Conteúdo (Copyright) */
+/* Estilo do Rodapé de Conteúdo (Copyright dentro das abas) */
 .content-footer {
-    margin-top: 60px;
+    margin-top: 60px; /* Grande espaçamento para separar do conteúdo principal */
     padding-top: 30px;
     border-top: 1px solid #1A1A1A;
-    text-align: center;
+    /* Centraliza o texto */
+    text-align: center; 
     font-size: 0.9em;
     color: #0E0B16;
 }
@@ -258,6 +292,7 @@ a:hover {
     margin: 0;
 }
 
+/* Estilos de Elementos Específicos */
 .header-content {
     text-align: center;
     padding: 20px;
