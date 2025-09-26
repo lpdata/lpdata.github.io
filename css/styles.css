@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #E7DFDD;
-    color: #0E0B16;
     line-height: 1.6;
+    color: #0E0B16;
 }
 
 h1, h3 {
@@ -86,10 +86,13 @@ a:hover {
     border: 3px solid #4717F6;
 }
 
+.sidebar-content h1, .sidebar-content h2, .sidebar-content h3 {
+    color: #E7DFDD;
+}
+
 .sidebar-content h1 {
     font-size: 1.8em;
     margin: 0;
-    color: #E7DFDD;
 }
 
 .sidebar-content h2 {
@@ -113,7 +116,6 @@ a:hover {
     border-bottom: 1px solid #4717F6;
     padding-bottom: 5px;
     margin-bottom: 10px;
-    color: #E7DFDD;
 }
 
 .social-links a {
@@ -136,7 +138,7 @@ a:hover {
 }
 
 .main-content-area {
-    margin-left: 280px; /* Largura da sidebar */
+    margin-left: 280px;
     flex-grow: 1;
 }
 
@@ -179,20 +181,13 @@ a:hover {
 }
 
 /* Seções de Conteúdo */
-.content-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 .content-section {
     display: none;
-    background-color: #0E0B16;
+    background-color: transparent;
     padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
     margin-bottom: 20px;
-    color: #E7DFDD;
+    color: #0E0B16;
 }
 
 .content-section.active-content {
@@ -207,10 +202,6 @@ a:hover {
 .header-content {
     text-align: center;
     padding: 20px;
-}
-
-.header-content h1, .header-content h3 {
-    color: #E7DFDD;
 }
 
 .main-hero-image {
@@ -252,7 +243,7 @@ a:hover {
 }
 
 .grid-item {
-    background-color: #0E0B16;
+    background-color: transparent;
     padding: 20px;
     border-radius: 5px;
 }
@@ -264,13 +255,13 @@ a:hover {
 .job-history article {
     margin-bottom: 20px;
     padding: 15px;
-    background-color: #0E0B16;
+    background-color: transparent;
     border-left: 4px solid #4717F6;
     border-radius: 5px;
 }
 
 .periodo {
-    color: #E7DFDD;
+    color: #0E0B16;
     font-style: italic;
     margin-top: -10px;
 }
@@ -288,7 +279,7 @@ a:hover {
 }
 
 .tech-block {
-    background-color: #0E0B16;
+    background-color: transparent;
     padding: 20px;
     border-radius: 8px;
     flex: 1;
@@ -343,7 +334,7 @@ a:hover {
 }
 
 .project-card {
-    background-color: #0E0B16;
+    background-color: transparent;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -359,7 +350,7 @@ a:hover {
 
 .certification-item {
     text-align: center;
-    background-color: #0E0B16;
+    background-color: transparent;
     padding: 15px;
     border-radius: 8px;
 }
@@ -398,7 +389,7 @@ a:hover {
 /* Estilo para Itens Expansíveis */
 .expandable-item {
     margin-bottom: 20px;
-    background-color: #0E0B16;
+    background-color: transparent;
     padding: 15px;
     border-radius: 8px;
     border-left: 4px solid #4717F6;
@@ -441,14 +432,6 @@ a:hover {
 .details.visible {
     max-height: 1000px;
     padding-top: 15px;
-}
-
-.sidebar-footer {
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    border-top: 1px solid #1A1A1A;
-    color: #E7DFDD;
 }
 
 footer {
