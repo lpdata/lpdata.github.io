@@ -1,10 +1,91 @@
 /*=====================================
+  DECLARAÇÃO DA FONTE ORKNEY
+=====================================*/
+
+/* Regular */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Regular.woff2') format('woff2'),
+         url('../fonts/Orkney Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Regular Italic */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Regular Italic.woff2') format('woff2'),
+         url('../fonts/Orkney Regular Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Medium.woff2') format('woff2'),
+         url('../fonts/Orkney Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Medium Italic.woff2') format('woff2'),
+         url('../fonts/Orkney Medium Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Light.woff2') format('woff2'),
+         url('../fonts/Orkney Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Light Italic.woff2') format('woff2'),
+         url('../fonts/Orkney Light Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Bold.woff2') format('woff2'),
+         url('../fonts/Orkney Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Bold Italic.woff2') format('woff2'),
+         url('../fonts/Orkney Bold Italic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* --- FIM DA DECLARAÇÃO DE FONTES --- */
+
+
+/*=====================================
   ESTILOS GERAIS DA PÁGINA (BODY)
   Estes estilos afetam a aparência básica de TODO o seu site.
 =====================================*/
 body {
     /* Define a família de fontes para todo o texto */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Orkney', sans-serif;
+    /* Define o peso da fonte padrão como Light (Leve) */
+    font-weight: 300;
     /* Remove margens e preenchimentos padrão que o navegador adiciona */
     margin: 0;
     padding: 0;
@@ -18,8 +99,8 @@ body {
 
 /* Estilo geral para todos os títulos (H1 e H3) */
 h1, h3 {
-    /* Define o peso da fonte (semi-negrito) */
-    font-weight: 600;
+    /* Define o peso da fonte como Bold (Negrito) */
+    font-weight: 700;
 }
 
 /* Estilo para o título principal (Usado no topo da página Inicial) */
@@ -31,7 +112,7 @@ h1 {
 /* Estilo para os títulos de Seção (H2) que usam a "barra" de destaque azul */
 h2 {
     font-size: 2.2em;
-    font-weight: 700;
+    font-weight: 700; /* Garante que H2 também seja Bold */
     /* Cor de fundo da barra: Azul Forte Original (#007bff) */
     background-color: #007bff;
     padding: 10px 20px;
@@ -45,7 +126,7 @@ h2 {
 /* Estilo específico para títulos internos menores (como "Bem-vindo(a)!✨") */
 .internal-title {
     font-size: 1.8em;
-    font-weight: 700;
+    font-weight: 700; /* Garante que este título também seja Bold */
     background-color: transparent; /* Garante que não tenha cor de fundo */
     padding: 0;
     margin-top: 1em;
@@ -128,7 +209,7 @@ a:hover {
 /* Estilo do cargo na Sidebar (Data Scientist & AI Engineer) */
 .job-title {
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 700; /* Garante que este título também seja Bold */
     margin-top: 5px;
     margin-bottom: 20px;
     background-color: transparent;
@@ -157,7 +238,7 @@ a:hover {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    font-weight: 400;
+    /* O peso do texto aqui será herdado do body (300 - Light) */
 }
 
 /* Estilo dos ícones/emojis e texto na Sidebar */
@@ -231,7 +312,7 @@ a:hover {
     display: block;
     padding: 15px 20px;
     color: #E7DFDD;
-    font-weight: bold;
+    font-weight: bold; /* Mapeia para o font-weight 700 (Bold) */
     border-bottom: 3px solid transparent;
     transition: background-color 0.3s, border-bottom 0.3s;
 }
@@ -349,7 +430,7 @@ a:hover {
 }
 
 .palavras-chave {
-    font-weight: bold;
+    font-weight: bold; /* Mapeia para o font-weight 700 (Bold) */
     color: #00bcd4;
 }
 
