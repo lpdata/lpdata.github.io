@@ -153,6 +153,36 @@ a:hover {
 }
 
 /*=====================================
+  ESTILOS DE TEXTO CUSTOMIZADOS
+=====================================*/
+
+/* Classe para seu nome na sidebar */
+.titulo-principal {
+    font-family: 'Orkney', sans-serif;
+    font-size: 2.1em; /* Tamanho grande e impactante */
+    font-weight: 400; /* Usando o peso 'Regular' para um visual mais limpo e elegante */
+    letter-spacing: 1.5px; /* Leve espaçamento entre as letras */
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #E7DFDD; /* Garante a cor clara na sidebar */
+}
+
+/* Classe para seu cargo na sidebar */
+.subtitulo-destaque {
+    font-family: 'Orkney', sans-serif;
+    font-size: 0.9em; /* Tamanho menor e mais discreto */
+    font-weight: 400; /* Usando o peso 'Regular' */
+    color: #00bcd4; /* Cor ciano para dar destaque */
+    text-transform: uppercase; /* Transforma o texto para maiúsculas */
+    letter-spacing: 3px; /* Espaçamento maior para um look moderno */
+    margin-bottom: 20px;
+    background-color: transparent; /* Garante que não há fundo */
+    padding: 5px 0; /* Adiciona um respiro vertical */
+    border: none; /* Remove bordas */
+    border-radius: 0;
+}
+
+/*=====================================
   LAYOUT PRINCIPAL (DUAS COLUNAS - SIDEBAR)
   Define a estrutura da barra lateral fixa e da área de conteúdo.
 =====================================*/
