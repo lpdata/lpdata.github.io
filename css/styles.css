@@ -84,7 +84,7 @@ a:hover {
 
 /* Configuração da BARRA LATERAL FIXA */
 .fixed-sidebar {
-    width: 280px;
+    width: 290px;
     /* Fundo da Sidebar: VOID (#0E0B16) - Escuro */
     background-color: #0E0B16;
     /* Cor do texto da Sidebar: STARK (#E7DFDD) - Claro */
@@ -92,8 +92,8 @@ a:hover {
     /* Mantém a barra fixa, independentemente da rolagem */
     position: fixed;
     height: 100vh;
-    padding: 20px;
-    box-sizing: border-box; /* Garante que o padding não aumente a largura total (280px) */
+    padding: 25px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total (290px) */
     display: flex;
     flex-direction: column; /* Organiza o conteúdo em coluna (topo ao rodapé) */
     align-items: center;
@@ -108,8 +108,8 @@ a:hover {
 
 /* Estilo da foto de perfil (sem borda circular ou corte) */
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     /* Garante que a imagem caiba completamente no espaço sem cortar */
     object-fit: contain; 
     margin-bottom: 20px;
