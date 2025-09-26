@@ -20,7 +20,7 @@ h1 {
 h2 {
     font-size: 2.2em;
     font-weight: 700;
-    background-color: #0073B4; /* Azul forte */
+    background-color: #007bff;
     padding: 10px 20px;
     border-radius: 8px;
     margin-top: 1.5em;
@@ -43,13 +43,13 @@ p {
 }
 
 a {
-    color: #00BFFF; /* Azul claro */
+    color: #00bcd4;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0073B4; /* Azul forte no hover */
+    color: #007bff;
 }
 
 /* Novo Layout de Duas Colunas */
@@ -93,7 +93,7 @@ a:hover {
     margin: 0;
 }
 
-.sidebar-content h2 {
+.job-title {
     font-size: 1em;
     font-weight: 700;
     margin-top: 5px;
@@ -111,29 +111,40 @@ a:hover {
 }
 
 .contact-info h3, .social-links h3 {
-    border-bottom: 1px solid #0073B4; /* Azul forte na borda */
+    border-bottom: 1px solid #007bff;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-.contact-info p, .social-links p {
+.contact-info p {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     font-weight: 400;
 }
 
-.contact-info .emoji, .social-links .emoji {
+.contact-info .emoji, .social-links i {
     margin-right: 10px;
+    width: 20px;
+    text-align: center;
 }
 
-/* Corrigido: Links na sidebar agora são claros */
-.fixed-sidebar a {
+.social-links p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.social-links a {
     color: #E7DFDD;
+    text-decoration: none;
+    font-weight: normal;
+    display: inline;
 }
 
-.fixed-sidebar a:hover {
-    color: #00BFFF; /* Azul claro no hover da sidebar */
+.social-links a:hover {
+    color: #007bff;
 }
 
 .sidebar-footer {
@@ -182,8 +193,8 @@ a:hover {
 }
 
 .tab-nav ul li a.active-tab {
-    background-color: #0073B4; /* Azul forte no tab ativo */
-    border-bottom: 3px solid #00BFFF; /* Azul claro na borda */
+    background-color: #007bff;
+    border-bottom: 3px solid #00bcd4;
     color: #E7DFDD;
 }
 
@@ -225,7 +236,7 @@ a:hover {
 
 .quick-access-buttons .button {
     display: inline-block;
-    background-color: #0073B4; /* Azul forte no botão */
+    background-color: #007bff;
     color: #E7DFDD;
     padding: 10px 15px;
     border-radius: 5px;
@@ -234,7 +245,7 @@ a:hover {
 }
 
 .quick-access-buttons .button:hover {
-    background-color: #00BFFF; /* Azul claro no hover */
+    background-color: #00bcd4;
 }
 
 .highlights span {
@@ -260,14 +271,14 @@ a:hover {
 }
 
 .grid-item h3 {
-    color: #0073B4; /* Azul forte no h3 */
+    color: #007bff;
 }
 
 .job-history article {
     margin-bottom: 20px;
     padding: 15px;
     background-color: transparent;
-    border-left: 4px solid #0073B4; /* Azul forte na borda */
+    border-left: 4px solid #007bff;
     border-radius: 5px;
 }
 
@@ -279,7 +290,7 @@ a:hover {
 
 .palavras-chave {
     font-weight: bold;
-    color: #00BFFF; /* Azul claro nas palavras-chave */
+    color: #00bcd4;
 }
 
 .tech-blocks {
@@ -298,7 +309,7 @@ a:hover {
 }
 
 .tech-block h3 {
-    color: #0073B4; /* Azul forte no h3 */
+    color: #007bff;
 }
 
 .tech-block ul {
@@ -349,7 +360,7 @@ a:hover {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    border-left: 4px solid #00BFFF; /* Azul claro na borda do projeto */
+    border-left: 4px solid #00bcd4;
 }
 
 .certification-container {
@@ -388,7 +399,13 @@ a:hover {
 }
 
 .social-links a {
-    color: #00BFFF; /* Azul claro no link */
+    color: #E7DFDD;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #007bff;
 }
 
 /* Estilo para Itens Expansíveis */
@@ -396,7 +413,7 @@ a:hover {
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 8px;
-    border-left: 4px solid #0073B4; /* Azul forte na borda */
+    border-left: 4px solid #007bff;
     background-color: transparent;
 }
 
@@ -414,7 +431,7 @@ a:hover {
 }
 
 .expand-btn {
-    background-color: #0073B4; /* Azul forte no botão */
+    background-color: #007bff;
     color: #E7DFDD;
     border: none;
     padding: 10px 15px;
@@ -426,7 +443,7 @@ a:hover {
 }
 
 .expand-btn:hover {
-    background-color: #00BFFF; /* Azul claro no hover */
+    background-color: #00bcd4;
 }
 
 .details {
