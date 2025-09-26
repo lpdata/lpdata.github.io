@@ -20,7 +20,7 @@ h1 {
 h2 {
     font-size: 2.2em;
     font-weight: 700;
-    background-color: #4717F6;
+    background-color: #0073B4; /* Azul forte */
     padding: 10px 20px;
     border-radius: 8px;
     margin-top: 1.5em;
@@ -43,13 +43,13 @@ p {
 }
 
 a {
-    color: #A239CA;
+    color: #00BFFF; /* Azul claro */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #4717F6;
+    color: #0073B4; /* Azul forte no hover */
 }
 
 /* Novo Layout de Duas Colunas */
@@ -77,22 +77,23 @@ a:hover {
     padding-bottom: 20px;
 }
 
-/* Estilo da foto (sem borda e sem cortar) */
 .profile-photo {
     width: 150px;
     height: 150px;
-    object-fit: contain; /* Ajusta a imagem para caber sem cortar */
+    object-fit: contain;
     margin-bottom: 20px;
+}
+
+.sidebar-content h1, .sidebar-content h3 {
+    color: #E7DFDD;
 }
 
 .sidebar-content h1 {
     font-size: 1.8em;
     margin: 0;
-    color: #E7DFDD;
 }
 
-/* Estilo do cargo (com mais destaque e legível) */
-.job-title {
+.sidebar-content h2 {
     font-size: 1em;
     font-weight: 700;
     margin-top: 5px;
@@ -110,10 +111,9 @@ a:hover {
 }
 
 .contact-info h3, .social-links h3 {
-    border-bottom: 1px solid #4717F6;
+    border-bottom: 1px solid #0073B4; /* Azul forte na borda */
     padding-bottom: 5px;
     margin-bottom: 10px;
-    color: #E7DFDD;
 }
 
 .contact-info p, .social-links p {
@@ -127,13 +127,13 @@ a:hover {
     margin-right: 10px;
 }
 
-.social-links a {
+/* Corrigido: Links na sidebar agora são claros */
+.fixed-sidebar a {
     color: #E7DFDD;
-    font-weight: 400;
 }
 
-.social-links a:hover {
-    color: #4717F6;
+.fixed-sidebar a:hover {
+    color: #00BFFF; /* Azul claro no hover da sidebar */
 }
 
 .sidebar-footer {
@@ -182,8 +182,8 @@ a:hover {
 }
 
 .tab-nav ul li a.active-tab {
-    background-color: #4717F6;
-    border-bottom: 3px solid #A239CA;
+    background-color: #0073B4; /* Azul forte no tab ativo */
+    border-bottom: 3px solid #00BFFF; /* Azul claro na borda */
     color: #E7DFDD;
 }
 
@@ -225,7 +225,7 @@ a:hover {
 
 .quick-access-buttons .button {
     display: inline-block;
-    background-color: #4717F6;
+    background-color: #0073B4; /* Azul forte no botão */
     color: #E7DFDD;
     padding: 10px 15px;
     border-radius: 5px;
@@ -234,7 +234,7 @@ a:hover {
 }
 
 .quick-access-buttons .button:hover {
-    background-color: #A239CA;
+    background-color: #00BFFF; /* Azul claro no hover */
 }
 
 .highlights span {
@@ -260,14 +260,14 @@ a:hover {
 }
 
 .grid-item h3 {
-    color: #4717F6;
+    color: #0073B4; /* Azul forte no h3 */
 }
 
 .job-history article {
     margin-bottom: 20px;
     padding: 15px;
     background-color: transparent;
-    border-left: 4px solid #4717F6;
+    border-left: 4px solid #0073B4; /* Azul forte na borda */
     border-radius: 5px;
 }
 
@@ -279,7 +279,7 @@ a:hover {
 
 .palavras-chave {
     font-weight: bold;
-    color: #A239CA;
+    color: #00BFFF; /* Azul claro nas palavras-chave */
 }
 
 .tech-blocks {
@@ -298,7 +298,7 @@ a:hover {
 }
 
 .tech-block h3 {
-    color: #4717F6;
+    color: #0073B4; /* Azul forte no h3 */
 }
 
 .tech-block ul {
@@ -349,7 +349,7 @@ a:hover {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    border-left: 4px solid #A239CA;
+    border-left: 4px solid #00BFFF; /* Azul claro na borda do projeto */
 }
 
 .certification-container {
@@ -388,7 +388,7 @@ a:hover {
 }
 
 .social-links a {
-    color: #0E0B16;
+    color: #00BFFF; /* Azul claro no link */
 }
 
 /* Estilo para Itens Expansíveis */
@@ -396,7 +396,7 @@ a:hover {
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 8px;
-    border-left: 4px solid #4717F6;
+    border-left: 4px solid #0073B4; /* Azul forte na borda */
     background-color: transparent;
 }
 
@@ -414,7 +414,7 @@ a:hover {
 }
 
 .expand-btn {
-    background-color: #4717F6;
+    background-color: #0073B4; /* Azul forte no botão */
     color: #E7DFDD;
     border: none;
     padding: 10px 15px;
@@ -426,7 +426,7 @@ a:hover {
 }
 
 .expand-btn:hover {
-    background-color: #A239CA;
+    background-color: #00BFFF; /* Azul claro no hover */
 }
 
 .details {
