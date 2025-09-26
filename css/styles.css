@@ -20,7 +20,7 @@ h1 {
 h2 {
     font-size: 2.2em;
     font-weight: 700;
-    background-color: #007bff;
+    background-color: #4717F6;
     padding: 10px 20px;
     border-radius: 8px;
     margin-top: 1.5em;
@@ -43,13 +43,13 @@ p {
 }
 
 a {
-    color: #00bcd4;
+    color: #A239CA;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #007bff;
+    color: #4717F6;
 }
 
 /* Novo Layout de Duas Colunas */
@@ -77,22 +77,21 @@ a:hover {
     padding-bottom: 20px;
 }
 
+/* Estilo da foto (sem borda) */
 .profile-photo {
-    width: 160px;
-    height: 160px;
-    object-fit: contain;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     margin-bottom: 20px;
-}
-
-.sidebar-content h1, .sidebar-content h3 {
-    color: #E7DFDD;
 }
 
 .sidebar-content h1 {
     font-size: 1.8em;
     margin: 0;
+    color: #E7DFDD;
 }
 
+/* Estilo do cargo (com mais destaque) */
 .job-title {
     font-size: 1em;
     font-weight: 700;
@@ -101,7 +100,7 @@ a:hover {
     background-color: transparent;
     padding: 0;
     border-radius: 0;
-    color: #E7DFDD;
+    color: #A239CA;
 }
 
 .contact-info, .social-links {
@@ -111,68 +110,29 @@ a:hover {
 }
 
 .contact-info h3, .social-links h3 {
-    border-bottom: 1px solid #007bff;
+    border-bottom: 1px solid #4717F6;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    color: #E7DFDD;
 }
 
-.contact-info p {
+.contact-info p, .social-links p {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     font-weight: 400;
 }
 
-.contact-info .emoji {
+.contact-info .emoji, .social-links .emoji {
     margin-right: 10px;
-    width: 20px;
-    text-align: center;
 }
 
-.social-links p {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-weight: 400;
-}
-
-/* Espaçamento e cores dos ícones */
-.social-links i {
-    margin-right: 10px; /* Adiciona espaçamento entre o ícone e o texto */
-    width: 20px; /* Garante que os ícones tenham largura consistente */
-    text-align: center;
-}
-
-.social-links .fa-linkedin {
-    color: #0A66C2; /* Cor oficial do LinkedIn */
-}
-.social-links .fa-github {
-    color: #333; /* Cor oficial do GitHub */
-}
-.social-links .fa-youtube {
-    color: #FF0000; /* Cor oficial do YouTube */
-}
-.social-links .fa-discord {
-    color: #5865F2; /* Cor oficial do Discord */
-}
-.social-links .fa-graduation-cap { /* Cor para Lattes */
-    color: #E7DFDD; 
-}
-.social-links .fa-id-card { /* Cor para ORCID */
-    color: #A6CE39;
-}
-
-
-/* Cor do texto dos links sociais */
 .social-links a {
-    color: #E7DFDD; /* Texto do link na barra lateral */
-    text-decoration: none;
-    font-weight: normal;
-    display: inline;
+    color: #E7DFDD;
 }
 
 .social-links a:hover {
-    color: #007bff;
+    color: #4717F6;
 }
 
 .sidebar-footer {
@@ -221,8 +181,8 @@ a:hover {
 }
 
 .tab-nav ul li a.active-tab {
-    background-color: #007bff;
-    border-bottom: 3px solid #00bcd4;
+    background-color: #4717F6;
+    border-bottom: 3px solid #A239CA;
     color: #E7DFDD;
 }
 
@@ -264,16 +224,16 @@ a:hover {
 
 .quick-access-buttons .button {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #4717F6;
     color: #E7DFDD;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     margin: 5px;
     transition: background-color 0.3s;
 }
 
 .quick-access-buttons .button:hover {
-    background-color: #00bcd4;
+    background-color: #A239CA;
 }
 
 .highlights span {
@@ -299,14 +259,14 @@ a:hover {
 }
 
 .grid-item h3 {
-    color: #007bff;
+    color: #4717F6;
 }
 
 .job-history article {
     margin-bottom: 20px;
     padding: 15px;
     background-color: transparent;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #4717F6;
     border-radius: 5px;
 }
 
@@ -318,7 +278,7 @@ a:hover {
 
 .palavras-chave {
     font-weight: bold;
-    color: #00bcd4;
+    color: #A239CA;
 }
 
 .tech-blocks {
@@ -337,7 +297,7 @@ a:hover {
 }
 
 .tech-block h3 {
-    color: #007bff;
+    color: #4717F6;
 }
 
 .tech-block ul {
@@ -388,7 +348,7 @@ a:hover {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    border-left: 4px solid #00bcd4;
+    border-left: 4px solid #A239CA;
 }
 
 .certification-container {
@@ -426,12 +386,22 @@ a:hover {
     margin-top: 15px;
 }
 
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.2em;
+    background-color: #4717F6;
+    color: #E7DFDD;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
 /* Estilo para Itens Expansíveis */
 .expandable-item {
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 8px;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #4717F6;
     background-color: transparent;
 }
 
@@ -449,7 +419,7 @@ a:hover {
 }
 
 .expand-btn {
-    background-color: #007bff;
+    background-color: #4717F6;
     color: #E7DFDD;
     border: none;
     padding: 10px 15px;
@@ -461,7 +431,7 @@ a:hover {
 }
 
 .expand-btn:hover {
-    background-color: #00bcd4;
+    background-color: #A239CA;
 }
 
 .details {
