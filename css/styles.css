@@ -123,7 +123,7 @@ a:hover {
     font-weight: 400;
 }
 
-.contact-info .emoji, .social-links i {
+.contact-info .emoji {
     margin-right: 10px;
     width: 20px;
     text-align: center;
@@ -136,8 +136,36 @@ a:hover {
     font-weight: 400;
 }
 
+/* Espaçamento e cores dos ícones */
+.social-links i {
+    margin-right: 10px; /* Adiciona espaçamento entre o ícone e o texto */
+    width: 20px; /* Garante que os ícones tenham largura consistente */
+    text-align: center;
+}
+
+.social-links .fa-linkedin {
+    color: #0A66C2; /* Cor oficial do LinkedIn */
+}
+.social-links .fa-github {
+    color: #333; /* Cor oficial do GitHub */
+}
+.social-links .fa-youtube {
+    color: #FF0000; /* Cor oficial do YouTube */
+}
+.social-links .fa-discord {
+    color: #5865F2; /* Cor oficial do Discord */
+}
+.social-links .fa-graduation-cap { /* Cor para Lattes */
+    color: #E7DFDD; 
+}
+.social-links .fa-id-card { /* Cor para ORCID */
+    color: #A6CE39;
+}
+
+
+/* Cor do texto dos links sociais */
 .social-links a {
-    color: #E7DFDD;
+    color: #E7DFDD; /* Texto do link na barra lateral */
     text-decoration: none;
     font-weight: normal;
     display: inline;
@@ -396,16 +424,6 @@ a:hover {
 
 .social-links {
     margin-top: 15px;
-}
-
-.social-links a {
-    color: #E7DFDD;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    color: #007bff;
 }
 
 /* Estilo para Itens Expansíveis */
