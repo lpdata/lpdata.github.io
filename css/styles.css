@@ -20,7 +20,7 @@ h1 {
 h2 {
     font-size: 2.2em;
     font-weight: 700;
-    background-color: #4717F6;
+    background-color: #007bff;
     padding: 10px 20px;
     border-radius: 8px;
     margin-top: 1.5em;
@@ -43,13 +43,13 @@ p {
 }
 
 a {
-    color: #A239CA;
+    color: #00bcd4;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #4717F6;
+    color: #007bff;
 }
 
 /* Novo Layout de Duas Colunas */
@@ -77,21 +77,22 @@ a:hover {
     padding-bottom: 20px;
 }
 
-/* Estilo da foto (sem borda) */
 .profile-photo {
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 20px;
+}
+
+.sidebar-content h1, .sidebar-content h3 {
+    color: #E7DFDD;
 }
 
 .sidebar-content h1 {
     font-size: 1.8em;
     margin: 0;
-    color: #E7DFDD;
 }
 
-/* Estilo do cargo (com mais destaque) */
 .job-title {
     font-size: 1em;
     font-weight: 700;
@@ -100,7 +101,7 @@ a:hover {
     background-color: transparent;
     padding: 0;
     border-radius: 0;
-    color: #A239CA;
+    color: #E7DFDD;
 }
 
 .contact-info, .social-links {
@@ -110,29 +111,67 @@ a:hover {
 }
 
 .contact-info h3, .social-links h3 {
-    border-bottom: 1px solid #4717F6;
+    border-bottom: 1px solid #007bff;
     padding-bottom: 5px;
     margin-bottom: 10px;
-    color: #E7DFDD;
 }
 
-.contact-info p, .social-links p {
+.contact-info p {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     font-weight: 400;
 }
 
-.contact-info .emoji, .social-links .emoji {
+.contact-info .emoji, .social-links i {
     margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.social-links p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+/* Cores dos Ícones Oficiais */
+.social-links i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.social-links .fa-linkedin {
+    color: #0A66C2;
+}
+.social-links .fa-github {
+    color: #E7DFDD;
+}
+.social-links .fa-youtube {
+    color: #FF0000;
+}
+.social-links .fa-discord {
+    color: #5865F2;
+}
+.social-links .fa-graduation-cap {
+    color: #E7DFDD;
+}
+.social-links .fa-id-card {
+    color: #A6CE39;
 }
 
 .social-links a {
-    color: #E7DFDD;
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: normal;
+    display: inline;
 }
 
 .social-links a:hover {
-    color: #4717F6;
+    color: #007bff;
 }
 
 .sidebar-footer {
@@ -181,8 +220,8 @@ a:hover {
 }
 
 .tab-nav ul li a.active-tab {
-    background-color: #4717F6;
-    border-bottom: 3px solid #A239CA;
+    background-color: #007bff;
+    border-bottom: 3px solid #00bcd4;
     color: #E7DFDD;
 }
 
@@ -205,6 +244,20 @@ a:hover {
     margin: 0 auto;
 }
 
+/* Estilo do Rodapé de Conteúdo (Copyright) */
+.content-footer {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid #1A1A1A;
+    text-align: center;
+    font-size: 0.9em;
+    color: #0E0B16;
+}
+
+.content-footer p {
+    margin: 0;
+}
+
 .header-content {
     text-align: center;
     padding: 20px;
@@ -224,16 +277,16 @@ a:hover {
 
 .quick-access-buttons .button {
     display: inline-block;
-    background-color: #4717F6;
+    background-color: #007bff;
     color: #E7DFDD;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
     margin: 5px;
     transition: background-color 0.3s;
 }
 
 .quick-access-buttons .button:hover {
-    background-color: #A239CA;
+    background-color: #00bcd4;
 }
 
 .highlights span {
@@ -259,14 +312,14 @@ a:hover {
 }
 
 .grid-item h3 {
-    color: #4717F6;
+    color: #007bff;
 }
 
 .job-history article {
     margin-bottom: 20px;
     padding: 15px;
     background-color: transparent;
-    border-left: 4px solid #4717F6;
+    border-left: 4px solid #007bff;
     border-radius: 5px;
 }
 
@@ -278,7 +331,7 @@ a:hover {
 
 .palavras-chave {
     font-weight: bold;
-    color: #A239CA;
+    color: #00bcd4;
 }
 
 .tech-blocks {
@@ -297,7 +350,7 @@ a:hover {
 }
 
 .tech-block h3 {
-    color: #4717F6;
+    color: #007bff;
 }
 
 .tech-block ul {
@@ -348,7 +401,7 @@ a:hover {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    border-left: 4px solid #A239CA;
+    border-left: 4px solid #00bcd4;
 }
 
 .certification-container {
@@ -386,22 +439,12 @@ a:hover {
     margin-top: 15px;
 }
 
-.social-links a {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 1.2em;
-    background-color: #4717F6;
-    color: #E7DFDD;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-
 /* Estilo para Itens Expansíveis */
 .expandable-item {
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 8px;
-    border-left: 4px solid #4717F6;
+    border-left: 4px solid #007bff;
     background-color: transparent;
 }
 
@@ -419,7 +462,7 @@ a:hover {
 }
 
 .expand-btn {
-    background-color: #4717F6;
+    background-color: #007bff;
     color: #E7DFDD;
     border: none;
     padding: 10px 15px;
@@ -431,7 +474,7 @@ a:hover {
 }
 
 .expand-btn:hover {
-    background-color: #A239CA;
+    background-color: #00bcd4;
 }
 
 .details {
@@ -443,8 +486,4 @@ a:hover {
 .details.visible {
     max-height: 1000px;
     padding-top: 15px;
-}
-
-footer {
-    display: none;
 }
