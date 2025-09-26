@@ -1,18 +1,19 @@
 /*=====================================
   ESTILOS GERAIS DA PÁGINA (BODY)
+  Estes estilos afetam a aparência básica de TODO o seu site.
 =====================================*/
 body {
-    /* Define a família de fontes para o site */
+    /* Define a família de fontes para todo o texto */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    /* Remove margens e preenchimentos padrão do navegador */
+    /* Remove margens e preenchimentos padrão que o navegador adiciona */
     margin: 0;
     padding: 0;
-    /* Fundo da página: STARK (#E7DFDD) - Cor clara */
+    /* Fundo da página: STARK (#E7DFDD) - Cor clara. É a cor que aparece na lateral. */
     background-color: #E7DFDD;
     /* Espaçamento entre linhas para melhor leitura */
     line-height: 1.6;
-    /* Cor do texto padrão em todo o BODY (texto escuro para fundo claro) */
-    color: #0E0B16; 
+    /* Cor do texto padrão em todo o BODY: VOID (#0E0B16) - Escuro. */
+    color: #0E0B16;
 }
 
 /* Estilo geral para todos os títulos (H1 e H3) */
@@ -21,13 +22,13 @@ h1, h3 {
     font-weight: 600;
 }
 
-/* Estilo para o título principal da seção (Geralmente o seu nome ou título) */
+/* Estilo para o título principal (Usado no topo da página Inicial) */
 h1 {
-    font-size: 2.5em; /* Tamanho maior */
+    font-size: 2.5em; /* Tamanho da fonte */
     margin-bottom: 0.5em;
 }
 
-/* Estilo para os títulos de seção (H2) que têm a barra de destaque */
+/* Estilo para os títulos de Seção (H2) que usam a "barra" de destaque azul */
 h2 {
     font-size: 2.2em;
     font-weight: 700;
@@ -37,7 +38,7 @@ h2 {
     border-radius: 8px; /* Cantos arredondados */
     margin-top: 1.5em;
     margin-bottom: 25px;
-    /* Cor do texto: STARK (#E7DFDD) - Clara, para contrastar com a barra azul */
+    /* Cor do texto: STARK (#E7DFDD) - Claro, para contrastar com a barra azul */
     color: #E7DFDD;
 }
 
@@ -45,7 +46,7 @@ h2 {
 .internal-title {
     font-size: 1.8em;
     font-weight: 700;
-    background-color: transparent; /* Sem cor de fundo */
+    background-color: transparent; /* Garante que não tenha cor de fundo */
     padding: 0;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -59,10 +60,10 @@ p {
 
 /* Estilo padrão para todos os links (a) */
 a {
-    /* Cor do link: Azul Secundário/Cyan (#00bcd4) */
+    /* Cor do link padrão: Azul Secundário/Cyan (#00bcd4) */
     color: #00bcd4;
     text-decoration: none; /* Remove o sublinhado padrão */
-    transition: color 0.3s ease; /* Efeito suave ao passar o mouse */
+    transition: color 0.3s ease; /* Efeito suave na cor ao interagir */
 }
 
 a:hover {
@@ -71,10 +72,11 @@ a:hover {
 }
 
 /*=====================================
-  LAYOUT PRINCIPAL (DUAS COLUNAS)
+  LAYOUT PRINCIPAL (DUAS COLUNAS - SIDEBAR)
+  Define a estrutura da barra lateral fixa e da área de conteúdo.
 =====================================*/
 .two-column-layout {
-    /* Usa Flexbox para criar o layout de duas colunas (Sidebar e Conteúdo) */
+    /* Usa Flexbox para dividir a página em dois contêineres principais */
     display: flex;
     /* Garante que o layout ocupe pelo menos a altura total da tela */
     min-height: 100vh;
@@ -87,11 +89,11 @@ a:hover {
     background-color: #0E0B16;
     /* Cor do texto da Sidebar: STARK (#E7DFDD) - Claro */
     color: #E7DFDD;
-    /* Torna a barra fixa, independentemente da rolagem */
+    /* Mantém a barra fixa, independentemente da rolagem */
     position: fixed;
     height: 100vh;
     padding: 20px;
-    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total (280px) */
     display: flex;
     flex-direction: column; /* Organiza o conteúdo em coluna (topo ao rodapé) */
     align-items: center;
@@ -104,17 +106,17 @@ a:hover {
     padding-bottom: 20px;
 }
 
-/* Estilo da foto de perfil */
+/* Estilo da foto de perfil (sem borda circular ou corte) */
 .profile-photo {
     width: 150px;
     height: 150px;
-    /* Garante que a imagem caiba completamente no espaço sem cortar (mantendo a proporção) */
+    /* Garante que a imagem caiba completamente no espaço sem cortar */
     object-fit: contain; 
     margin-bottom: 20px;
 }
 
+/* Garante que os títulos H1 e H3 na sidebar sejam claros */
 .sidebar-content h1, .sidebar-content h3 {
-    /* Garante que os títulos na sidebar sejam brancos/claros */
     color: #E7DFDD;
 }
 
@@ -123,7 +125,7 @@ a:hover {
     margin: 0;
 }
 
-/* Estilo do cargo na Sidebar (Job Title) */
+/* Estilo do cargo na Sidebar (Data Scientist & AI Engineer) */
 .job-title {
     font-size: 1em;
     font-weight: 700;
@@ -132,7 +134,7 @@ a:hover {
     background-color: transparent;
     padding: 0;
     border-radius: 0;
-    color: #E7DFDD;
+    color: #E7DFDD; /* Texto claro */
 }
 
 /* Seções de Contato e Links Sociais na Sidebar */
@@ -149,25 +151,35 @@ a:hover {
     margin-bottom: 10px;
 }
 
+/* Alinhamento de Ícones/Emojis e Links */
 .contact-info p, .social-links p {
-    /* Usa Flexbox para alinhar o ícone/emoji e o texto lado a lado */
+    /* Usa Flexbox para alinhar o ícone/emoji e o texto na mesma linha */
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     font-weight: 400;
 }
 
+/* Estilo dos ícones/emojis e texto na Sidebar */
 .contact-info .emoji, .social-links i {
-    /* Espaçamento entre o ícone e o texto/link */
+    /* Adiciona espaçamento à direita para separar do link */
     margin-right: 10px;
-    /* Define uma largura para que todos os ícones fiquem alinhados */
     width: 20px; 
     text-align: center;
+    font-size: 1.1em; /* Tamanho dos ícones */
 }
 
-/* Corrigindo a cor dos links dentro da Sidebar (o texto) */
+/* Cores dos Ícones Oficiais */
+.social-links .fa-linkedin { color: #0A66C2; }
+.social-links .fa-github { color: #E7DFDD; }
+.social-links .fa-youtube { color: #FF0000; }
+.social-links .fa-discord { color: #5865F2; }
+.social-links .fa-graduation-cap { color: #E7DFDD; }
+.social-links .fa-id-card { color: #A6CE39; }
+
+/* Corrigido: Cor do texto dos links na sidebar */
 .social-links a {
-    color: #00bcd4; /* Cor do link */
+    color: #00bcd4; /* Azul Secundário/Cyan */
     text-decoration: none;
     font-weight: normal;
     display: inline;
@@ -176,21 +188,6 @@ a:hover {
 .social-links a:hover {
     color: #007bff; /* Azul Forte no hover */
 }
-
-/* Cores dos Ícones Oficiais (Font Awesome) */
-.social-links i {
-    margin-right: 10px;
-    width: 20px;
-    text-align: center;
-    font-size: 1.1em;
-}
-.social-links .fa-linkedin { color: #0A66C2; } /* LinkedIn Azul */
-.social-links .fa-github { color: #E7DFDD; } /* GitHub Branco/Claro para contraste */
-.social-links .fa-youtube { color: #FF0000; } /* YouTube Vermelho */
-.social-links .fa-discord { color: #5865F2; } /* Discord Roxo */
-.social-links .fa-graduation-cap { color: #E7DFDD; } /* Lattes Cor Clara */
-.social-links .fa-id-card { color: #A6CE39; } /* ORCID Verde/Claro */
-
 
 /* Rodapé da Barra Lateral (Direitos Autorais) */
 .sidebar-footer {
@@ -201,11 +198,10 @@ a:hover {
     color: #E7DFDD;
 }
 
-/* Área Principal de Conteúdo (a parte que rola) */
+/* Área Principal de Conteúdo (o contêiner com as abas que rola) */
 .main-content-area {
     /* Empurra o conteúdo para a direita, deixando espaço para a sidebar */
     margin-left: 280px; 
-    /* Permite que a área principal ocupe o restante do espaço */
     flex-grow: 1; 
 }
 
@@ -247,39 +243,40 @@ a:hover {
 /* Aba ATIVA */
 .tab-nav ul li a.active-tab {
     background-color: #007bff;
-    /* Linha de destaque na aba ativa: Azul Secundário/Cyan (#00bcd4) */
+    /* Linha de destaque: Azul Secundário/Cyan (#00bcd4) */
     border-bottom: 3px solid #00bcd4;
     color: #E7DFDD;
 }
 
 /*=====================================
   SEÇÕES DE CONTEÚDO
+  Esta seção remove as caixas pretas e torna o fundo claro.
 =====================================*/
-
 .content-section {
     display: none;
-    /* Fundo Transparente: Conteúdo ocupa largura total no fundo claro do body */
+    /* Fundo Transparente, permitindo que o fundo claro do body apareça */
     background-color: transparent; 
     padding: 40px;
-    box-shadow: none; /* Remove a sombra da caixa */
+    box-shadow: none; /* Remove qualquer sombra de caixa */
     margin-bottom: 20px;
-    /* Cor do texto: VOID (#0E0B16) - Escuro, para o fundo claro do body */
+    /* Cor do texto: VOID (#0E0B16) - Escuro, para o fundo claro */
     color: #0E0B16; 
 }
 
 .content-section.active-content {
-    display: block; /* Mostra a aba ativa */
+    display: block;
 }
 
 .section-inner {
-    /* Limita a largura do texto para melhor leitura (mesmo que a seção seja full-width) */
+    /* Limita a largura do conteúdo interno para melhor leitura */
     max-width: 800px;
     margin: 0 auto;
 }
 
 /* Estilo do Rodapé de Conteúdo (Copyright dentro das abas) */
 .content-footer {
-    margin-top: 60px; /* Grande espaçamento para separar do conteúdo principal */
+    /* Grande espaçamento para separar o copyright do conteúdo principal */
+    margin-top: 60px; 
     padding-top: 30px;
     border-top: 1px solid #1A1A1A;
     /* Centraliza o texto */
@@ -292,24 +289,12 @@ a:hover {
     margin: 0;
 }
 
-/* Estilos de Elementos Específicos */
-.header-content {
-    text-align: center;
-    padding: 20px;
-}
-
+/* Garante que os títulos H1 e H3 na área de conteúdo sejam escuros */
 .header-content h1, .header-content h3 {
     color: #0E0B16;
 }
 
-.main-hero-image {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    display: block;
-    margin: 0 auto 30px auto;
-}
-
+/* Estilos dos botões na seção de conteúdo */
 .quick-access-buttons .button {
     display: inline-block;
     background-color: #007bff;
@@ -324,6 +309,7 @@ a:hover {
     background-color: #00bcd4;
 }
 
+/* Estilo para as tags de destaque (highlights) */
 .highlights span {
     display: inline-block;
     background-color: #1A1A1A;
@@ -334,28 +320,26 @@ a:hover {
     font-size: 0.9em;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.grid-item {
+/* Estilo de caixas de informação e listas */
+.grid-item, .job-history article, .tech-block, .project-card, .certification-item, .expandable-item {
     background-color: transparent;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.grid-item h3 {
-    color: #007bff;
-}
-
-.job-history article {
-    margin-bottom: 20px;
     padding: 15px;
-    background-color: transparent;
+    border-radius: 8px;
+}
+
+.job-history article, .expandable-item {
+    /* Borda de destaque lateral: Azul Forte Original (#007bff) */
     border-left: 4px solid #007bff;
-    border-radius: 5px;
+}
+
+.project-card {
+    /* Borda de destaque lateral: Azul Secundário/Cyan (#00bcd4) */
+    border-left: 4px solid #00bcd4;
+}
+
+/* Cores específicas de texto */
+.grid-item h3, .job-history article h3, .tech-block h3 {
+    color: #007bff;
 }
 
 .periodo {
@@ -369,35 +353,7 @@ a:hover {
     color: #00bcd4;
 }
 
-.tech-blocks {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-.tech-block {
-    background-color: transparent;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1;
-    min-width: 250px;
-}
-
-.tech-block h3 {
-    color: #007bff;
-}
-
-.tech-block ul {
-    list-style: none;
-    padding: 0;
-}
-
 /* Estilo para as Barras de Progresso */
-.skill-item {
-    margin-bottom: 20px;
-}
-
 .progress-bar {
     background-color: #1A1A1A;
     border-radius: 5px;
@@ -405,97 +361,19 @@ a:hover {
     overflow: hidden;
 }
 
-.progress-fill {
-    height: 100%;
-    transition: width 0.5s ease;
-    border-radius: 5px;
-}
+.progress-fill.beginner { background-color: #ff6347; width: 30%; }
+.progress-fill.intermediate { background-color: #ffd700; width: 60%; }
+.progress-fill.advanced { background-color: #3cb371; width: 90%; }
 
-.progress-fill.beginner {
-    background-color: #ff6347;
-    width: 30%;
-}
 
-.progress-fill.intermediate {
-    background-color: #ffd700;
-    width: 60%;
-}
-
-.progress-fill.advanced {
-    background-color: #3cb371;
-    width: 90%;
-}
-
-.tech-block ul {
-    list-style: none;
-    padding: 0;
-}
-
-.project-card {
-    background-color: transparent;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border-left: 4px solid #00bcd4;
-}
-
-.certification-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.certification-item {
-    text-align: center;
-    background-color: transparent;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.certification-item img {
-    border-radius: 8px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-}
-
-.social-links {
-    margin-top: 15px;
-}
-
-/* Estilo para Itens Expansíveis */
-.expandable-item {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    border-left: 4px solid #007bff;
-    background-color: transparent;
-}
-
+/* Estilo de Títulos H4 dentro de Itens Expansíveis */
 .expandable-item h4 {
     margin-top: 0;
     margin-bottom: 5px;
     color: #0E0B16;
 }
 
-.summary {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    cursor: pointer;
-}
-
+/* Estilo do botão de expandir (+ Saiba mais) */
 .expand-btn {
     background-color: #007bff;
     color: #E7DFDD;
@@ -512,6 +390,7 @@ a:hover {
     background-color: #00bcd4;
 }
 
+/* Lógica que esconde o conteúdo expansível (usada pelo JavaScript) */
 .details {
     overflow: hidden;
     max-height: 0;
