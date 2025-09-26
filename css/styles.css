@@ -77,27 +77,24 @@ a:hover {
     padding-bottom: 20px;
 }
 
+/* Estilo da foto (sem borda) */
 .profile-photo {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 3px solid #4717F6;
-}
-
-.sidebar-content h1, .sidebar-content h3 {
-    color: #E7DFDD;
 }
 
 .sidebar-content h1 {
     font-size: 1.8em;
     margin: 0;
+    color: #E7DFDD;
 }
 
-.sidebar-content h2 {
+/* Estilo do cargo (com mais destaque) */
+.job-title {
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 700;
     margin-top: 5px;
     margin-bottom: 20px;
     background-color: transparent;
@@ -116,13 +113,22 @@ a:hover {
     border-bottom: 1px solid #4717F6;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    color: #E7DFDD;
+}
+
+.contact-info p, .social-links p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.contact-info .emoji, .social-links .emoji {
+    margin-right: 10px;
 }
 
 .social-links a {
-    display: block;
-    margin-bottom: 5px;
     color: #E7DFDD;
-    font-weight: 400;
 }
 
 .social-links a:hover {
@@ -187,7 +193,7 @@ a:hover {
     padding: 40px;
     box-shadow: none;
     margin-bottom: 20px;
-    color: #0E0B16; /* Cor do texto no fundo claro */
+    color: #0E0B16;
 }
 
 .content-section.active-content {
@@ -396,7 +402,7 @@ a:hover {
     padding: 15px;
     border-radius: 8px;
     border-left: 4px solid #4717F6;
-    background-color: transparent; /* Remove o fundo da caixa */
+    background-color: transparent;
 }
 
 .expandable-item h4 {
