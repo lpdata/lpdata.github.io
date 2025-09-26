@@ -172,7 +172,7 @@ a:hover {
     font-family: 'Orkney', sans-serif;
     font-size: 0.9em; /* Tamanho menor e mais discreto */
     font-weight: 400; /* Usando o peso 'Regular' */
-    color: #00bcd4; /* Cor ciano para dar destaque */
+    color: #4717f6; /* Cor jewl para dar destaque */
     text-transform: uppercase; /* Transforma o texto para maiúsculas */
     letter-spacing: 3px; /* Espaçamento maior para um look moderno */
     margin-bottom: 20px;
@@ -229,23 +229,6 @@ a:hover {
 /* Garante que os títulos H1 e H3 na sidebar sejam claros */
 .sidebar-content h1, .sidebar-content h3 {
     color: #E7DFDD;
-}
-
-.sidebar-content h1 {
-    font-size: 1.8em;
-    margin: 0;
-}
-
-/* Estilo do cargo na Sidebar (Data Scientist & AI Engineer) */
-.job-title {
-    font-size: 1em;
-    font-weight: 700; /* Garante que este título também seja Bold */
-    margin-top: 5px;
-    margin-bottom: 20px;
-    background-color: transparent;
-    padding: 0;
-    border-radius: 0;
-    color: #E7DFDD; /* Texto claro */
 }
 
 /* Seções de Contato e Links Sociais na Sidebar */
