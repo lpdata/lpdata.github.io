@@ -329,6 +329,32 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 /*=====================================
+  ESTILOS PARA A SEÇÃO HOME (COM GIF)
+=====================================*/
+.home-layout {
+    display: flex; /* Cria o layout lado a lado */
+    align-items: center; /* Alinha o texto e a imagem verticalmente */
+    gap: 40px; /* Espaçamento entre o texto e a imagem */
+}
+
+.home-text {
+    flex: 2; /* Faz o texto ocupar mais espaço (ex: 2/3 da largura) */
+}
+
+.home-gif {
+    flex: 1; /* Faz a imagem ocupar menos espaço (ex: 1/3 da largura) */
+    text-align: center; /* Centraliza o GIF no seu container */
+}
+
+.home-gif img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse seu container */
+    width: 300px; /* Define o "tamanho médio" do GIF. Ajuste este valor como desejar! */
+    height: auto;
+    border-radius: 15px; /* Adiciona cantos arredondados para um visual mais suave */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/*=====================================
   MEDIA QUERIES PARA RESPONSIVIDADE
 =====================================*/
 @media (max-width: 800px) {
@@ -342,5 +368,13 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     .tab-nav ul li a {
         padding: 12px 15px;
         font-size: 0.9em;
+    }
+    .home-layout {
+        flex-direction: column; /* Altera o layout para vertical */
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    .home-gif {
+        margin-top: 30px; /* Adiciona um espaço acima do GIF no modo celular */
     }
 }
