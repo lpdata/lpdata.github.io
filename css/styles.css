@@ -421,7 +421,11 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     margin-left: 0;
     text-align: justify;   /* ALTERADO: Justifica o texto para alinhar ambas as bordas */
 }
-
+/* Centraliza o conteúdo do bloco de highlights na Home */
+.highlights {
+    text-align: center;
+    margin-top: 50px; /* Movido do seu HTML para cá para melhor organização */
+}
 /*=====================================
   ESTILOS PARA A SEÇÃO EM CONSTRUÇÃO
 =====================================*/
