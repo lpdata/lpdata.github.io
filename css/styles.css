@@ -71,12 +71,12 @@
   VARIÁVEIS DE COR
 =====================================*/
 :root {
-    --color-stark: #E7DFDD;
-    --color-void: #0E0B16;
-    --color-azul-forte: #007bff;
-    --color-azul-cyan: #00bcd4;
+    --color-stark: #FFFFFF;
+    --color-void: #4717f6;
+    --color-azul-forte: #4717f6;
+    --color-azul-cyan: #4717f6;
     --color-jewl: #4717f6;
-    --color-cinza-escuro: #1A1A1A;
+    --color-cinza-escuro: #000000;
 }
 
 /*=====================================
