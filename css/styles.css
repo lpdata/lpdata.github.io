@@ -344,7 +344,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 .hero-left-col {
     flex-shrink: 0;
-    width: 150px; /* Mantive o tamanho menor que definimos antes */
+    width: 200px; /* Mantive o tamanho menor que definimos antes */
     text-align: center;
 }
 
