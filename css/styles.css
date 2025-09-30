@@ -349,14 +349,11 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 .my-profile-pic {
-    width: 100%; /* Imagem preenche a largura da coluna */
+    width: 100%;
     height: auto;
-    border-radius: 50%; /* Transforma a imagem em um círculo */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra sutil */
-    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
-    aspect-ratio: 1 / 1; /* Mantém a imagem perfeitamente quadrada para o círculo */
-    display: block; /* Remove espaço extra abaixo da imagem */
-    margin-left: auto; /* Centraliza a imagem na coluna, se a largura da imagem for menor */
+  /* As linhas de border-radius, box-shadow, object-fit e aspect-ratio foram removidas */
+    display: block;
+    margin-left: auto;
     margin-right: auto;
 }
 
