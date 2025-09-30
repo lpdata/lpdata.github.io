@@ -155,9 +155,9 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     display: block;
     padding: 30px 20px;
     color: var(--color-stark);
-    font-weight: 450; /* De 700 (negrito) para 500 (médio), ou 400 para normal */
-    font-size: 0.90rem; /* Adicionado para diminuir o tamanho da fonte (~10% menor) */
-    letter-spacing: 0.5px; /* Leve espaçamento entre as letras */
+    font-weight: 400; /* De 700 (negrito) para 500 (médio), ou 400 para normal */
+    font-size: 0.88rem; /* Adicionado para diminuir o tamanho da fonte (~10% menor) */
+    letter-spacing: 0.6px; /* Leve espaçamento entre as letras */
     border-bottom: 3px solid transparent;
     transition: background-color 0.3s, border-bottom 0.3s, color 0.3s;
 }
