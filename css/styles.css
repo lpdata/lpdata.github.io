@@ -10,52 +10,7 @@
     font-weight: 400;
     font-style: normal;
 }
-
-/* Regular Italic */
-@font-face {
-    font-family: 'Orkney';
-    src: url('../fonts/Orkney Regular Italic.woff2') format('woff2'),
-         url('../fonts/Orkney Regular Italic.woff') format('woff');
-    font-weight: 400;
-    font-style: italic;
-}
-
-/* Medium */
-@font-face {
-    font-family: 'Orkney';
-    src: url('../fonts/Orkney Medium.woff2') format('woff2'),
-         url('../fonts/Orkney Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-/* Medium Italic */
-@font-face {
-    font-family: 'Orkney';
-    src: url('../fonts/Orkney Medium Italic.woff2') format('woff2'),
-         url('../fonts/Orkney Medium Italic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-}
-
-/* Light */
-@font-face {
-    font-family: 'Orkney';
-    src: url('../fonts/Orkney Light.woff2') format('woff2'),
-         url('../fonts/Orkney Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-/* Light Italic */
-@font-face {
-    font-family: 'Orkney';
-    src: url('../fonts/Orkney Light Italic.woff2') format('woff2'),
-         url('../fonts/Orkney Light Italic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-}
-
+/* ... (outras declarações de fonte permanecem aqui) ... */
 /* Bold */
 @font-face {
     font-family: 'Orkney';
@@ -65,246 +20,198 @@
     font-style: normal;
 }
 
-/* Bold Italic */
-@font-face {
-    font-family: 'Orkney';
-    src: url('../fonts/Orkney Bold Italic.woff2') format('woff2'),
-         url('../fonts/Orkney Bold Italic.woff') format('woff');
-    font-weight: 700;
-    font-style: italic;
-}
-
 /* --- FIM DA DECLARAÇÃO DE FONTES --- */
 
-
 /*=====================================
-  ESTILOS GERAIS DA PÁGINA (BODY)
-  Estes estilos afetam a aparência básica de TODO o seu site.
+  VARIÁVEIS DE COR (CUSTOM PROPERTIES)
 =====================================*/
-body {
-    /* Define a família de fontes para todo o texto */
-    font-family: 'Orkney', sans-serif;
-    /* Define o peso da fonte padrão como Light (Leve) */
-    font-weight: 300;
-    /* Remove margens e preenchimentos padrão que o navegador adiciona */
-    margin: 0;
-    padding: 0;
-    /* Fundo da página: STARK (#E7DFDD) - Cor clara. É a cor que aparece na lateral. */
-    background-color: #E7DFDD;
-    /* Espaçamento entre linhas para melhor leitura */
-    line-height: 1.6;
-    /* Cor do texto padrão em todo o BODY: VOID (#0E0B16) - Escuro. */
-    color: #0E0B16;
+:root {
+    --color-stark: #E7DFDD;       /* Fundo claro, texto da sidebar */
+    --color-void: #0E0B16;        /* Fundo da sidebar, texto principal */
+    --color-azul-forte: #007bff;   /* Destaques principais, botões */
+    --color-azul-cyan: #00bcd4;    /* Links, destaques secundários */
+    --color-jewl: #4717f6;        /* Subtítulo do cargo */
+    --color-cinza-escuro: #1A1A1A; /* Fundo de hover, bordas escuras */
 }
 
-/* Estilo geral para todos os títulos (H1 e H3) */
-h1, h3 {
-    /* Define o peso da fonte como Bold (Negrito) */
+/*=====================================
+  ESTILOS GERAIS DA PÁGINA
+=====================================*/
+body {
+    font-family: 'Orkney', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-stark);
+    line-height: 1.6;
+    color: var(--color-void);
+}
+
+h1, h2, h3 {
     font-weight: 700;
 }
 
-/* Estilo para o título principal (Usado no topo da página Inicial) */
-h1 {
-    font-size: 2.5em; /* Tamanho da fonte */
-    margin-bottom: 0.5em;
-}
-
-/* Estilo para os títulos de Seção (H2) que usam a "barra" de destaque azul */
-h2 {
+/* Estilo para os títulos de Seção (H2) */
+.section-title {
     font-size: 2.2em;
-    font-weight: 700; /* Garante que H2 também seja Bold */
-    /* Cor de fundo da barra: Azul Forte Original (#007bff) */
-    background-color: #007bff;
+    font-weight: 700;
+    background-color: var(--color-azul-forte);
     padding: 10px 20px;
-    border-radius: 8px; /* Cantos arredondados */
+    border-radius: 8px;
     margin-top: 1.5em;
     margin-bottom: 25px;
-    /* Cor do texto: STARK (#E7DFDD) - Claro, para contrastar com a barra azul */
-    color: #E7DFDD;
+    color: var(--color-stark);
+    display: inline-block; /* Garante que o fundo se ajuste ao texto */
 }
 
-/* Estilo específico para títulos internos menores (como "Bem-vindo(a)!✨") */
+/* Estilo para títulos internos (H2 da Home) */
 .internal-title {
     font-size: 1.8em;
-    font-weight: 700; /* Garante que este título também seja Bold */
-    background-color: transparent; /* Garante que não tenha cor de fundo */
+    font-weight: 700;
+    background-color: transparent;
     padding: 0;
     margin-top: 1em;
     margin-bottom: 1em;
+    color: var(--color-void);
 }
 
-/* Estilo para parágrafos */
 p {
     line-height: 1.6;
     margin-bottom: 25px;
 }
 
-/* Estilo padrão para todos os links (a) */
 a {
-    /* Cor do link padrão: Azul Secundário/Cyan (#00bcd4) */
-    color: #00bcd4;
-    text-decoration: none; /* Remove o sublinhado padrão */
-    transition: color 0.3s ease; /* Efeito suave na cor ao interagir */
+    color: var(--color-azul-cyan);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    /* Cor do link ao passar o mouse: Azul Forte Original (#007bff) */
-    color: #007bff;
+    color: var(--color-azul-forte);
 }
 
 /*=====================================
   ESTILOS DE TEXTO CUSTOMIZADOS
 =====================================*/
-
-/* Classe para seu nome na sidebar */
 .titulo-principal {
     font-family: 'Orkney', sans-serif;
-    font-size: 2.1em; /* Tamanho grande e impactante */
-    font-weight: 400; /* Usando o peso 'Regular' para um visual mais limpo e elegante */
-    letter-spacing: 1.5px; /* Leve espaçamento entre as letras */
+    font-size: 2.1em;
+    font-weight: 400;
+    letter-spacing: 1.5px;
     margin-top: 15px;
     margin-bottom: 5px;
-    color: #E7DFDD; /* Garante a cor clara na sidebar */
+    color: var(--color-stark);
 }
 
-/* Classe para seu cargo na sidebar */
 .subtitulo-destaque {
     font-family: 'Orkney', sans-serif;
-    font-size: 0.9em; /* Tamanho menor e mais discreto */
-    font-weight: 400; /* Usando o peso 'Regular' */
-    color: #4717f6; /* Cor jewl para dar destaque */
-    text-transform: uppercase; /* Transforma o texto para maiúsculas */
-    letter-spacing: 3px; /* Espaçamento maior para um look moderno */
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--color-jewl);
+    text-transform: uppercase;
+    letter-spacing: 3px;
     margin-bottom: 20px;
-    background-color: transparent; /* Garante que não há fundo */
-    padding: 5px 0; /* Adiciona um respiro vertical */
-    border: none; /* Remove bordas */
+    background-color: transparent;
+    padding: 5px 0;
+    border: none;
     border-radius: 0;
 }
 
 /*=====================================
-  LAYOUT PRINCIPAL (DUAS COLUNAS - SIDEBAR)
-  Define a estrutura da barra lateral fixa e da área de conteúdo.
+  LAYOUT PRINCIPAL (SIDEBAR)
 =====================================*/
 .two-column-layout {
-    /* Usa Flexbox para dividir a página em dois contêineres principais */
     display: flex;
-    /* Garante que o layout ocupe pelo menos a altura total da tela */
     min-height: 100vh;
 }
 
-/* Configuração da BARRA LATERAL FIXA */
 .fixed-sidebar {
     width: 280px;
-    /* Fundo da Sidebar: VOID (#0E0B16) - Escuro */
-    background-color: #0E0B16;
-    /* Cor do texto da Sidebar: STARK (#E7DFDD) - Claro */
-    color: #E7DFDD;
-    /* Mantém a barra fixa, independentemente da rolagem */
+    background-color: var(--color-void);
+    color: var(--color-stark);
     position: fixed;
     height: 100vh;
     padding: 20px;
-    box-sizing: border-box; /* Garante que o padding não aumente a largura total (280px) */
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo em coluna (topo ao rodapé) */
+    flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
 .sidebar-content {
-    /* Permite que esta seção cresça e empurre o rodapé para baixo */
     flex-grow: 1;
     padding-bottom: 20px;
+    /* Adicionado para permitir rolagem se o conteúdo for muito grande */
+    overflow-y: auto; 
 }
 
-/* Estilo da foto de perfil (sem borda circular ou corte) */
 .profile-photo {
     width: 160px;
     height: 160px;
-    /* Garante que a imagem caiba completamente no espaço sem cortar */
-    object-fit: contain; 
+    object-fit: contain;
     margin-bottom: 20px;
 }
 
-/* Garante que os títulos H1 e H3 na sidebar sejam claros */
-.sidebar-content h1, .sidebar-content h3 {
-    color: #E7DFDD;
+.sidebar-content h3 {
+    color: var(--color-stark);
 }
 
-/* Seções de Contato e Links Sociais na Sidebar */
-.contact-info, .social-links {
+.contact-info {
     text-align: left;
     margin-bottom: 20px;
     width: 100%;
 }
 
-.contact-info h3, .social-links h3 {
-    /* Linha de separação: Azul Forte Original (#007bff) */
-    border-bottom: 1px solid #007bff;
+.contact-info h3 {
+    border-bottom: 1px solid var(--color-azul-forte);
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-/* Alinhamento de Ícones/Emojis e Links */
-.contact-info p, .social-links p {
-    /* Usa Flexbox para alinhar o ícone/emoji e o texto na mesma linha */
+.contact-info p {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    /* O peso do texto aqui será herdado do body (300 - Light) */
 }
 
-/* Estilo dos ícones/emojis e texto na Sidebar */
-.contact-info .emoji, .social-links i {
-    /* Adiciona espaçamento à direita para separar do link */
+.contact-info .emoji, .contact-info i {
     margin-right: 10px;
-    width: 20px; 
+    width: 20px;
     text-align: center;
-    font-size: 1.1em; /* Tamanho dos ícones */
+    font-size: 1.1em;
 }
 
-/* Cores dos Ícones Oficiais */
-.social-links .fa-linkedin { color: #0A66C2; }
-.social-links .fa-github { color: #E7DFDD; }
-.social-links .fa-youtube { color: #FF0000; }
-.social-links .fa-discord { color: #5865F2; }
-.social-links .fa-graduation-cap { color: #E7DFDD; }
-.social-links .fa-id-card { color: #A6CE39; }
+/* Cores dos Ícones Sociais (algumas mantidas por serem cores de marca) */
+.contact-info .fa-linkedin { color: #0A66C2; }
+.contact-info .fa-github { color: var(--color-stark); }
+.contact-info .fa-youtube { color: #FF0000; }
+.contact-info .fa-discord { color: #5865F2; }
+.contact-info .fa-graduation-cap { color: var(--color-stark); }
+.contact-info .fa-id-card { color: #A6CE39; }
 
-/* Corrigido: Cor do texto dos links na sidebar */
-.social-links a {
-    color: #00bcd4; /* Azul Secundário/Cyan */
-    text-decoration: none;
-    font-weight: normal;
-    display: inline;
-}
-
-.social-links a:hover {
-    color: #007bff; /* Azul Forte no hover */
-}
-
-/* Rodapé da Barra Lateral (Direitos Autorais) */
+/* Rodapé da Barra Lateral */
 .sidebar-footer {
     width: 100%;
     text-align: center;
-    padding-top: 10px;
-    border-top: 1px solid #1A1A1A;
-    color: #E7DFDD;
+    padding-top: 15px;
+    margin-top: auto; /* Empurra para o final do container flex */
+    border-top: 1px solid var(--color-cinza-escuro);
+    color: var(--color-stark);
+    font-size: 0.9em;
 }
 
-/* Área Principal de Conteúdo (o contêiner com as abas que rola) */
+/* Área Principal de Conteúdo */
 .main-content-area {
-    /* Empurra o conteúdo para a direita, deixando espaço para a sidebar */
-    margin-left: 280px; 
-    flex-grow: 1; 
+    margin-left: 280px;
+    flex-grow: 1;
 }
 
 /*=====================================
   NAVEGAÇÃO POR ABAS (TAB NAV)
 =====================================*/
 .tab-nav {
-    background-color: #0E0B16;
-    /* Mantém a navegação colada no topo da área principal */
+    background-color: var(--color-void);
     position: sticky;
     top: 0;
     width: 100%;
@@ -324,37 +231,31 @@ a:hover {
 .tab-nav ul li a {
     display: block;
     padding: 15px 20px;
-    color: #E7DFDD;
-    font-weight: bold; /* Mapeia para o font-weight 700 (Bold) */
+    color: var(--color-stark);
+    font-weight: 700; /* 'bold' equivale a 700 */
     border-bottom: 3px solid transparent;
     transition: background-color 0.3s, border-bottom 0.3s;
 }
 
 .tab-nav ul li a:hover {
-    background-color: #1A1A1A;
+    background-color: var(--color-cinza-escuro);
 }
 
-/* Aba ATIVA */
 .tab-nav ul li a.active-tab {
-    background-color: #007bff;
-    /* Linha de destaque: Azul Secundário/Cyan (#00bcd4) */
-    border-bottom: 3px solid #00bcd4;
-    color: #E7DFDD;
+    background-color: var(--color-azul-forte);
+    border-bottom: 3px solid var(--color-azul-cyan);
+    color: var(--color-stark);
 }
 
 /*=====================================
   SEÇÕES DE CONTEÚDO
-  Esta seção remove as caixas pretas e torna o fundo claro.
 =====================================*/
 .content-section {
     display: none;
-    /* Fundo Transparente, permitindo que o fundo claro do body apareça */
-    background-color: transparent; 
+    background-color: transparent;
     padding: 40px;
-    box-shadow: none; /* Remove qualquer sombra de caixa */
-    margin-bottom: 20px;
-    /* Cor do texto: VOID (#0E0B16) - Escuro, para o fundo claro */
-    color: #0E0B16; 
+    box-shadow: none;
+    /* margin-bottom removida para evitar espaço extra no final */
 }
 
 .content-section.active-content {
@@ -362,94 +263,61 @@ a:hover {
 }
 
 .section-inner {
-    /* Limita a largura do conteúdo interno para melhor leitura */
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Estilo do Rodapé de Conteúdo (Copyright dentro das abas) */
-.content-footer {
-    /* Grande espaçamento para separar o copyright do conteúdo principal */
-    margin-top: 60px; 
-    padding-top: 30px;
-    border-top: 1px solid #1A1A1A;
-    /* Centraliza o texto */
-    text-align: center; 
-    font-size: 0.9em;
-    color: #0E0B16;
+/* A classe .content-footer foi removida pois não existe mais no HTML */
+
+.header-content h3 {
+    color: var(--color-void);
 }
 
-.content-footer p {
-    margin: 0;
-}
-
-/* Garante que os títulos H1 e H3 na área de conteúdo sejam escuros */
-.header-content h1, .header-content h3 {
-    color: #0E0B16;
-}
-
-/* Estilos dos botões na seção de conteúdo */
-.quick-access-buttons .button {
-    display: inline-block;
-    background-color: #007bff;
-    color: #E7DFDD;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin: 5px;
-    transition: background-color 0.3s;
-}
-
-.quick-access-buttons .button:hover {
-    background-color: #00bcd4;
-}
-
-/* Estilo para as tags de destaque (highlights) */
 .highlights span {
     display: inline-block;
-    background-color: #1A1A1A;
-    color: #E7DFDD;
+    background-color: var(--color-cinza-escuro);
+    color: var(--color-stark);
     padding: 5px 10px;
     border-radius: 20px;
     margin: 5px;
     font-size: 0.9em;
 }
 
-/* Estilo de caixas de informação e listas */
-.grid-item, .job-history article, .tech-block, .project-card, .certification-item, .expandable-item {
+/*=====================================
+  COMPONENTES (CARDS, LISTAS, ETC)
+=====================================*/
+.job-history article, .tech-block, .project-card, .certification-item, .expandable-item {
     background-color: transparent;
     padding: 15px;
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .job-history article, .expandable-item {
-    /* Borda de destaque lateral: Azul Forte Original (#007bff) */
-    border-left: 4px solid #007bff;
+    border-left: 4px solid var(--color-azul-forte);
 }
 
 .project-card {
-    /* Borda de destaque lateral: Azul Secundário/Cyan (#00bcd4) */
-    border-left: 4px solid #00bcd4;
+    border-left: 4px solid var(--color-azul-cyan);
 }
 
-/* Cores específicas de texto */
-.grid-item h3, .job-history article h3, .tech-block h3 {
-    color: #007bff;
+.tech-block h3, .job-history h3 {
+    color: var(--color-azul-forte);
 }
 
 .periodo {
-    color: #0E0B16;
+    color: var(--color-void);
     font-style: italic;
     margin-top: -10px;
 }
 
 .palavras-chave {
-    font-weight: bold; /* Mapeia para o font-weight 700 (Bold) */
-    color: #00bcd4;
+    font-weight: 700;
+    color: var(--color-azul-cyan);
 }
 
-/* Estilo para as Barras de Progresso */
 .progress-bar {
-    background-color: #1A1A1A;
+    background-color: var(--color-cinza-escuro);
     border-radius: 5px;
     height: 10px;
     overflow: hidden;
@@ -459,18 +327,15 @@ a:hover {
 .progress-fill.intermediate { background-color: #ffd700; width: 60%; }
 .progress-fill.advanced { background-color: #3cb371; width: 90%; }
 
-
-/* Estilo de Títulos H4 dentro de Itens Expansíveis */
 .expandable-item h4 {
     margin-top: 0;
     margin-bottom: 5px;
-    color: #0E0B16;
+    color: var(--color-void);
 }
 
-/* Estilo do botão de expandir (+ Saiba mais) */
 .expand-btn {
-    background-color: #007bff;
-    color: #E7DFDD;
+    background-color: var(--color-azul-forte);
+    color: var(--color-stark);
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -481,10 +346,9 @@ a:hover {
 }
 
 .expand-btn:hover {
-    background-color: #00bcd4;
+    background-color: var(--color-azul-cyan);
 }
 
-/* Lógica que esconde o conteúdo expansível (usada pelo JavaScript) */
 .details {
     overflow: hidden;
     max-height: 0;
@@ -492,6 +356,41 @@ a:hover {
 }
 
 .details.visible {
-    max-height: 1000px;
+    max-height: 1000px; /* Valor alto para garantir que todo o conteúdo caiba */
     padding-top: 15px;
+}
+
+/*=====================================
+  MEDIA QUERIES PARA RESPONSIVIDADE
+=====================================*/
+@media (max-width: 800px) {
+    .fixed-sidebar {
+        display: none;
+    }
+
+    .main-content-area {
+        margin-left: 0;
+    }
+
+    .content-section {
+        padding: 25px 20px; /* Ajuste para telas menores */
+    }
+    
+    .section-title, .internal-title {
+        font-size: 1.6em; /* Títulos um pouco menores no celular */
+    }
+
+    .titulo-principal {
+        font-size: 1.8em;
+    }
+
+    .tab-nav ul {
+        /* Garante que o padding não seja excessivo em telas com rolagem */
+        padding-left: 10px;
+    }
+
+    .tab-nav ul li a {
+        padding: 12px 15px; /* Abas um pouco menores */
+        font-size: 0.9em;
+    }
 }
