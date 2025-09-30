@@ -1,8 +1,6 @@
 /*=====================================
-  DECLARAÇÃO DA FONTE ORKNEY (CORRIGIDO E RESTAURADO)
+  DECLARAÇÃO DA FONTE ORKNEY
 =====================================*/
-
-/* Regular */
 @font-face {
     font-family: 'Orkney';
     src: url('../fonts/Orkney Regular.woff2') format('woff2'),
@@ -10,7 +8,6 @@
     font-weight: 400; /* Normal */
     font-style: normal;
 }
-/* Regular Italic */
 @font-face {
     font-family: 'Orkney';
     src: url('../fonts/Orkney Regular Italic.woff2') format('woff2'),
@@ -18,7 +15,6 @@
     font-weight: 400;
     font-style: italic;
 }
-/* Medium */
 @font-face {
     font-family: 'Orkney';
     src: url('../fonts/Orkney Medium.woff2') format('woff2'),
@@ -26,7 +22,6 @@
     font-weight: 500; /* Médio */
     font-style: normal;
 }
-/* Medium Italic */
 @font-face {
     font-family: 'Orkney';
     src: url('../fonts/Orkney Medium Italic.woff2') format('woff2'),
@@ -34,7 +29,6 @@
     font-weight: 500;
     font-style: italic;
 }
-/* Light */
 @font-face {
     font-family: 'Orkney';
     src: url('../fonts/Orkney Light.woff2') format('woff2'),
@@ -42,7 +36,6 @@
     font-weight: 300; /* Leve */
     font-style: normal;
 }
-/* Light Italic */
 @font-face {
     font-family: 'Orkney';
     src: url('../fonts/Orkney Light Italic.woff2') format('woff2'),
@@ -50,7 +43,6 @@
     font-weight: 300;
     font-style: italic;
 }
-/* Bold */
 @font-face {
     font-family: 'Orkney';
     src: url('../fonts/Orkney Bold.woff2') format('woff2'),
@@ -58,7 +50,6 @@
     font-weight: 700; /* Negrito */
     font-style: normal;
 }
-/* Bold Italic */
 @font-face {
     font-family: 'Orkney';
     src: url('../fonts/Orkney Bold Italic.woff2') format('woff2'),
@@ -71,12 +62,12 @@
   VARIÁVEIS DE COR
 =====================================*/
 :root {
-    --color-stark: #FFFFFF;
-    --color-void: #000000;
-    --color-azul-forte: #4717f6;
-    --color-azul-cyan: #4717f6;
+    --color-stark: #E7DFDD;
+    --color-void: #0E0B16;
+    --color-azul-forte: #007bff;
+    --color-azul-cyan: #00bcd4;
     --color-jewl: #4717f6;
-    --color-cinza-escuro: #000000;
+    --color-cinza-escuro: #1A1A1A;
 }
 
 /*=====================================
@@ -84,7 +75,7 @@
 =====================================*/
 body {
     font-family: 'Orkney', sans-serif;
-    font-weight: 300; /* Padrão Leve */
+    font-weight: 300;
     margin: 0;
     padding: 0;
     background-color: var(--color-stark);
@@ -104,15 +95,13 @@ a:hover {
 /*=====================================
   SISTEMA DE TIPOGRAFIA
 =====================================*/
-/* Estilo base para parágrafos */
 p {
-    font-size: 1rem; /* Tamanho base, ~16px */
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.7;
     margin-bottom: 20px;
 }
 
-/* Escala de Títulos Semânticos (h1-h6) */
 h1 { font-size: 2.5rem;  font-weight: 400; line-height: 1.2; margin-bottom: 0.5rem; }
 h2 { font-size: 2rem;    font-weight: 700; line-height: 1.3; margin-bottom: 1rem; }
 h3 { font-size: 1.5rem;  font-weight: 500; line-height: 1.4; margin-bottom: 0.75rem; }
@@ -120,7 +109,6 @@ h4 { font-size: 1.25rem; font-weight: 500; line-height: 1.4; margin-bottom: 0.5r
 h5 { font-size: 1rem;    font-weight: 700; line-height: 1.5; margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 0.5px; }
 h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25rem; color: #555; }
 
-/* Classes de Utilidade para Texto */
 .texto-gg { font-size: 3rem; line-height: 1.1; }
 .texto-g  { font-size: 1.25rem; }
 .texto-p  { font-size: 0.9rem; }
@@ -135,131 +123,9 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 .texto-maiusculo { text-transform: uppercase; letter-spacing: 1px; }
 
 /*=====================================
-  ESTILOS DE COMPONENTES ESPECÍFICOS
+  LAYOUT (PÁGINA ÚNICA)
 =====================================*/
-.titulo-principal {
-    font-family: 'Orkney', sans-serif;
-    font-size: 2.1em;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    color: var(--color-stark);
-}
-
-.subtitulo-destaque {
-    font-family: 'Orkney', sans-serif;
-    font-size: 0.9em;
-    font-weight: 400;
-    color: var(--color-jewl);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    background-color: transparent;
-    padding: 5px 0;
-    border: none;
-    border-radius: 0;
-}
-
-.section-title {
-    background-color: var(--color-azul-forte);
-    color: var(--color-stark);
-    padding: 10px 20px;
-    border-radius: 8px;
-    display: inline-block;
-}
-
-.internal-title {
-    background-color: transparent;
-    padding: 0;
-    margin-top: 1em;
-}
-
-/*=====================================
-  LAYOUT (SIDEBAR E ÁREA PRINCIPAL)
-=====================================*/
-.two-column-layout {
-    display: flex;
-    min-height: 100vh;
-}
-
-.fixed-sidebar {
-    width: 280px;
-    background-color: var(--color-void);
-    color: var(--color-stark);
-    position: fixed;
-    height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.sidebar-content {
-    flex-grow: 1;
-    padding-bottom: 20px;
-    overflow-y: auto;
-    width: 100%;
-}
-
-.profile-photo {
-    width: 160px;
-    height: 160px;
-    object-fit: contain;
-    margin-bottom: 20px;
-}
-
-.sidebar-content h3 {
-    color: var(--color-stark);
-}
-
-.contact-info {
-    text-align: left;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.contact-info h3 {
-    border-bottom: 1px solid var(--color-azul-forte);
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-.contact-info p {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-weight: 300;
-}
-
-.contact-info .emoji, .contact-info i {
-    margin-right: 10px;
-    width: 20px;
-    text-align: center;
-    font-size: 1.1em;
-}
-
-.contact-info .fa-linkedin { color: #0A66C2; }
-.contact-info .fa-github { color: var(--color-stark); }
-.contact-info .fa-youtube { color: #FF0000; }
-.contact-info .fa-discord { color: #5865F2; }
-.contact-info .fa-graduation-cap { color: var(--color-stark); }
-.contact-info .fa-id-card { color: #A6CE39; }
-
-.sidebar-footer {
-    width: 100%;
-    text-align: center;
-    padding-top: 15px;
-    margin-top: auto;
-    border-top: 1px solid var(--color-cinza-escuro);
-    color: var(--color-stark);
-    font-size: 0.9em;
-}
-
 .main-content-area {
-    margin-left: 280px;
     flex-grow: 1;
 }
 
@@ -272,6 +138,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .tab-nav ul {
@@ -279,7 +146,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -290,11 +157,12 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     color: var(--color-stark);
     font-weight: 700;
     border-bottom: 3px solid transparent;
-    transition: background-color 0.3s, border-bottom 0.3s;
+    transition: background-color 0.3s, border-bottom 0.3s, color 0.3s;
 }
 
 .tab-nav ul li a:hover {
     background-color: var(--color-cinza-escuro);
+    color: var(--color-azul-cyan);
 }
 
 .tab-nav ul li a.active-tab {
@@ -304,13 +172,12 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 /*=====================================
-  SEÇÕES DE CONTEÚDO
+  SEÇÕES DE CONTEÚDO E COMPONENTES
 =====================================*/
 .content-section {
     display: none;
     background-color: transparent;
-    padding: 40px;
-    box-shadow: none;
+    padding: 60px 40px;
 }
 
 .content-section.active-content {
@@ -318,8 +185,22 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 .section-inner {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+}
+
+.section-title {
+    background-color: var(--color-azul-forte);
+    color: var(--color-stark);
+    padding: 10px 25px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.internal-title {
+    background-color: transparent;
+    padding: 0;
+    margin-top: 1em;
 }
 
 .highlights span {
@@ -333,7 +214,6 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 .job-history article, .tech-block, .project-card, .certification-item, .expandable-item {
-    background-color: transparent;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -347,34 +227,10 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     border-left: 4px solid var(--color-azul-cyan);
 }
 
-.job-history h3 {
-    color: var(--color-azul-forte);
-}
-
 .periodo {
     color: var(--color-void);
     font-style: italic;
     margin-top: -10px;
-}
-
-.palavras-chave {
-    font-weight: 700;
-    color: var(--color-azul-cyan);
-}
-
-.progress-bar {
-    background-color: var(--color-cinza-escuro);
-    border-radius: 5px;
-    height: 10px;
-    overflow: hidden;
-}
-
-.progress-fill.beginner { background-color: #ff6347; width: 30%; }
-.progress-fill.intermediate { background-color: #ffd700; width: 60%; }
-.progress-fill.advanced { background-color: #3cb371; width: 90%; }
-
-.expandable-item h4 {
-    color: var(--color-void);
 }
 
 .expand-btn {
@@ -405,19 +261,80 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 /*=====================================
+  ESTILOS PARA SEÇÃO DE CONTATO
+=====================================*/
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-item {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-item i {
+    font-size: 2.5rem;
+    color: var(--color-azul-forte);
+    margin-bottom: 15px;
+}
+
+.contact-item h4 {
+    margin-bottom: 5px;
+}
+
+.contact-item a {
+    font-weight: 500;
+}
+
+.resume-download {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+}
+
+.button-download {
+    display: inline-block;
+    background-color: var(--color-azul-forte);
+    color: var(--color-stark);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-download:hover {
+    background-color: var(--color-void);
+    transform: translateY(-2px);
+}
+
+.button-download i {
+    margin-right: 8px;
+}
+
+/*=====================================
   MEDIA QUERIES PARA RESPONSIVIDADE
 =====================================*/
 @media (max-width: 800px) {
-    .fixed-sidebar {
-        display: none;
-    }
-    .main-content-area {
-        margin-left: 0;
-    }
     .content-section {
-        padding: 25px 20px;
+        padding: 40px 20px;
     }
     .tab-nav ul {
+        justify-content: flex-start;
         padding-left: 10px;
     }
     .tab-nav ul li a {
