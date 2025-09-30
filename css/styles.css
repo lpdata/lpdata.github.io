@@ -344,7 +344,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 .hero-left-col {
     flex-shrink: 0; /* Impede que a coluna da imagem diminua */
-    width: 100px; /* Largura da coluna da imagem. Ajuste se necessário. */
+    width: 150px; /* Largura da coluna da imagem. Ajuste se necessário. */
     text-align: center; /* Centraliza a imagem se ela for menor que a coluna */
 }
 
