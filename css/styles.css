@@ -153,9 +153,9 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 .tab-nav ul li a {
     display: block;
-    padding: 20px 20px;
+    padding: 25px 20px;
     color: var(--color-stark);
-    font-weight: 500; /* De 700 (negrito) para 500 (médio), ou 400 para normal */
+    font-weight: 400; /* De 700 (negrito) para 500 (médio), ou 400 para normal */
     font-size: 0.9rem; /* Adicionado para diminuir o tamanho da fonte (~10% menor) */
     text-transform: uppercase; /* Adicionado para manter a legibilidade com a fonte menor */
     letter-spacing: 0.5px; /* Leve espaçamento entre as letras */
