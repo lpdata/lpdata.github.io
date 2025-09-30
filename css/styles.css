@@ -360,7 +360,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     height: auto;
     position: relative;        /* Permite o ajuste fino da posição */
     top: 15px;                 /* Empurra o GIF para baixo. Use valores negativos para subir. */
-    left: -15px;               /* Empurra o GIF para a esquerda. */
+    left: 0;               /* Empurra o GIF para a esquerda. */
 }
 
 .hero-subtitle {
