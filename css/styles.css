@@ -329,23 +329,23 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 /*=====================================
-  ESTILOS PARA A SEÇÃO HOME (LAYOUT DE DUAS COLUNAS)
+  ESTILOS PARA A SEÇÃO HOME (AJUSTES DE ALINHAMENTO E TEXTO)
 =====================================*/
 
 /* Importa a fonte serifada para o "Oi." grande */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
 
 .home-hero-layout {
-    display: flex; /* Cria o layout de duas colunas */
-    align-items: flex-start; /* Alinha o topo dos itens */
-    gap: 40px; /* Espaçamento entre a foto e o texto/gif */
-    margin-bottom: 40px;
+    display: flex;
+    align-items: center; /* ALTERADO: Alinha a foto e o texto pelo centro verticalmente */
+    gap: 40px;
+    margin-bottom: 30px; /* ALTERADO: Diminuí a margem inferior para aproximar o parágrafo */
 }
 
 .hero-left-col {
-    flex-shrink: 0; /* Impede que a coluna da imagem diminua */
-    width: 180px; /* Largura da coluna da imagem. Ajuste se necessário. */
-    text-align: center; /* Centraliza a imagem se ela for menor que a coluna */
+    flex-shrink: 0;
+    width: 150px; /* Mantive o tamanho menor que definimos antes */
+    text-align: center;
 }
 
 .my-profile-pic {
@@ -356,24 +356,23 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     margin-right: auto;
 }
 
-
 .hero-right-col {
-    flex-grow: 1; /* Faz a coluna da direita ocupar o espaço restante */
+    flex-grow: 1;
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo da coluna direita verticalmente */
-    justify-content: center; /* Centraliza o conteúdo verticalmente dentro da coluna */
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-main-greeting {
     display: flex;
-    align-items: center; /* Alinha o "Oi." e o GIF pelo centro vertical */
-    gap: 10px; /* Espaçamento entre "Oi." e GIF */
-    margin-bottom: 10px; /* Espaço entre o Hi/Welcome e o nome/cargo */
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px; /* ALTERADO: Diminuí drasticamente para aproximar o nome */
 }
 
 .hero-title {
     font-family: 'Playfair Display', serif;
-    font-size: 7rem; /* Tamanho do "Oi.". Ajuste este valor. */
+    font-size: 8rem;
     font-weight: 400;
     margin: 0;
     line-height: 1;
@@ -382,16 +381,16 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 .welcome-gif {
-    width: 250px; /* Largura do GIF. Ajuste conforme o tamanho real do seu GIF. */
+    width: 280px;
     height: auto;
     position: relative;
-    top: 0px; /* Ajuste vertical. Use valores negativos para subir, positivos para descer. */
-    left: 0px; /* Ajuste horizontal. Não use valores negativos para evitar sobreposição. */
+    top: 10px; /* Ajustei um pouco o 'top' para o novo alinhamento */
+    left: 0;
 }
 
 .hero-subtitle {
     font-family: 'Orkney', sans-serif;
-    font-size: 1.5rem; /* Tamanho do seu nome */
+    font-size: 1.5rem;
     font-weight: 500;
     margin: 0;
     color: var(--color-void);
@@ -399,7 +398,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 .hero-role {
     font-family: 'Orkney', sans-serif;
-    font-size: 1.2rem; /* Tamanho do seu cargo */
+    font-size: 1.2rem;
     font-weight: 300;
     margin: 5px 0 0 0;
     color: #555;
@@ -407,14 +406,13 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 .hero-description {
     font-family: 'Orkney', sans-serif;
-    font-size: 1.3rem; /* Tamanho da descrição principal */
-    font-weight: 300;
-    line-height: 1.6;
-    margin-top: 40px;
-    max-width: 800px; /* Mantém a largura do parágrafo */
-    margin-left: 0; /* Alinha à esquerda na coluna principal */
-    margin-right: auto;
-    text-align: left;
+    font-size: 1.1rem;      /* ALTERADO: Fonte um pouco menor */
+    font-weight: 300;      /* Já está no peso mais fino (Light) */
+    line-height: 1.8;      /* Aumentei um pouco para melhor legibilidade com o justificado */
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: 0;
+    text-align: justify;   /* ALTERADO: Justifica o texto para alinhar ambas as bordas */
 }
 /*=====================================
   MEDIA QUERIES PARA RESPONSIVIDADE
