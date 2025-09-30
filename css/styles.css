@@ -444,7 +444,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 /* Correção 2: Reduz o espaçamento no topo da seção Home */
 #inicio.content-section {
-    padding-top: 20px; /* Reduzido de 60px para 20px. Ajuste se quiser mais ou menos espaço. */
+    padding-top: 15px; /* Reduzido de 60px para 20px. Ajuste se quiser mais ou menos espaço. */
 }
 
 /* Correção 1: Força todo o conteúdo dentro da Home a se centralizar horizontalmente */
@@ -456,7 +456,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 /* Ajuste fino para o parágrafo principal agora que ele está em um container flex */
 .hero-description {
-    text-align: center; /* Mudado de 'justify' para 'center' para um visual mais coeso com o novo alinhamento */
+    text-align: justify; /* Mudado de 'justify' para 'center' para um visual mais coeso com o novo alinhamento */
 }
 
 /*=====================================
