@@ -1,8 +1,62 @@
 /*=====================================
-  DECLARAÇÃO DA NOVA FONTE
+  DECLARAÇÃO DA FONTE ORKNEY
 =====================================*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Regular.woff2') format('woff2'),
+         url('../fonts/Orkney Regular.woff') format('woff');
+    font-weight: 400; /* Normal */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Regular Italic.woff2') format('woff2'),
+         url('../fonts/Orkney Regular Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Medium.woff2') format('woff2'),
+         url('../fonts/Orkney Medium.woff') format('woff');
+    font-weight: 500; /* Médio */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Medium Italic.woff2') format('woff2'),
+         url('../fonts/Orkney Medium Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Light.woff2') format('woff2'),
+         url('../fonts/Orkney Light.woff') format('woff');
+    font-weight: 300; /* Leve */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Light Italic.woff2') format('woff2'),
+         url('../fonts/Orkney Light Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Bold.woff2') format('woff2'),
+         url('../fonts/Orkney Bold.woff') format('woff');
+    font-weight: 700; /* Negrito */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Bold Italic.woff2') format('woff2'),
+         url('../fonts/Orkney Bold Italic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
 
 /*=====================================
   VARIÁVEIS DE COR
@@ -20,7 +74,7 @@
   ESTILOS GERAIS E BODY
 =====================================*/
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orkney', sans-serif;
     font-weight: 300;
     margin: 0;
     padding: 0;
@@ -125,7 +179,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 .content-section {
     display: none;
     background-color: transparent;
-    padding: 20px 40px;
+    padding: 40px 40px;
 }
 
 .content-section.active-content {
@@ -139,13 +193,13 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 .section-title {
     font-family: 'Playfair Display', serif; /* Usa a mesma fonte do "Hi," */
-    font-weight: 500;                      /* Peso que combina com a fonte */
-    font-size: 2.8rem;                     /* Tamanho grande para dar impacto */
+    font-weight: 400;                      /* Peso que combina com a fonte */
+    font-size: 3.5rem;                     /* Tamanho grande para dar impacto */
     color: var(--color-void);              /* Cor do texto preta (do seu tema) */
     background-color: transparent;         /* Remove o fundo azul */
-    text-align: left;                    /* Centraliza o título */
+    text-align: center;                    /* Centraliza o título */
     display: block;                        /* Permite a centralização */
-    margin-bottom: 30px;                   /* Aumenta o espaço abaixo do título */
+    margin-bottom: 40px;                   /* Aumenta o espaço abaixo do título */
     
     /* As linhas de padding e border-radius foram removidas por não serem mais necessárias */
 }
@@ -367,11 +421,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     margin-left: 0;
     text-align: justify;   /* ALTERADO: Justifica o texto para alinhar ambas as bordas */
 }
-/* Centraliza o conteúdo do bloco de highlights na Home */
-.highlights {
-    text-align: center;
-    margin-top: 50px; /* Movido do seu HTML para cá para melhor organização */
-}
+
 /*=====================================
   ESTILOS PARA A SEÇÃO EM CONSTRUÇÃO
 =====================================*/
