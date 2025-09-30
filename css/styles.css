@@ -179,7 +179,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 .content-section {
     display: none;
     background-color: transparent;
-    padding: 40px 40px;
+    padding: 20px 40px;
 }
 
 .content-section.active-content {
@@ -193,13 +193,13 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 .section-title {
     font-family: 'Playfair Display', serif; /* Usa a mesma fonte do "Hi," */
-    font-weight: 400;                      /* Peso que combina com a fonte */
-    font-size: 3.5rem;                     /* Tamanho grande para dar impacto */
+    font-weight: 500;                      /* Peso que combina com a fonte */
+    font-size: 2.8rem;                     /* Tamanho grande para dar impacto */
     color: var(--color-void);              /* Cor do texto preta (do seu tema) */
     background-color: transparent;         /* Remove o fundo azul */
-    text-align: center;                    /* Centraliza o título */
+    text-align: left;                    /* Centraliza o título */
     display: block;                        /* Permite a centralização */
-    margin-bottom: 40px;                   /* Aumenta o espaço abaixo do título */
+    margin-bottom: 30px;                   /* Aumenta o espaço abaixo do título */
     
     /* As linhas de padding e border-radius foram removidas por não serem mais necessárias */
 }
