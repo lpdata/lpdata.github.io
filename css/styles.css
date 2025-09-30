@@ -347,7 +347,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     width: 200px;
     text-align: center;
     position: relative; /* "Liga" o modo de posicionamento */
-    top: 60px;          /* EMPURRA A FOTO PARA BAIXO. Ajuste este valor! */
+    top: 40px;          /* EMPURRA A FOTO PARA BAIXO. Ajuste este valor! */
 }
 
 .my-profile-pic {
@@ -369,7 +369,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 0; /* ALTERADO: Diminuí drasticamente para aproximar o nome */
+    margin-bottom: -10px; /* ALTERADO: Diminuí drasticamente para aproximar o nome */
 }
 
 .hero-title {
