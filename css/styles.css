@@ -329,31 +329,55 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 /*=====================================
-  ESTILOS PARA A SEÇÃO HOME (COM GIF)
+  ESTILOS PARA A SEÇÃO HOME (REFERÊNCIA DE IMAGEM)
 =====================================*/
-.home-layout {
-    display: flex; /* Cria o layout lado a lado */
-    align-items: center; /* Alinha o texto e a imagem verticalmente */
-    gap: 40px; /* Espaçamento entre o texto e a imagem */
+
+/* Importa a fonte serifada para o "Oi." grande */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+
+.hero-main-greeting {
+    display: flex; /* Para colocar o "Oi." e o GIF lado a lado */
+    align-items: flex-end; /* Alinha a base do "Oi." com a base do GIF */
+    gap: 15px; /* Espaçamento entre o "Oi." e o GIF */
+    margin-bottom: 20px; /* Espaçamento abaixo do "Oi. Welcome" */
 }
 
-.home-text {
-    flex: 2; /* Faz o texto ocupar mais espaço (ex: 2/3 da largura) */
+.hero-title {
+    font-family: 'Playfair Display', serif; /* Fonte serifada para o "Oi." */
+    font-size: 8rem; /* Tamanho gigante para o "Oi.". Ajuste este valor. */
+    font-weight: 400; /* Peso da fonte para "Playfair Display" */
+    margin: 0;
+    line-height: 0.9; /* Ajusta a altura da linha para o texto grande */
+    color: var(--color-void); /* Cor do texto "Oi." */
 }
 
-.home-gif {
-    flex: 1; /* Faz a imagem ocupar menos espaço (ex: 1/3 da largura) */
-    text-align: center; /* Centraliza o GIF no seu container */
-}
-
-.home-gif img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse seu container */
-    width: 300px; /* Define o "tamanho médio" do GIF. Ajuste este valor como desejar! */
+.welcome-gif {
+    /* Ajuste o tamanho do GIF aqui para que ele se alinhe visualmente */
+    width: 300px; /* Largura do GIF. Ajuste conforme o tamanho real do seu GIF. */
     height: auto;
-    border-radius: 15px; /* Adiciona cantos arredondados para um visual mais suave */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra sutil */
+    /* Pode ser necessário ajustar o posicionamento vertical */
+    position: relative;
+    top: -10px; /* Ajuste para cima/baixo para alinhar visualmente com o "Oi." */
 }
 
+.hero-subtitle {
+    font-family: 'Orkney', sans-serif; /* Usando sua fonte principal */
+    font-size: 1.25rem; /* Um pouco maior que o texto normal */
+    font-weight: 400; /* Peso normal para o subtítulo */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555; /* Cor cinza para o subtítulo, como na referência */
+}
+
+.hero-description {
+    font-family: 'Orkney', sans-serif; /* Usando sua fonte principal */
+    font-size: 1.7rem; /* Texto maior e impactante */
+    font-weight: 300; /* Peso leve para elegância */
+    line-height: 1.6;
+    margin-top: 30px;
+    max-width: 800px; /* Limita a largura para melhor leitura */
+    color: var(--color-void); /* Cor do texto principal */
+}
 /*=====================================
   MEDIA QUERIES PARA RESPONSIVIDADE
 =====================================*/
@@ -369,12 +393,30 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
         padding: 12px 15px;
         font-size: 0.9em;
     }
-    .home-layout {
-        flex-direction: column; /* Altera o layout para vertical */
-        text-align: center; /* Centraliza o texto */
+    .hero-main-greeting {
+        flex-direction: column; /* Em telas pequenas, Oi e Welcome ficam um abaixo do outro */
+        align-items: center; /* Centraliza verticalmente */
+        text-align: center;
+        gap: 10px;
     }
-    
-    .home-gif {
-        margin-top: 30px; /* Adiciona um espaço acima do GIF no modo celular */
+
+    .hero-title {
+        font-size: 4.5rem; /* Reduz o tamanho do "Oi." em telas pequenas */
+        line-height: 1;
+    }
+
+    .welcome-gif {
+        width: 200px; /* Reduz o tamanho do GIF em telas pequenas */
+        top: 0; /* Remove ajuste vertical em mobile */
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+        text-align: center;
     }
 }
