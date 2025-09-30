@@ -329,54 +329,75 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 /*=====================================
-  ESTILOS PARA A SEÇÃO HOME (REFERÊNCIA DE IMAGEM)
+  ESTILOS PARA A SEÇÃO HOME (ALINHAMENTO CORRIGIDO)
 =====================================*/
 
 /* Importa a fonte serifada para o "Oi." grande */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
 
 .hero-main-greeting {
-    display: flex; /* Para colocar o "Oi." e o GIF lado a lado */
-    align-items: flex-end; /* Alinha a base do "Oi." com a base do GIF */
-    gap: 15px; /* Espaçamento entre o "Oi." e o GIF */
-    margin-bottom: 20px; /* Espaçamento abaixo do "Oi. Welcome" */
+    display: flex;           /* ESSENCIAL: Coloca os itens na mesma linha */
+    justify-content: center;   /* Centraliza o par ("Oi." + GIF) no meio da página */
+    align-items: center;       /* Alinha os itens verticalmente pelo centro */
+    flex-wrap: wrap;           /* Permite que quebre a linha em telas muito pequenas */
+    margin-bottom: 20px;
 }
 
 .hero-title {
-    font-family: 'Playfair Display', serif; /* Fonte serifada para o "Oi." */
-    font-size: 8rem; /* Tamanho gigante para o "Oi.". Ajuste este valor. */
-    font-weight: 400; /* Peso da fonte para "Playfair Display" */
+    font-family: 'Playfair Display', serif;
+    font-size: 10rem;          /* Tamanho gigante. Sinta-se à vontade para ajustar */
+    font-weight: 400;
     margin: 0;
-    line-height: 0.9; /* Ajusta a altura da linha para o texto grande */
-    color: var(--color-void); /* Cor do texto "Oi." */
+    line-height: 1;
+    color: var(--color-void);
+    /* Remove margens extras que podem atrapalhar o alinhamento */
+    padding: 0; 
 }
 
 .welcome-gif {
-    /* Ajuste o tamanho do GIF aqui para que ele se alinhe visualmente */
-    width: 300px; /* Largura do GIF. Ajuste conforme o tamanho real do seu GIF. */
+    /* CONTROLE FINO: Ajuste estes valores para o alinhamento perfeito */
+    width: 350px;              /* Ajuste a largura do seu GIF */
     height: auto;
-    /* Pode ser necessário ajustar o posicionamento vertical */
-    position: relative;
-    top: -10px; /* Ajuste para cima/baixo para alinhar visualmente com o "Oi." */
+    position: relative;        /* Permite o ajuste fino da posição */
+    top: 15px;                 /* Empurra o GIF para baixo. Use valores negativos para subir. */
+    left: -15px;               /* Empurra o GIF para a esquerda. */
 }
 
 .hero-subtitle {
-    font-family: 'Orkney', sans-serif; /* Usando sua fonte principal */
-    font-size: 1.25rem; /* Um pouco maior que o texto normal */
-    font-weight: 400; /* Peso normal para o subtítulo */
+    font-family: 'Orkney', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #555; /* Cor cinza para o subtítulo, como na referência */
+    color: #555;
+    text-align: center; /* Centraliza o texto abaixo do "Oi. Welcome" */
 }
 
 .hero-description {
-    font-family: 'Orkney', sans-serif; /* Usando sua fonte principal */
-    font-size: 1.7rem; /* Texto maior e impactante */
-    font-weight: 300; /* Peso leve para elegância */
+    font-family: 'Orkney', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 300;
     line-height: 1.6;
     margin-top: 30px;
-    max-width: 800px; /* Limita a largura para melhor leitura */
-    color: var(--color-void); /* Cor do texto principal */
+    max-width: 800px;
+    margin-left: auto; /* Centraliza o bloco do parágrafo */
+    margin-right: auto; /* Centraliza o bloco do parágrafo */
+    text-align: center;
+}
+
+/* Ajustes de responsividade para o novo layout */
+@media (max-width: 800px) {
+    .hero-title {
+        font-size: 6rem;
+    }
+    .welcome-gif {
+        width: 250px;
+        top: 10px;
+        left: -10px;
+    }
+    .hero-description {
+        font-size: 1.2rem;
+    }
 }
 /*=====================================
   MEDIA QUERIES PARA RESPONSIVIDADE
