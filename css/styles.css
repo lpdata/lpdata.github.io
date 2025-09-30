@@ -329,75 +329,96 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 /*=====================================
-  ESTILOS PARA A SEÇÃO HOME (ALINHAMENTO CORRIGIDO)
+  ESTILOS PARA A SEÇÃO HOME (LAYOUT DE DUAS COLUNAS)
 =====================================*/
 
 /* Importa a fonte serifada para o "Oi." grande */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
 
+.home-hero-layout {
+    display: flex; /* Cria o layout de duas colunas */
+    align-items: flex-start; /* Alinha o topo dos itens */
+    gap: 40px; /* Espaçamento entre a foto e o texto/gif */
+    margin-bottom: 40px;
+}
+
+.hero-left-col {
+    flex-shrink: 0; /* Impede que a coluna da imagem diminua */
+    width: 250px; /* Largura da coluna da imagem. Ajuste se necessário. */
+    text-align: center; /* Centraliza a imagem se ela for menor que a coluna */
+}
+
+.my-profile-pic {
+    width: 100%; /* Imagem preenche a largura da coluna */
+    height: auto;
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra sutil */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+    aspect-ratio: 1 / 1; /* Mantém a imagem perfeitamente quadrada para o círculo */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin-left: auto; /* Centraliza a imagem na coluna, se a largura da imagem for menor */
+    margin-right: auto;
+}
+
+
+.hero-right-col {
+    flex-grow: 1; /* Faz a coluna da direita ocupar o espaço restante */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo da coluna direita verticalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente dentro da coluna */
+}
+
 .hero-main-greeting {
-    display: flex;           /* ESSENCIAL: Coloca os itens na mesma linha */
-    justify-content: center;   /* Centraliza o par ("Oi." + GIF) no meio da página */
-    align-items: center;       /* Alinha os itens verticalmente pelo centro */
-    flex-wrap: wrap;           /* Permite que quebre a linha em telas muito pequenas */
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* Alinha o "Oi." e o GIF pelo centro vertical */
+    gap: 10px; /* Espaçamento entre "Oi." e GIF */
+    margin-bottom: 10px; /* Espaço entre o Hi/Welcome e o nome/cargo */
 }
 
 .hero-title {
     font-family: 'Playfair Display', serif;
-    font-size: 7rem;          /* Tamanho gigante. Sinta-se à vontade para ajustar */
+    font-size: 7rem; /* Tamanho do "Oi.". Ajuste este valor. */
     font-weight: 400;
     margin: 0;
     line-height: 1;
     color: var(--color-void);
-    /* Remove margens extras que podem atrapalhar o alinhamento */
-    padding: 0; 
+    padding: 0;
 }
 
 .welcome-gif {
-    /* CONTROLE FINO: Ajuste estes valores para o alinhamento perfeito */
-    width: 280px;              /* Ajuste a largura do seu GIF */
+    width: 250px; /* Largura do GIF. Ajuste conforme o tamanho real do seu GIF. */
     height: auto;
-    position: relative;        /* Permite o ajuste fino da posição */
-    top: 15px;                 /* Empurra o GIF para baixo. Use valores negativos para subir. */
-    left: 0;               /* Empurra o GIF para a esquerda. */
+    position: relative;
+    top: 0px; /* Ajuste vertical. Use valores negativos para subir, positivos para descer. */
+    left: 0px; /* Ajuste horizontal. Não use valores negativos para evitar sobreposição. */
 }
 
 .hero-subtitle {
     font-family: 'Orkney', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Tamanho do seu nome */
+    font-weight: 500;
+    margin: 0;
+    color: var(--color-void);
+}
+
+.hero-role {
+    font-family: 'Orkney', sans-serif;
+    font-size: 1.2rem; /* Tamanho do seu cargo */
+    font-weight: 300;
+    margin: 5px 0 0 0;
     color: #555;
-    text-align: center; /* Centraliza o texto abaixo do "Oi. Welcome" */
 }
 
 .hero-description {
     font-family: 'Orkney', sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.3rem; /* Tamanho da descrição principal */
     font-weight: 300;
     line-height: 1.6;
-    margin-top: 30px;
-    max-width: 800px;
-    margin-left: auto; /* Centraliza o bloco do parágrafo */
-    margin-right: auto; /* Centraliza o bloco do parágrafo */
-    text-align: center;
-}
-
-/* Ajustes de responsividade para o novo layout */
-@media (max-width: 800px) {
-    .hero-title {
-        font-size: 6rem;
-    }
-    .welcome-gif {
-        width: 250px;
-        top: 10px;
-        left: -10px;
-    }
-    .hero-description {
-        font-size: 1.2rem;
-    }
+    margin-top: 40px;
+    max-width: 800px; /* Mantém a largura do parágrafo */
+    margin-left: 0; /* Alinha à esquerda na coluna principal */
+    margin-right: auto;
+    text-align: left;
 }
 /*=====================================
   MEDIA QUERIES PARA RESPONSIVIDADE
@@ -414,30 +435,45 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
         padding: 12px 15px;
         font-size: 0.9em;
     }
-    .hero-main-greeting {
-        flex-direction: column; /* Em telas pequenas, Oi e Welcome ficam um abaixo do outro */
-        align-items: center; /* Centraliza verticalmente */
+    .home-hero-layout {
+        flex-direction: column; /* Colunas empilham em telas pequenas */
+        align-items: center; /* Centraliza tudo */
         text-align: center;
-        gap: 10px;
+        gap: 30px;
+    }
+
+    .hero-left-col {
+        width: 180px; /* Largura menor para a foto no mobile */
+    }
+
+    .hero-right-col {
+        align-items: center; /* Centraliza o conteúdo da direita */
+    }
+
+    .hero-main-greeting {
+        flex-direction: row; /* Mantém Hi e Welcome lado a lado, mas permite quebra */
+        flex-wrap: wrap; /* Importante para não cortar o gif em telas muito pequenas */
+        justify-content: center; /* Centraliza o Hi + Welcome */
+        gap: 8px; /* Espaçamento menor no mobile */
     }
 
     .hero-title {
-        font-size: 5rem; /* Reduz o tamanho do "Oi." em telas pequenas */
+        font-size: 4.5rem; /* Tamanho menor do "Oi." no mobile */
     }
 
     .welcome-gif {
-        width: 200px; /* Reduz o tamanho do GIF em telas pequenas */
-        top: 5; /* Remove ajuste vertical em mobile */
+        width: 180px; /* Tamanho menor do GIF no mobile */
+        top: 0;
         left: 0;
     }
 
-    .hero-subtitle {
-        font-size: 1rem;
+    .hero-subtitle, .hero-role {
+        font-size: 1.2rem; /* Tamanho do nome e cargo no mobile */
         text-align: center;
     }
 
     .hero-description {
-        font-size: 1.1rem;
+        font-size: 1.05rem; /* Tamanho menor do texto da descrição */
         text-align: center;
     }
 }
