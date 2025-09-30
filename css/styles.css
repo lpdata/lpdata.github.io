@@ -345,7 +345,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 .hero-title {
     font-family: 'Playfair Display', serif;
-    font-size: 10rem;          /* Tamanho gigante. Sinta-se à vontade para ajustar */
+    font-size: 8rem;          /* Tamanho gigante. Sinta-se à vontade para ajustar */
     font-weight: 400;
     margin: 0;
     line-height: 1;
@@ -356,7 +356,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 .welcome-gif {
     /* CONTROLE FINO: Ajuste estes valores para o alinhamento perfeito */
-    width: 350px;              /* Ajuste a largura do seu GIF */
+    width: 280px;              /* Ajuste a largura do seu GIF */
     height: auto;
     position: relative;        /* Permite o ajuste fino da posição */
     top: 15px;                 /* Empurra o GIF para baixo. Use valores negativos para subir. */
@@ -422,13 +422,13 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     }
 
     .hero-title {
-        font-size: 4.5rem; /* Reduz o tamanho do "Oi." em telas pequenas */
-        line-height: 1;
+        font-size: 5rem; /* Reduz o tamanho do "Oi." em telas pequenas */
     }
 
     .welcome-gif {
         width: 200px; /* Reduz o tamanho do GIF em telas pequenas */
-        top: 0; /* Remove ajuste vertical em mobile */
+        top: 5; /* Remove ajuste vertical em mobile */
+        left: 0;
     }
 
     .hero-subtitle {
