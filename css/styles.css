@@ -192,11 +192,16 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 .section-title {
-    background-color: var(--color-azul-forte);
-    color: var(--color-stark);
-    padding: 10px 25px;
-    border-radius: 8px;
-    display: inline-block;
+    font-family: 'Playfair Display', serif; /* Usa a mesma fonte do "Hi," */
+    font-weight: 400;                      /* Peso que combina com a fonte */
+    font-size: 3.5rem;                     /* Tamanho grande para dar impacto */
+    color: var(--color-void);              /* Cor do texto preta (do seu tema) */
+    background-color: transparent;         /* Remove o fundo azul */
+    text-align: center;                    /* Centraliza o título */
+    display: block;                        /* Permite a centralização */
+    margin-bottom: 40px;                   /* Aumenta o espaço abaixo do título */
+    
+    /* As linhas de padding e border-radius foram removidas por não serem mais necessárias */
 }
 
 .internal-title {
