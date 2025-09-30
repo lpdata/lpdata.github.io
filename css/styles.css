@@ -344,8 +344,10 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 .hero-left-col {
     flex-shrink: 0;
-    width: 200px; /* Mantive o tamanho menor que definimos antes */
+    width: 200px;
     text-align: center;
+    position: relative; /* "Liga" o modo de posicionamento */
+    top: 60px;          /* EMPURRA A FOTO PARA BAIXO. Ajuste este valor! */
 }
 
 .my-profile-pic {
