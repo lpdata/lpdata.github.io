@@ -168,9 +168,9 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 .tab-nav ul li a.active-tab {
-    background-color: var(--color-azul-forte);
-    border-bottom: 3px solid var(--color-azul-cyan);
-    color: var(--color-stark);
+    background-color: transparent; /* Removemos o fundo azul, deixando transparente */
+    border-bottom: 2px solid var(--color-azul-cyan); /* Deixamos a linha mais fina (2px) */
+    color: var(--color-azul-cyan); /* O texto da aba ativa agora fica azul, combinando com a linha */
 }
 
 /*=====================================
