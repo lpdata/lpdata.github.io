@@ -416,6 +416,29 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     margin-left: 0;
     text-align: justify;   /* ALTERADO: Justifica o texto para alinhar ambas as bordas */
 }
+
+/*=====================================
+  ESTILOS PARA A SEÇÃO EM CONSTRUÇÃO
+=====================================*/
+.under-construction {
+    text-align: center; /* Centraliza todo o conteúdo (título, texto, gif) */
+    padding: 50px 0;
+}
+
+.under-construction p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.construction-gif {
+    max-width: 100%; /* Garante que o GIF não transborde */
+    width: 300px; /* Tamanho médio do GIF. Ajuste este valor se precisar. */
+    height: auto;
+    border-radius: 8px; /* Cantos levemente arredondados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
 /*=====================================
   MEDIA QUERIES PARA RESPONSIVIDADE
 =====================================*/
