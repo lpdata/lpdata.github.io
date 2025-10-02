@@ -475,7 +475,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /* Estilo em comum para as duas caixas */
 .title-box,
 .content-box {
-    background-color: #000000;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
@@ -489,7 +489,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /* Estilo específico para a caixa do CONTEÚDO */
 .content-box {
     padding: 15px;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 /* Ajuste no título para ele se encaixar na nova caixa */
@@ -497,7 +497,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     margin: 0; /* Removemos as margens antigas para o alinhamento ficar perfeito */
     padding: 0;
     border: none;
-    color: #FFFFFF; /* Altera a cor do texto para o azul do seu tema */
+    color: #000000; /* Altera a cor do texto para o azul do seu tema */
 }
 
 
