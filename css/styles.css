@@ -450,10 +450,17 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 /* 2. Estilo base para AMBAS as imagens flutuantes */
 .image-floated {
-    max-width: 250px;      /* Largura máxima da imagem. Ajuste se quiser. */
-    border: 5px solid white; /* Borda branca grossa */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* Sombra para ressaltar */
-    border-radius: 8px;      /* Cantos levemente arredondados */
+    border: 5px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+/* --- Tamanhos individuais para as imagens da História --- */
+#foto-infancia {
+    max-width: 200px; /* Tamanho para a primeira foto. */
+}
+
+#foto-formatura {
+    max-width: 250px; /* Tamanho para a segunda foto. */
 }
 
 /* 3. Classe para alinhar a imagem à ESQUERDA */
