@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     "“A simplicidade é a sofisticação máxima.” – Leonardo da Vinci",
     "“Visão sem execução é alucinação.” – Thomas Edison",
     "“Trabalhe duro em silêncio; deixe o sucesso fazer o barulho.” – Frank Ocean",
-    "“Quem tenta agradar a todos não agrada a ninguém.” – Publílio Siro",
     "“Não é sobre ideias. É sobre fazer as ideias acontecerem.” – Scott Belsky",
     "“Comece pequeno, pense grande.” – Ray Kroc",
     "“Seja rápido para ouvir e lento para falar.” – Provérbio",
