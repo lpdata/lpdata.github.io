@@ -472,10 +472,6 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
   ESTILOS PARA A SEÇÃO HISTÓRIA 
 =====================================*/
 
-/*=====================================
-  ESTILO DE "DUAS CAIXAS" PARA A ABA HISTÓRIA
-=====================================*/
-
 /* Estilo em comum para as duas caixas */
 .title-box,
 .content-box {
@@ -541,15 +537,6 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     content: "";
     display: table;
     clear: both;
-}
-
-
-/* --- Estilo da Caixa Branca com Sombra (Área Verde) --- */
-#historia .section-inner {
-    background-color: #FFFFFF; /* Fundo branco para a caixa */
-    padding: 20px;             /* Espaçamento interno para o conteúdo não colar na borda */
-    border-radius: 10px;        /* Cantos levemente arredondados */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidade */
 }
 
 /*=====================================
