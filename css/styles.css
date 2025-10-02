@@ -469,7 +469,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 /*=====================================
-  ESTILOS PARA A SEÇÃO HISTÓRIA (TEXTO JUSTIFICADO E IMAGENS)
+  ESTILOS PARA A SEÇÃO HISTÓRIA 
 =====================================*/
 
 /* 1. Justifica todo o texto dentro da aba História */
@@ -485,7 +485,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 /* --- Tamanhos individuais para as imagens da História --- */
 #foto-infancia {
-    max-width: 200px; /* Tamanho para a primeira foto. */
+    max-width: 150px; /* Tamanho para a primeira foto. */
 }
 
 #foto-formatura {
