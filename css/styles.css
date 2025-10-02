@@ -439,6 +439,42 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     font-weight: 350; /* Adicionado para dar um pouco mais de destaque à letra */
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar volume */
 }
+
+/*=====================================
+  ESTILOS PARA A SEÇÃO HISTÓRIA (TEXTO JUSTIFICADO E IMAGENS)
+=====================================*/
+
+/* 1. Justifica todo o texto dentro da aba História */
+#historia .section-inner p {
+    text-align: justify;
+}
+
+/* 2. Estilo base para AMBAS as imagens flutuantes */
+.image-floated {
+    max-width: 250px;      /* Largura máxima da imagem. Ajuste se quiser. */
+    border: 5px solid white; /* Borda branca grossa */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* Sombra para ressaltar */
+    border-radius: 8px;      /* Cantos levemente arredondados */
+}
+
+/* 3. Classe para alinhar a imagem à ESQUERDA */
+.img-float-left {
+    float: left;
+    margin: 5px 20px 10px 0; /* Espaçamento: topo, direita, baixo, esquerda */
+}
+
+/* 4. Classe para alinhar a imagem à DIREITA */
+.img-float-right {
+    float: right;
+    margin: 5px 0 10px 20px; /* Espaçamento: topo, direita, baixo, esquerda */
+}
+
+/* 5. Correção ESSENCIAL para layouts com float (clearfix) */
+#historia .section-inner::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /*=====================================
   ESTILOS PARA A SEÇÃO EM CONSTRUÇÃO
 =====================================*/
@@ -536,5 +572,12 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     .hero-description {
         font-size: 1.05rem; /* Tamanho menor do texto da descrição */
         text-align: center;
+    }
+
+    .image-floated {
+        float: none; /* Desativa a flutuação */
+        display: block; /* Transforma a imagem em um bloco */
+        margin: 20px auto; /* Centraliza a imagem e adiciona espaço vertical */
+        max-width: 80%; /* Limita a largura para não colar nas bordas da tela */
     }
 }
