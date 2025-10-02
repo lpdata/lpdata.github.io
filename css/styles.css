@@ -424,7 +424,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /* Centraliza o conteúdo do bloco de highlights na Home */
 .highlights {
     text-align: center;
-    margin-top: 25px; /* Movido do seu HTML para cá para melhor organização */
+    margin-top: 20px; /* Movido do seu HTML para cá para melhor organização */
 }
 /* Estilo para as tags de destaque (highlights) */
 .highlights span {
@@ -436,6 +436,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     margin: 5px;
     font-size: 0.9em;
     font-weight: 500; /* Adicionado para dar um pouco mais de destaque à letra */
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar volume */
 }
 /*=====================================
   ESTILOS PARA A SEÇÃO EM CONSTRUÇÃO
