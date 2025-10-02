@@ -494,13 +494,13 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 /* 3. Classe para alinhar a imagem à ESQUERDA */
 .img-float-left {
-    float: right;
+    float: left;
     margin: 5px 20px 10px 0; /* Espaçamento: topo, direita, baixo, esquerda */
 }
 
 /* 4. Classe para alinhar a imagem à DIREITA */
 .img-float-right {
-    float: left;
+    float: rigth;
     margin: 5px 0 10px 20px; /* Espaçamento: topo, direita, baixo, esquerda */
 }
 
@@ -515,8 +515,8 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /* --- Estilo da Caixa Branca com Sombra (Área Verde) --- */
 #historia .section-inner {
     background-color: #FFFFFF; /* Fundo branco para a caixa */
-    padding: 40px;             /* Espaçamento interno para o conteúdo não colar na borda */
-    border-radius: 8px;        /* Cantos levemente arredondados */
+    padding: 20px;             /* Espaçamento interno para o conteúdo não colar na borda */
+    border-radius: 10px;        /* Cantos levemente arredondados */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidade */
 }
 
@@ -529,8 +529,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     background-color: #000000;         /* Fundo preto */
     padding: 15px 25px;                /* Espaçamento interno do título */
     border-radius: 5px;                /* Cantos arredondados do fundo preto */
-    border-left: 5px solid var(--color-azul-forte); /* O detalhe em azul na lateral esquerda */
-    text-shadow: none;                 /* Remove a sombra de texto que aplicamos antes */
+    border-left: 4px solid var(--color-azul-forte); /* O detalhe em azul na lateral esquerda */
     display: block;             /* Ajusta o comportamento do elemento */
     text-align: left;                  /* Garante o alinhamento à esquerda */
 }
