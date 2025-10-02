@@ -435,7 +435,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     border-radius: 20px;
     margin: 5px;
     font-size: 0.9em;
-    font-weight: 500; /* Adicionado para dar um pouco mais de destaque à letra */
+    font-weight: 350; /* Adicionado para dar um pouco mais de destaque à letra */
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar volume */
 }
 /*=====================================
