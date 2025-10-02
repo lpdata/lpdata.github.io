@@ -200,9 +200,8 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     text-align: left;                    /* Centraliza o título */
     display: block;                        /* Permite a centralização */
     margin-bottom: 30px;                   /* Aumenta o espaço abaixo do título */
-    
-    /* As linhas de padding e border-radius foram removidas por não serem mais necessárias */
-}
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Adiciona uma sombra sutil */
+  }
 
 .internal-title {
     background-color: transparent;
