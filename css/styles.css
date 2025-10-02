@@ -226,7 +226,19 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 .job-history article, .expandable-item {
-    border-left: 4px solid var(--color-azul-forte);
+    background-color: #FFFFFF; /* Adiciona um fundo branco para criar a "caixa" */
+    border: 1px solid #e0e0e0; /* Adiciona uma borda sutil em toda a volta */
+    border-radius: 8px;        /* Mantém os cantos arredondados */
+    padding: 25px;             /* Aumenta um pouco o espaçamento interno */
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Adiciona a sombra para dar "vida" e profundidade */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Efeito suave ao interagir */
+}
+
+/* Efeito extra: a caixa levanta um pouco ao passar o mouse */
+.job-history article:hover, .expandable-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
 }
 
 .project-card {
