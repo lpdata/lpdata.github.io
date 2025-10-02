@@ -451,6 +451,23 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar volume */
 }
 
+/* Correção 2: Reduz o espaçamento no topo da seção Home */
+#inicio.content-section {
+    padding-top: 15px; /* Reduzido de 60px para 20px. Ajuste se quiser mais ou menos espaço. */
+}
+
+/* Correção 1: Força todo o conteúdo dentro da Home a se centralizar horizontalmente */
+#inicio .section-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza todos os "filhos" (blocos de conteúdo) no eixo horizontal */
+}
+
+/* Ajuste fino para o parágrafo principal agora que ele está em um container flex */
+.hero-description {
+    text-align: justify; /* Mudado de 'justify' para 'center' para um visual mais coeso com o novo alinhamento */
+}
+
 /*=====================================
   ESTILOS PARA A SEÇÃO HISTÓRIA (TEXTO JUSTIFICADO E IMAGENS)
 =====================================*/
@@ -539,8 +556,32 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     display: block;
 }
 
+/* Transforma o container de informações em um layout flexível */
 .info-container {
-    flex-grow: 1; /* Faz a coluna de texto ocupar o espaço restante */
+    flex-grow: 1;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Empurra os itens para as extremidades (texto para esquerda, botão para direita) */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Garante um espaço mínimo entre texto e botão */
+}
+
+/* Estilo específico para o botão "Saiba mais" dentro dos cards de formação */
+#formacao .expand-btn {
+    background-color: var(--color-azul-forte);
+    color: var(--color-stark);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    white-space: nowrap; /* Impede que o texto "Saiba mais" quebre a linha */
+    transition: background-color 0.3s;
+    margin: 0; /* Remove margens antigas */
+}
+
+#formacao .expand-btn:hover {
+    background-color: var(--color-azul-cyan);
 }
 /*=====================================
   ESTILOS PARA A SEÇÃO EM CONSTRUÇÃO
@@ -566,23 +607,6 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /*=====================================
   AJUSTES DE ALINHAMENTO E ESPAÇAMENTO PARA A SEÇÃO HOME
 =====================================*/
-
-/* Correção 2: Reduz o espaçamento no topo da seção Home */
-#inicio.content-section {
-    padding-top: 15px; /* Reduzido de 60px para 20px. Ajuste se quiser mais ou menos espaço. */
-}
-
-/* Correção 1: Força todo o conteúdo dentro da Home a se centralizar horizontalmente */
-#inicio .section-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza todos os "filhos" (blocos de conteúdo) no eixo horizontal */
-}
-
-/* Ajuste fino para o parágrafo principal agora que ele está em um container flex */
-.hero-description {
-    text-align: justify; /* Mudado de 'justify' para 'center' para um visual mais coeso com o novo alinhamento */
-}
 
 /*=====================================
   MEDIA QUERIES PARA RESPONSIVIDADE
