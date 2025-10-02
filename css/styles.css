@@ -520,20 +520,6 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidade */
 }
 
-/* --- Estilo do Título (Área Rosa) --- */
-#historia .section-title {
-    font-family: 'Orkney', sans-serif; /* Voltando para a fonte padrão, que combina mais com este estilo */
-    font-size: 2rem;                   /* Tamanho ajustado para caber no novo design */
-    font-weight: 500;                  /* Peso médio */
-    color: #FFFFFF;                    /* Cor da letra branca */
-    background-color: #000000;         /* Fundo preto */
-    padding: 15px 25px;                /* Espaçamento interno do título */
-    border-radius: 5px;                /* Cantos arredondados do fundo preto */
-    border-left: 4px solid var(--color-azul-forte); /* O detalhe em azul na lateral esquerda */
-    display: block;             /* Ajusta o comportamento do elemento */
-    text-align: left;                  /* Garante o alinhamento à esquerda */
-}
-
 /*=====================================
   ESTILOS PARA A LINHA DO TEMPO ACADÊMICA (COM LOGOS)
 =====================================*/
