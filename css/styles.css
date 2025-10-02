@@ -475,6 +475,30 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     clear: both;
 }
 /*=====================================
+  ESTILOS PARA A LINHA DO TEMPO ACADÊMICA (COM LOGOS)
+=====================================*/
+
+/* Transforma o container .summary em um layout flexível */
+#formacao .summary {
+    display: flex;
+    align-items: center; /* Alinha o logo e o texto verticalmente */
+    gap: 20px;           /* Espaço entre o logo и o texto */
+}
+
+.logo-container {
+    flex-shrink: 0; /* Impede que a coluna do logo encolha */
+}
+
+.logo-container img {
+    width: 60px;  /* Define o tamanho "pequeno" do logo. Ajuste se precisar. */
+    height: auto; /* Mantém a proporção */
+    display: block;
+}
+
+.info-container {
+    flex-grow: 1; /* Faz a coluna de texto ocupar o espaço restante */
+}
+/*=====================================
   ESTILOS PARA A SEÇÃO EM CONSTRUÇÃO
 =====================================*/
 .under-construction {
@@ -578,5 +602,13 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
         display: block; /* Transforma a imagem em um bloco */
         margin: 20px auto; /* Centraliza a imagem e adiciona espaço vertical */
         max-width: 80%; /* Limita a largura para não colar nas bordas da tela */
+    }
+
+    #formacao .summary {
+        gap: 15px; /* Diminui o espaço entre o logo e o texto */
+    }
+    
+    .logo-container img {
+        width: 50px; /* Deixa o logo um pouco menor no celular */
     }
 }
