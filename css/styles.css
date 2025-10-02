@@ -472,6 +472,12 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
   ESTILOS PARA A SEÇÃO HISTÓRIA 
 =====================================*/
 
+#historia .section-title {
+    padding-bottom: 20px; /* Adiciona um espaço ABAIXO do texto do título, antes da linha */
+    margin-bottom: 30px;  /* Define o espaço ENTRE a linha e o parágrafo abaixo */
+    border-bottom: 1px solid #eeeeee; /* Cria a linha divisória cinza claro */
+}
+
 /* 1. Justifica todo o texto dentro da aba História */
 #historia .section-inner p {
     text-align: justify;
@@ -481,11 +487,11 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 .image-floated {
     border: 5px solid white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
+    border-radius: 6px;
 }
 /* --- Tamanhos individuais para as imagens da História --- */
 #foto-infancia {
-    max-width: 150px; /* Tamanho para a primeira foto. */
+    max-width: 145px; /* Tamanho para a primeira foto. */
 }
 
 #foto-formatura {
