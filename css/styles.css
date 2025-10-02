@@ -472,15 +472,41 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
   ESTILOS PARA A SEÇÃO HISTÓRIA 
 =====================================*/
 
-#historia .section-title {
-    padding-bottom: 20px; /* Adiciona um espaço ABAIXO do texto do título, antes da linha */
-    margin-bottom: 30px;  /* Define o espaço ENTRE a linha e o parágrafo abaixo */
-    border-bottom: 1px solid #eeeeee; /* Cria a linha divisória cinza claro */
+/*=====================================
+  ESTILO DE "DUAS CAIXAS" PARA A ABA HISTÓRIA
+=====================================*/
+
+/* Estilo em comum para as duas caixas */
+.title-box,
+.content-box {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* 1. Justifica todo o texto dentro da aba História */
-#historia .section-inner p {
-    text-align: justify;
+/* Estilo específico para a caixa do TÍTULO */
+.title-box {
+    padding: 20px 30px;
+    margin-bottom: 30px; /* Espaço entre a caixa do título e a caixa de conteúdo */
+}
+
+/* Estilo específico para a caixa do CONTEÚDO */
+.content-box {
+    padding: 30px;
+}
+
+/* Ajuste no título para ele se encaixar na nova caixa */
+#historia .section-title {
+    margin: 0; /* Removemos as margens antigas para o alinhamento ficar perfeito */
+    padding: 0;
+    border: none;
+}
+
+/* Movemos a correção do 'float' para a nova caixa de conteúdo */
+.content-box::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* 2. Estilo base para AMBAS as imagens flutuantes */
