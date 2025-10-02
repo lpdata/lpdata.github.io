@@ -481,7 +481,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     background-color: #FFFFFF; /* Fundo branco para a caixa */
     padding: 40px;             /* Espaçamento interno para o conteúdo não colar na borda */
     border-radius: 8px;        /* Cantos levemente arredondados */
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidade */
 }
 
 /* --- Estilo do Título (Área Rosa) --- */
@@ -495,7 +495,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     border-radius: 5px;                /* Cantos arredondados do fundo preto */
     border-left: 5px solid var(--color-azul-forte); /* O detalhe em azul na lateral esquerda */
     text-shadow: none;                 /* Remove a sombra de texto que aplicamos antes */
-    display: inline-block;             /* Ajusta o comportamento do elemento */
+    display: block;             /* Ajusta o comportamento do elemento */
     text-align: left;                  /* Garante o alinhamento à esquerda */
 }
 
