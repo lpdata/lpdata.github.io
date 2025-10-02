@@ -401,6 +401,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     font-weight: 500;
     margin: 0;
     color: var(--color-void);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra suave no texto */
 }
 
 .hero-role {
