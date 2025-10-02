@@ -496,7 +496,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     margin: 0; /* Removemos as margens antigas para o alinhamento ficar perfeito */
     padding: 0;
     border: none;
-    color: var(--color-azul-forte); /* Altera a cor do texto para o azul do seu tema */
+    color: #FFFFFF; /* Altera a cor do texto para o azul do seu tema */
 }
 
 
