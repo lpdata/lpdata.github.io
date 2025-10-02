@@ -475,15 +475,15 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /* Estilo em comum para as duas caixas */
 .title-box,
 .content-box {
-    background-color: #FFFFFF;
+    background-color: #000000;
     border-radius: 8px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo específico para a caixa do TÍTULO */
 .title-box {
     padding: 20px 30px;
-    margin-bottom: 30px; /* Espaço entre a caixa do título e a caixa de conteúdo */
+    margin-bottom: 20px; /* Espaço entre a caixa do título e a caixa de conteúdo */
 }
 
 /* Estilo específico para a caixa do CONTEÚDO */
