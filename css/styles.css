@@ -229,9 +229,9 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     background-color: #FFFFFF; /* Adiciona um fundo branco para criar a "caixa" */
     border: 1px solid #e0e0e0; /* Adiciona uma borda sutil em toda a volta */
     border-radius: 8px;        /* Mantém os cantos arredondados */
-    padding: 25px;             /* Aumenta um pouco o espaçamento interno */
+    padding: 15px;             /* Aumenta um pouco o espaçamento interno */
     margin-bottom: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Adiciona a sombra para dar "vida" e profundidade */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adiciona a sombra para dar "vida" e profundidade */
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Efeito suave ao interagir */
 }
 
@@ -545,6 +545,23 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /*=====================================
   ESTILOS PARA A LINHA DO TEMPO ACADÊMICA (COM LOGOS)
 =====================================*/
+/* 1. Prepara o container que agrupa os cards */
+#formacao .job-history {
+    position: relative; /* Ativa o posicionamento para a linha-guia poder ser posicionada dentro dele */
+    padding-left: 40px; /* Cria um espaço à esquerda para a linha e um respiro */
+}
+
+/* 2. Cria a linha-guia vertical azul */
+#formacao .job-history::before {
+    content: ''; /* Essencial para o pseudo-elemento funcionar */
+    position: absolute; /* Permite o posicionamento preciso */
+    left: 10px;         /* Distância da borda esquerda */
+    top: 5px;           /* Espaço no topo, para não colar no título */
+    bottom: 5px;        /* Espaço embaixo */
+    width: 3px;         /* Espessura da linha */
+    background-color: var(--color-azul-forte); /* Cor da linha */
+    border-radius: 2px; /* Deixa as pontas da linha arredondadas */
+}
 
 /* Transforma o container .summary em um layout flexível */
 #formacao .summary {
