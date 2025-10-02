@@ -458,13 +458,13 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 /* 3. Classe para alinhar a imagem à ESQUERDA */
 .img-float-left {
-    float: left;
+    float: right;
     margin: 5px 20px 10px 0; /* Espaçamento: topo, direita, baixo, esquerda */
 }
 
 /* 4. Classe para alinhar a imagem à DIREITA */
 .img-float-right {
-    float: right;
+    float: left;
     margin: 5px 0 10px 20px; /* Espaçamento: topo, direita, baixo, esquerda */
 }
 
