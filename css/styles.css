@@ -545,22 +545,23 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /*=====================================
   ESTILOS PARA A LINHA DO TEMPO ACADÊMICA (COM LOGOS)
 =====================================*/
-/* 1. Prepara o container que agrupa os cards */
-#formacao .job-history {
-    position: relative; /* Ativa o posicionamento para a linha-guia poder ser posicionada dentro dele */
-    padding-left: 40px; /* Cria um espaço à esquerda para a linha e um respiro */
+
+/* 1. Prepara o NOVO container da linha do tempo */
+#formacao .timeline-container {
+    position: relative;
+    padding-left: 30px; /* Espaço à esquerda dos cards */
 }
 
-/* 2. Cria a linha-guia vertical azul */
-#formacao .job-history::before {
-    content: ''; /* Essencial para o pseudo-elemento funcionar */
-    position: absolute; /* Permite o posicionamento preciso */
-    left: 10px;         /* Distância da borda esquerda */
-    top: 5px;           /* Espaço no topo, para não colar no título */
-    bottom: 5px;        /* Espaço embaixo */
-    width: 3px;         /* Espessura da linha */
-    background-color: var(--color-azul-forte); /* Cor da linha */
-    border-radius: 2px; /* Deixa as pontas da linha arredondadas */
+/* 2. Cria a linha guia que se ajusta AUTOMATICAMENTE */
+#formacao .timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;      /* Começa EXATAMENTE no topo do primeiro card */
+    bottom: 0;   /* Termina EXATAMENTE no final do último card */
+    width: 3px;
+    background-color: var(--color-azul-forte);
+    border-radius: 2px;
 }
 
 /* Transforma o container .summary em um layout flexível */
