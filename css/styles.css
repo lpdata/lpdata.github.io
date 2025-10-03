@@ -594,7 +594,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /* Estilo específico para o botão "Saiba mais" dentro dos cards de formação */
 #formacao .expand-btn {
     background-color: var(--color-azul-forte);
-    color: var(--color-stark);
+    color: #000000;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -603,7 +603,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     font-weight: 600;
     white-space: nowrap;
     margin: 0;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Sombra para dar profundidade */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20); /* Sombra para dar profundidade */
     transition: all 0.2s ease-in-out; /* Transição suave para todos os efeitos */
 }
 
