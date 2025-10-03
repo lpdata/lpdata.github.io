@@ -490,6 +490,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 .content-box {
     padding: 15px;
     color: #000000;
+    justify-content: justify;
 }
 
 /* Ajuste no título para ele se encaixar na nova caixa */
@@ -562,7 +563,6 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     width: 2px; /* espessura da linha */
     background-color: var(--color-azul-forte);
     border-radius: 1px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Adiciona uma sombra sutil */
 }
 
 /* Transforma o container .summary em um layout flexível */
