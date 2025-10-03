@@ -556,10 +556,10 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 #formacao .timeline-container::before {
     content: '';
     position: absolute;
-    left: 10px;
+    left: 5px;
     top: 0;      /* Começa EXATAMENTE no topo do primeiro card */
     bottom: 0;   /* Termina EXATAMENTE no final do último card */
-    width: 3px;
+    width: 2.5px;
     background-color: var(--color-azul-forte);
     border-radius: 2px;
 }
