@@ -105,7 +105,6 @@ a:hover {
 
 /*===============================================================================================
   DEFINIÇÃO DO SISTEMA DE TIPOGRAFIA
-  Estilos padrão para elementos de texto, como parágrafos e títulos (h1 a h6).
 =================================================================================================*/
 
 /* --- Estilo para Parágrafos --- */
@@ -530,7 +529,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 /*===============================================================================================
-   ESTILOS PARA A SEÇÃO FORMAÇÃO (TIMELINE)
+   ESTILOS PARA A SEÇÃO FORMAÇÃO 
 =================================================================================================*/
 
 /* --- Container da Linha do Tempo --- */
@@ -685,11 +684,13 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /* ===============================================================================================
    SEÇÃO HABILIDADES 
 =================================================================================================*/
+
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-  margin-top: 30px;
+  grid-template-columns: repeat(2, 1fr); /* duas colunas fixas */
+  gap: 50px 60px; /* espaço entre linhas e colunas */
+  margin-top: 40px;
+  align-items: start;
 }
 
 .tech-category {
@@ -708,13 +709,14 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 .tech-category h3 {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--color-void);
   margin-bottom: 15px;
 }
 
 .skill-image {
   width: 100%;
+  max-width: 400px; /* evita que estoure */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
@@ -725,13 +727,11 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
   transform: scale(1.03);
 }
 
-/* Ajuste mobile */
-@media (max-width: 800px) {
+/* Layout responsivo — 1 coluna no mobile */
+@media (max-width: 900px) {
   .tech-grid {
-    gap: 25px;
-  }
-  .tech-category {
-    padding: 20px;
+    grid-template-columns: 1fr;
+    gap: 35px;
   }
 }
 
