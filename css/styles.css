@@ -1071,7 +1071,6 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 /*=====================================
   MEDIA QUERIES PARA RESPONSIVIDADE (MOBILE)
-  Este bloco ajusta os estilos para telas com largura máxima de 800px.
 =====================================*/
 @media (max-width: 800px) {
     /* --- Ajuste no Padding das Seções --- */
