@@ -884,59 +884,77 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /* ===============================================================================================
    PORTFÓLIO 
 =================================================================================================*/
+/* ===============================================================================================
+   PORTFÓLIO — mesmo estilo da aba Formação (sem botão expansível)
+=================================================================================================*/
 
-
-.portfolio-list {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-top: 25px;
+.portfolio-container {
+  position: relative;
+  padding-left: 30px;
 }
 
-.portfolio-card {
-  background-color: #ffffff;
+.portfolio-container::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-azul-forte);
+  border-radius: 1px;
+}
+
+.portfolio-container .summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  padding: 25px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.portfolio-card:hover {
+.portfolio-container .summary:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.card-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 12px;
-}
-
-.card-icon {
-  font-size: 26px;
-  color: var(--color-azul-forte);
-  background: #f2f8ff;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+.portfolio-container .logo-container {
+  flex-shrink: 0;
   display: grid;
   place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f5f9ff;
+  border: 1px solid #e2e8f0;
 }
 
-.card-text h4 {
+.portfolio-container .logo-icon {
+  font-size: 24px;
+  color: var(--color-azul-forte);
+}
+
+.portfolio-container .info-container {
+  flex: 1;
+}
+
+.portfolio-container h4 {
   font-weight: 600;
   font-size: 1.15rem;
-  margin-bottom: 4px;
   color: var(--color-void);
+  margin-bottom: 6px;
 }
 
-.card-text .meta {
+.portfolio-container .meta {
   font-size: 0.95rem;
   color: #555;
+  margin-bottom: 10px;
 }
 
-.card-description {
+.portfolio-container .descricao {
   font-size: 1rem;
   color: #333;
   line-height: 1.6;
@@ -1246,12 +1264,14 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     }
   
   @media (max-width: 900px) {
-    .portfolio-card {
-      padding: 20px;
+    .portfolio-container .summary {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-    .card-header {
-      flex-direction: row;
-      gap: 12px;
+  
+    .portfolio-container .descricao {
+      text-align: left;
     }
 }
 
