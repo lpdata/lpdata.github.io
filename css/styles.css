@@ -884,13 +884,86 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /* ===============================================================================================
    PORTFÓLIO 
 =================================================================================================*/
+/* ===================== PORTFÓLIO (tab oficial #portfolio) ===================== */
 
+/* lista em 1 coluna */
+#portfolio .portfolio-list{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+  margin-top:16px;
+}
 
+/* card único, limpo (um retângulo só) */
+#portfolio .portfolio-item{
+  display:flex;
+  align-items:flex-start;
+  gap:18px;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 6px 12px rgba(0,0,0,.10);
+  border:1px solid rgba(226,232,240,.6);
+  padding:20px 22px;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+#portfolio .portfolio-item:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,.14);
+}
 
+/* ícone circular centralizado */
+#portfolio .pi-logo{
+  width:60px;height:60px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:#f5f9ff;border:1px solid #e2e8f0;
+  flex-shrink:0;
+}
+#portfolio .pi-logo i{font-size:22px;color:var(--color-azul-forte,#1976d2);}
 
+/* corpo do card */
+#portfolio .pi-body{flex:1;}
 
+/* título do projeto em AZUL */
+#portfolio .pi-title{
+  margin:0 0 6px 0;
+  font-size:1.15rem;
+  font-weight:800;
+  color:var(--color-azul-forte,#1976d2);
+  letter-spacing:.2px;
+}
 
+/* badge ao lado do título (neutro) */
+#portfolio .pi-badge{
+  margin-left:6px;
+  font-size:.92rem;
+  font-weight:600;
+  color:#616161;
+  opacity:.95;
+}
 
+/* linhas de texto */
+#portfolio .pi-row{
+  margin:.35rem 0;
+  font-size:1rem;
+  color:#333;
+  text-align:justify;
+  line-height:1.65;
+}
+#portfolio .pi-row strong{font-weight:800;color:#111;}
+#portfolio .pi-tools{opacity:.97;margin-top:6px;}
+
+/* responsivo */
+@media (max-width:900px){
+  #portfolio .portfolio-item{padding:18px;}
+  #portfolio .pi-logo{width:54px;height:54px;}
+  #portfolio .pi-title{font-size:1.08rem;}
+}
+@media (max-width:520px){
+  #portfolio .portfolio-item{gap:14px;}
+  #portfolio .pi-logo{width:50px;height:50px;}
+  #portfolio .pi-title{font-size:1.04rem;}
+  #portfolio .pi-badge{font-size:.88rem;}
+}
 
 /* ===============================================================================================
    SEÇÃO DE CONTEUDO BLOG 
