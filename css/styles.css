@@ -173,9 +173,9 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     color: var(--color-azul-cyan); /* O texto da aba ativa agora fica azul, combinando com a linha */
 }
 
-/*=====================================
-  SEÇÕES DE CONTEÚDO E COMPONENTES
-=====================================*/
+/*===============================================================================================
+   SEÇÕES DE CONTEÚDO E COMPONENTES
+=================================================================================================*/
 .content-section {
     display: none;
     background-color: transparent;
@@ -278,75 +278,9 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     padding-top: 15px;
 }
 
-/*=====================================
-  ESTILOS PARA SEÇÃO DE CONTATO
-=====================================*/
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-    text-align: center;
-}
-
-.contact-item {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.contact-item i {
-    font-size: 2.5rem;
-    color: var(--color-azul-forte);
-    margin-bottom: 15px;
-}
-
-.contact-item h4 {
-    margin-bottom: 5px;
-}
-
-.contact-item a {
-    font-weight: 500;
-}
-
-.resume-download {
-    text-align: center;
-    margin-top: 60px;
-    padding-top: 30px;
-    border-top: 1px solid #ccc;
-}
-
-.button-download {
-    display: inline-block;
-    background-color: var(--color-azul-forte);
-    color: var(--color-stark);
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 700;
-    margin-top: 10px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.button-download:hover {
-    background-color: var(--color-void);
-    transform: translateY(-2px);
-}
-
-.button-download i {
-    margin-right: 8px;
-}
-
-/*=====================================
-  ESTILOS PARA A SEÇÃO HOME (AJUSTES DE ALINHAMENTO E TEXTO)
-=====================================*/
+/*===============================================================================================
+   ESTILOS PARA A SEÇÃO HOME
+=================================================================================================*/
 
 /* Importa a fonte serifada para o "Oi." grande */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
@@ -468,9 +402,9 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     text-align: justify; /* Mudado de 'justify' para 'center' para um visual mais coeso com o novo alinhamento */
 }
 
-/*=====================================
-  ESTILOS PARA A SEÇÃO HISTÓRIA 
-=====================================*/
+/*===============================================================================================
+   ESTILOS PARA A SEÇÃO HISTÓRIA
+=================================================================================================*/
 
 /* Estilo em comum para as duas caixas */
 .title-box,
@@ -500,7 +434,6 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     border: none;
     color: #000000; /* Altera a cor do texto para o azul do seu tema */
 }
-
 
 /* Movemos a correção do 'float' para a nova caixa de conteúdo */
 .content-box::after {
@@ -543,9 +476,9 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     clear: both;
 }
 
-/*=====================================
-  ESTILOS PARA A LINHA DO TEMPO ACADÊMICA (COM LOGOS)
-=====================================*/
+/*===============================================================================================
+   ESTILOS PARA A SEÇÃO FORMAÇÃO
+=================================================================================================*/
 
 /* 1. Prepara o NOVO container da linha do tempo */
 #formacao .timeline-container {
@@ -612,9 +545,11 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     transform: translateY(-2px); /* Efeito que "levanta" o botão */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra mais forte no hover */
 }
-/*=====================================
-  ESTILOS PARA A SEÇÃO EM CONSTRUÇÃO
-=====================================*/
+
+/*===============================================================================================
+   ESTILOS PARA A SEÇÃO EM CONSTRUÇÃO
+=================================================================================================*/
+
 .under-construction {
     text-align: center; /* Centraliza todo o conteúdo (título, texto, gif) */
     padding: 50px 0;
@@ -633,12 +568,75 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     border-radius: 8px; /* Cantos levemente arredondados */
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
 }
-/*=====================================
-  AJUSTES DE ALINHAMENTO E ESPAÇAMENTO PARA A SEÇÃO HOME
-=====================================*/
+
+/*===============================================================================================
+   ESTILOS PARA SEÇÃO DE CONTATO
+=================================================================================================*/
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-item {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-item i {
+    font-size: 2.5rem;
+    color: var(--color-azul-forte);
+    margin-bottom: 15px;
+}
+
+.contact-item h4 {
+    margin-bottom: 5px;
+}
+
+.contact-item a {
+    font-weight: 500;
+}
+
+.resume-download {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+}
+
+.button-download {
+    display: inline-block;
+    background-color: var(--color-azul-forte);
+    color: var(--color-stark);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-download:hover {
+    background-color: var(--color-void);
+    transform: translateY(-2px);
+}
+
+.button-download i {
+    margin-right: 8px;
+}
 
 /*=====================================
-  MEDIA QUERIES PARA RESPONSIVIDADE
+  MEDIA QUERIES PARA RESPONSIVIDADE PARA MOBILE
 =====================================*/
 @media (max-width: 800px) {
     .content-section {
