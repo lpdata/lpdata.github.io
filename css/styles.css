@@ -885,93 +885,69 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
    PORTFÓLIO 
 =================================================================================================*/
 
-.portfolio-container {
+#projetos-portfolio.lp-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  line-height: 1.6;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+#projetos-portfolio .lp-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 16px;
+}
+
+/* 1 coluna empilhada */
+#projetos-portfolio .lp-grid {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 0; /* remove espaçamento lateral que criava o efeito de duplo retângulo */
 }
 
-/* Remove a linha guia azul lateral */
-.portfolio-container::before {
-  display: none;
-}
-
-.portfolio-container .summary {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  background-color: #ffffff;
+/* Card no mesmo estilo das outras abas */
+#projetos-portfolio .lp-project {
+  background: #ffffff;
   border-radius: 14px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-  padding: 25px 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  padding: 25px 28px 20px;
+  transition: transform .3s ease, box-shadow .3s ease;
 }
-
-.portfolio-container .summary:hover {
+#projetos-portfolio .lp-project:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* Ícones circulares perfeitamente centralizados */
-.portfolio-container .logo-container {
-  display: flex;
-  justify-content: center;
+/* Título do projeto + badge */
+#projetos-portfolio .lp-project h3 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+  display: inline-flex;
   align-items: center;
-  width: 65px;
-  height: 65px;
-  background-color: #f5f9ff;
-  border-radius: 50%;
-  border: 1px solid #e3ebf5;
-  flex-shrink: 0;
+  gap: 6px;
+}
+#projetos-portfolio .lp-badge {
+  font-size: .9rem;
+  opacity: .85;
+  margin-left: 6px;
+  font-weight: 500;
+  color: var(--color-azul-forte, #1976d2);
 }
 
-.portfolio-container .logo-icon {
-  font-size: 26px;
-  color: var(--color-azul-forte);
-}
-
-/* Texto principal do card */
-.portfolio-container .info-container {
-  flex: 1;
-  text-align: left;
-}
-
-.portfolio-container h4 {
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: var(--color-void);
-  margin-bottom: 6px;
-}
-
-.portfolio-container .meta {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.portfolio-container .descricao {
+/* Linhas de conteúdo */
+#projetos-portfolio .lp-row {
+  margin: .35rem 0;
   font-size: 1rem;
   color: #333;
-  line-height: 1.6;
-  text-align: justify;
 }
-
-/* Responsivo */
-@media (max-width: 900px) {
-  .portfolio-container .summary {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .portfolio-container .info-container {
-    text-align: center;
-  }
-
-  .portfolio-container .descricao {
-    text-align: left;
-  }
+#projetos-portfolio .lp-row strong {
+  font-weight: 700;
+  color: #000;
+}
+#projetos-portfolio .lp-tools {
+  opacity: .95;
+  margin-top: 8px;
 }
 
 /* ===============================================================================================
@@ -1276,16 +1252,9 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
       align-items: flex-start;
     }
   
-  @media (max-width: 900px) {
-    .portfolio-container .summary {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .portfolio-container .descricao {
-      text-align: left;
-    }
-}
+  /* Espaçamento maior em telas largas */
+  @media (min-width: 900px) {
+    #projetos-portfolio.lp-section { padding: 40px; }
+  }
 
 }
