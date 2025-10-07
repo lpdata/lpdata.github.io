@@ -802,6 +802,10 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
    SEÇÃO DE CONTEUDO BLOG 
 =================================================================================================*/
 
+/* ===============================================================================================
+   BLOG / INSIGHTS — layout dos posts em cards (zigue-zague automático)
+=================================================================================================*/
+
 .content-posts {
   display: flex;
   flex-direction: column;
@@ -809,7 +813,6 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
   margin-top: 30px;
 }
 
-/* --- Card principal --- */
 .blog-card {
   display: flex;
   align-items: center;
@@ -827,12 +830,12 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* --- Layout invertido (imagem à esquerda) --- */
-.blog-card.reverse {
+/* --- zigue-zague: cards pares invertem a direção --- */
+.content-posts .blog-card:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-/* --- Área de texto --- */
+/* --- texto --- */
 .blog-text {
   flex: 1;
   text-align: left;
@@ -853,7 +856,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
   text-align: justify;
 }
 
-/* --- Link (em laranja) --- */
+/* --- link (laranja) --- */
 .blog-link {
   display: inline-block;
   font-weight: 600;
@@ -861,13 +864,9 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
   text-decoration: none;
   transition: color 0.2s ease;
 }
+.blog-link:hover { color: #e65100; text-decoration: underline; }
 
-.blog-link:hover {
-  color: #e65100;
-  text-decoration: underline;
-}
-
-/* --- Mídia (imagem ou vídeo) --- */
+/* --- mídia (imagem/vídeo) --- */
 .blog-media {
   width: 40%;
   flex-shrink: 0;
@@ -875,9 +874,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
   justify-content: center;
   align-items: center;
 }
-
-.blog-image,
-.blog-video {
+.blog-image, .blog-video {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
@@ -1087,19 +1084,14 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
       grid-template-columns: 1fr;
       gap: 35px;
     }
-    /* --- Layout responsivo --- */
+ 
   @media (max-width: 900px) {
     .blog-card,
-    .blog-card.reverse {
-      flex-direction: column;
-      text-align: center;
+    .content-posts .blog-card:nth-child(even) {
+      flex-direction: column; /* no mobile vira coluna para todos */
     }
-  
-    .blog-media {
-      width: 100%;
-    }
-  
-    .blog-text {
-      text-align: center;
-    }
+    .blog-media { width: 100%; }
+    .blog-text { text-align: center; }
+  }
+
 }
