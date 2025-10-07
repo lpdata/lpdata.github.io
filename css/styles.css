@@ -884,66 +884,62 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 /* ===============================================================================================
    PORTFÓLIO 
 =================================================================================================*/
-/* ===============================================================================================
-   PORTFÓLIO — mesmo estilo da aba Formação (sem botão expansível)
-=================================================================================================*/
 
 .portfolio-container {
-  position: relative;
-  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0; /* remove espaçamento lateral que criava o efeito de duplo retângulo */
 }
 
+/* Remove a linha guia azul lateral */
 .portfolio-container::before {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background-color: var(--color-azul-forte);
-  border-radius: 1px;
+  display: none;
 }
 
 .portfolio-container .summary {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px 25px;
-  margin-bottom: 25px;
+  align-items: center;
+  gap: 22px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .portfolio-container .summary:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
 }
 
+/* Ícones circulares perfeitamente centralizados */
 .portfolio-container .logo-container {
-  flex-shrink: 0;
-  display: grid;
-  place-items: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
   background-color: #f5f9ff;
-  border: 1px solid #e2e8f0;
+  border-radius: 50%;
+  border: 1px solid #e3ebf5;
+  flex-shrink: 0;
 }
 
 .portfolio-container .logo-icon {
-  font-size: 24px;
+  font-size: 26px;
   color: var(--color-azul-forte);
 }
 
+/* Texto principal do card */
 .portfolio-container .info-container {
   flex: 1;
+  text-align: left;
 }
 
 .portfolio-container h4 {
   font-weight: 600;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   color: var(--color-void);
   margin-bottom: 6px;
 }
@@ -959,6 +955,23 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
   color: #333;
   line-height: 1.6;
   text-align: justify;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .portfolio-container .summary {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .portfolio-container .info-container {
+    text-align: center;
+  }
+
+  .portfolio-container .descricao {
+    text-align: left;
+  }
 }
 
 /* ===============================================================================================
