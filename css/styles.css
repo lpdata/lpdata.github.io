@@ -682,6 +682,89 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 /* ===============================================================================================
+   EXPERIÊNCIA 
+=================================================================================================*/
+
+#trajetoria .timeline-container {
+  position: relative;
+  padding-left: 30px;
+}
+
+#trajetoria .timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-azul-forte);
+  border-radius: 1px;
+}
+
+#trajetoria .summary {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#trajetoria .logo-container {
+  flex-shrink: 0;
+}
+
+#trajetoria .logo-container img {
+  width: 60px;
+  height: auto;
+  display: block;
+}
+
+#trajetoria .info-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#trajetoria .expand-btn {
+  background-color: var(--color-azul-forte);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+#trajetoria .expand-btn:hover {
+  background-color: var(--color-azul-cyan);
+  transform: translateY(-2px);
+}
+
+/* CLIENTES — grid de logos */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.clients-grid img {
+  max-width: 120px;
+  height: auto;
+  opacity: 0.9;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.clients-grid img:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+/* ===============================================================================================
    SEÇÃO HABILIDADES 
 =================================================================================================*/
 
@@ -1093,5 +1176,16 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     .blog-media { width: 100%; }
     .blog-text { text-align: center; }
   }
+
+  @media (max-width: 900px) {
+    .clients-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    #trajetoria .info-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+}
 
 }
