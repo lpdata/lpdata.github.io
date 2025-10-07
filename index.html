@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        ESTRUTURAÇÃO DO SITE
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +11,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
+    
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        ESTRUTURAÇÃO DAS ABAS
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    
 <body>
     <main class="main-content-area">
         
@@ -29,6 +36,10 @@
             </nav>
         </header>
 
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        SEÇÃO HOME
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
 <section id="inicio" role="tabpanel" class="content-section active-content">
     <div class="section-inner">
         
@@ -67,7 +78,11 @@
 
     </div>
 </section>
-
+        
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        SEÇÃO HISTÓRIA
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
         <section id="historia" role="tabpanel" class="content-section">
             <div class="section-inner">
                 <div class="title-box">
@@ -88,6 +103,10 @@
             </div>
         </section>
 
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        SEÇÃO FORMAÇÃO
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
         <section id="formacao" role="tabpanel" class="content-section">
             <div class="section-inner">
                 <div class="job-history">
@@ -281,6 +300,10 @@
             </div>
         </section>
 
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        SEÇÃO EXPERIÊNCIA
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
         <section id="trajetoria" role="tabpanel" class="content-section">
             <div class="section-inner">
                 <h2 class="section-title">Trajetória Profissional</h2>
@@ -345,6 +368,10 @@
             </div>
         </section>
 
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        SEÇÃO HABILIDADES
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
         <section id="tech-stack" role="tabpanel" class="content-section">
             <div class="section-inner">
                 <h2 class="section-title">Tech Stack</h2>
@@ -470,33 +497,118 @@
             </div>
         </section>
 
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        SEÇÃO PORTFÓLIO
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
         <section id="portfolio" role="tabpanel" class="content-section">
-            <div class="section-inner">
-                <h2 class="section-title">Projetos & Portfólio</h2>
-                <div class="project-card">
-                    <h3>RetenX</h3>
-                    <p><strong>Problema:</strong> Descreva o problema.</p>
-                    <p><strong>Solução:</strong> Modelo de retenção estudantil, dashboards e insights.</p>
-                    <p><strong>Impacto:</strong> Descreva o impacto.</p>
-                    <p><strong>Ferramentas usadas:</strong> [Ferramenta 1], [Ferramenta 2], etc.</p>
-                </div>
-                <div class="project-card">
-                    <h3>ReconeX</h3>
-                    <p><strong>Problema:</strong> Descreva o problema.</p>
-                    <p><strong>Solução:</strong> Monitoramento de NPS e transferências.</p>
-                    <p><strong>Impacto:</strong> Descreva o impacto.</p>
-                    <p><strong>Ferramentas usadas:</strong> [Ferramenta 1], [Ferramenta 2], etc.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Ouvidoria</h3>
-                    <p><strong>Problema:</strong> Descreva o problema.</p>
-                    <p><strong>Solução:</strong> Dashboard + fluxo de automação.</p>
-                    <p><strong>Impacto:</strong> Descreva o impacto.</p>
-                    <p><strong>Ferramentas usadas:</strong> [Ferramenta 1], [Ferramenta 2], etc.</p>
-                </div>
+          <div class="section-inner">
+            <h2 class="section-title">Projetos & Portfólio</h2>
+        
+            <div class="project-card">
+              <h3>RetenX</h3>
+              <p><strong>Problema:</strong> Alta evasão estudantil e pouca visibilidade preditiva de risco.</p>
+              <p><strong>Solução:</strong> Modelo de machine learning com variáveis acadêmicas e comportamentais, dashboards explicativos e alertas automáticos.</p>
+              <p><strong>Impacto:</strong> Redução de 32% na evasão em unidades-piloto e priorização eficiente de atendimentos.</p>
+              <p><strong>Ferramentas usadas:</strong> Python, SQL Server, Qlik Sense, Azure ML, Power Automate.</p>
             </div>
+        
+            <div class="project-card">
+              <h3>ReconeX</h3>
+              <p><strong>Problema:</strong> Falta de rastreabilidade nos registros de NPS e retrabalhos nos fluxos de atendimento.</p>
+              <p><strong>Solução:</strong> Integração omnichannel com SharePoint Lists, dashboards de acompanhamento e automação de transferências.</p>
+              <p><strong>Impacto:</strong> Diminuição de 45% no tempo médio de resposta e aumento do índice de satisfação.</p>
+              <p><strong>Ferramentas usadas:</strong> Power Automate, Qlik Sense, SharePoint, Python.</p>
+            </div>
+        
+            <div class="project-card">
+              <h3>Finanlytix (Finanças)</h3>
+              <p><strong>Problema:</strong> Baixa previsibilidade de fluxo de caixa e inadimplência.</p>
+              <p><strong>Solução:</strong> Pipeline financeiro e regressão para previsão de cash flow e classificação de risco.</p>
+              <p><strong>Impacto:</strong> +15% na assertividade das previsões e melhor gestão de liquidez.</p>
+              <p><strong>Ferramentas usadas:</strong> Python, R, SQL, Power BI, Azure Data Lake.</p>
+            </div>
+        
+            <div class="project-card">
+              <h3>InduX (Indústria)</h3>
+              <p><strong>Problema:</strong> Gargalos produtivos e desperdício de insumos sem telemetria.</p>
+              <p><strong>Solução:</strong> Monitoramento em tempo real com sensores IoT e previsão de falhas.</p>
+              <p><strong>Impacto:</strong> −20% em tempo de parada e economia de insumos.</p>
+              <p><strong>Ferramentas usadas:</strong> Python, PySpark, AWS IoT Core, Power BI, SQL.</p>
+            </div>
+        
+            <div class="project-card">
+              <h3>RetailInsight (Varejo)</h3>
+              <p><strong>Problema:</strong> Estoques desbalanceados e rupturas frequentes.</p>
+              <p><strong>Solução:</strong> Previsão de demanda com sazonalidade e clustering ABC-XYZ.</p>
+              <p><strong>Impacto:</strong> −18% em perdas e +22% na disponibilidade de produtos.</p>
+              <p><strong>Ferramentas usadas:</strong> Python, R, Qlik Sense, Scikit-Learn, Google Cloud.</p>
+            </div>
+        
+            <div class="project-card">
+              <h3>UrbanFlow (Mobilidade)</h3>
+              <p><strong>Problema:</strong> Tráfego intenso e falta de análise preditiva de rotas urbanas.</p>
+              <p><strong>Solução:</strong> Modelagem de rede com dados abertos, simulação de cenários e otimização de fluxos.</p>
+              <p><strong>Impacto:</strong> Redução simulada de 14% no tempo médio de trajeto.</p>
+              <p><strong>Ferramentas usadas:</strong> Python, Pandas, NetworkX, Folium, Open Data Curitiba.</p>
+            </div>
+        
+            <div class="project-card">
+              <h3>CardioPredict (Saúde)</h3>
+              <p><strong>Problema:</strong> Previsão de risco cardíaco com dados clínicos heterogêneos.</p>
+              <p><strong>Solução:</strong> Pipeline supervisionado com validação cruzada e explicabilidade de modelos.</p>
+              <p><strong>Impacto:</strong> Acurácia de 92% em base pública e modelo interpretável.</p>
+              <p><strong>Ferramentas usadas:</strong> Python, Pandas, Scikit-Learn, Matplotlib.</p>
+            </div>
+        
+            <div class="project-card">
+              <h3>EcoAI (Sustentabilidade)</h3>
+              <p><strong>Problema:</strong> Monitoramento insuficiente de desmatamento ilegal.</p>
+              <p><strong>Solução:</strong> Detecção de mudanças com imagens satelitais e IA preditiva.</p>
+              <p><strong>Impacto:</strong> Mapa de risco de desmatamento por bioma com alertas automatizados.</p>
+              <p><strong>Ferramentas usadas:</strong> Python, Google Earth Engine, TensorFlow, QGIS.</p>
+            </div>
+        
+            <div class="project-card">
+              <h3>MarketScope (Economia & Dados Públicos)</h3>
+              <p><strong>Problema:</strong> Dificuldade em cruzar indicadores macroeconômicos e setoriais.</p>
+              <p><strong>Solução:</strong> Data Lake de dados abertos (IBGE, BACEN, IPEA) e dashboard temporal.</p>
+              <p><strong>Impacto:</strong> Base utilizada para estudos de mercado e decisões de investimento.</p>
+              <p><strong>Ferramentas usadas:</strong> R, SQL, Python, Power BI, APIs oficiais.</p>
+            </div>
+        
+            <div class="project-card">
+              <h3>BeautyRank (Concursos de Beleza)</h3>
+              <p><strong>Problema:</strong> Julgamentos subjetivos e inconsistentes entre jurados.</p>
+              <p><strong>Solução:</strong> Análise multicritério e visão computacional (simetria, postura, expressividade) para gerar notas objetivas.</p>
+              <p><strong>Impacto:</strong> −40% em divergências e maior transparência no processo.</p>
+              <p><strong>Ferramentas usadas:</strong> Python, OpenCV, Scikit-Learn, Streamlit, Power BI.</p>
+            </div>
+        
+            <div class="project-card">
+              <h3>HomeMarket (Mercadinhos em Casa)</h3>
+              <p><strong>Problema:</strong> Precificação e controle de estoque pouco previsíveis.</p>
+              <p><strong>Solução:</strong> Dashboard simples com previsão de vendas e reposição automática.</p>
+              <p><strong>Impacto:</strong> −25% em rupturas e +12% na margem média de lucro.</p>
+              <p><strong>Ferramentas usadas:</strong> Python, Excel, Power BI, Prophet, SQLite.</p>
+            </div>
+        
+            <div class="project-card">
+              <h3>F1Data 2024 (Esportes & Performance)</h3>
+              <p><strong>Problema:</strong> Dados dispersos sobre performance de pilotos e estratégias.</p>
+              <p><strong>Solução:</strong> Coleta via API F1, modelagem estatística e dashboard de KPIs.</p>
+              <p><strong>Impacto:</strong> Identificação de padrões estratégicos que explicam 70% da variação de posições.</p>
+              <p><strong>Ferramentas usadas:</strong> Python, Pandas, Plotly/Dash, API F1, Matplotlib.</p>
+            </div>
+        
+          </div>
         </section>
 
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        SEÇÃO BLOG
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
         <section id="insights" role="tabpanel" class="content-section">
             <div class="section-inner">
                 <h2 class="section-title">Insights & Conteúdo</h2>
