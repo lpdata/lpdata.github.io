@@ -602,6 +602,86 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta a sombra. */
 }
 
+/* Modificações para atender área de publicações */
+
+.publications .timeline-container {
+    position: relative;
+    padding-left: 30px;
+}
+
+.publications .timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--color-azul-forte);
+    border-radius: 1px;
+}
+
+.publications .summary {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.publications .logo-container {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.publications .logo-icon {
+    font-size: 26px;
+    line-height: 1;
+    color: var(--color-azul-forte);
+}
+
+.publications .info-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.publications .expand-btn {
+    background-color: var(--color-azul-forte);
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    white-space: nowrap;
+    margin: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);
+    transition: all 0.2s ease-in-out;
+}
+
+.publications .expand-btn:hover {
+    background-color: var(--color-azul-cyan);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+    .publications .info-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
 /*===============================================================================================
    ESTILOS PARA A SEÇÃO EM CONSTRUÇÃO
 =================================================================================================*/
