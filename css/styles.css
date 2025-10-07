@@ -798,6 +798,91 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
   text-align: justify;
 }
 
+/* ===============================================================================================
+   SEÇÃO DE CONTEUDO BLOG 
+=================================================================================================*/
+
+.content-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* --- Card principal --- */
+.blog-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* --- Layout invertido (imagem à esquerda) --- */
+.blog-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* --- Área de texto --- */
+.blog-text {
+  flex: 1;
+  text-align: left;
+}
+
+.blog-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #f7b801; /* amarelo */
+  margin-bottom: 12px;
+}
+
+.blog-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* --- Link (em laranja) --- */
+.blog-link {
+  display: inline-block;
+  font-weight: 600;
+  color: #ff6f00;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.blog-link:hover {
+  color: #e65100;
+  text-decoration: underline;
+}
+
+/* --- Mídia (imagem ou vídeo) --- */
+.blog-media {
+  width: 40%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-image,
+.blog-video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
 /*===============================================================================================
    ESTILOS PARA A SEÇÃO EM CONSTRUÇÃO
 =================================================================================================*/
@@ -1001,5 +1086,20 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     .tech-grid {
       grid-template-columns: 1fr;
       gap: 35px;
+    }
+    /* --- Layout responsivo --- */
+  @media (max-width: 900px) {
+    .blog-card,
+    .blog-card.reverse {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .blog-media {
+      width: 100%;
+    }
+  
+    .blog-text {
+      text-align: center;
     }
 }
