@@ -1051,28 +1051,6 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 }
 
 /*===============================================================================================
-   ESTILOS PARA A SEÇÃO EM CONSTRUÇÃO
-=================================================================================================*/
-.under-construction {
-    text-align: center; /* Centraliza todo o conteúdo (texto, gif). */
-    padding: 50px 0; /* Espaçamento vertical. */
-}
-
-.under-construction p {
-    font-size: 1.2rem; /* Tamanho da fonte do parágrafo. */
-    color: #666; /* Cor cinza para o texto. */
-    margin-bottom: 30px; /* Espaço abaixo do parágrafo. */
-}
-
-.construction-gif {
-    max-width: 100%; /* Garante que o GIF seja responsivo e não ultrapasse a largura da tela. */
-    width: 300px; /* Define uma largura base para o GIF. */
-    height: auto; /* Mantém a proporção. */
-    border-radius: 8px; /* Cantos levemente arredondados. */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave. */
-}
-
-/*===============================================================================================
    ESTILOS PARA SEÇÃO DE CONTATO
 =================================================================================================*/
 
