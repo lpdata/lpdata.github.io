@@ -458,17 +458,10 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 =================================================================================================*/
 
 /* --- Estilo Comum para as Caixas de Título e Conteúdo --- */
-.title-box,
 .content-box {
     background-color: #ffffff; /* Fundo branco. */
     border-radius: 8px; /* Cantos arredondados. */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade. */
-}
-
-/* --- Caixa do Título --- */
-.title-box {
-    padding: 20px 30px; /* Espaçamento interno. */
-    margin-bottom: 20px; /* Espaço abaixo da caixa do título. */
 }
 
 /* --- Caixa do Conteúdo --- */
@@ -482,14 +475,6 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 #historia .content-box {
     text-align: justify;
-}
-
-/* --- Ajuste no Título da Seção História --- */
-#historia .section-title {
-    margin: 0; /* Remove margens para se ajustar à nova caixa. */
-    padding: 0; /* Remove preenchimento. */
-    border: none; /* Remove bordas. */
-    color: #000000; /* Cor do texto preta. */
 }
 
 /* --- Correção para Layouts com "Float" (Clearfix) --- */
