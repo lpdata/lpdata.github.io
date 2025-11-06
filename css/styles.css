@@ -139,6 +139,11 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 .texto-italico { font-style: italic; } /* Classe para forçar o estilo itálico. */
 .texto-maiusculo { text-transform: uppercase; letter-spacing: 1px; } /* Classe para transformar o texto em maiúsculas e adicionar espaçamento. */
 
+/*--- Classes para texto justificado ---*/
+.text-justify {
+    text-align: justify;
+}
+
 /*===============================================================================================
  LAYOUT DA PÁGINA ÚNICA
 =================================================================================================*/
