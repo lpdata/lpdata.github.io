@@ -474,8 +474,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 .content-box {
     padding: 15px; /* Espaçamento interno. */
     color: #000000; /* Cor do texto preta. */
-    justify-content: justify; /* Justifica o conteúdo (não é uma propriedade válida aqui, mas a intenção é clara). */
-}
+    text-align: justify; /*texto justificado*/
 
 /* --- Ajuste no Título da Seção História --- */
 #historia .section-title {
