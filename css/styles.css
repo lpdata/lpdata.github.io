@@ -334,20 +334,27 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 
 /* --- Coluna da Esquerda (Foto) --- */
 .hero-left-col {
-    flex-shrink: 0; /* Impede que a coluna da foto encolha. */
-    width: 200px; /* Define uma largura fixa para a coluna da foto. */
-    text-align: center; /* Centraliza o conteúdo (a foto). */
-    position: relative; /* Ativa o posicionamento relativo para mover a foto. */
-    top: 38px; /* Empurra a coluna da foto 38px para baixo. */
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    top: 0;
 }
 
-/* --- Foto de Perfil --- */
+/* --- Foto de Perfil (recorte circular estilo LinkedIn) --- */
 .my-profile-pic {
-    width: 100%; /* Faz a imagem ocupar 100% da largura do seu container (.hero-left-col). */
-    height: auto; /* Mantém a proporção da imagem. */
-    display: block; /* Remove espaços extras abaixo da imagem. */
-    margin-left: auto; /* Centraliza horizontalmente. */
-    margin-right: auto; /* Centraliza horizontalmente. */
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center 35%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* --- Coluna da Direita (Texto) --- */
@@ -1139,7 +1146,7 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
     }
     /* --- Ajuste na Coluna da Foto --- */
     .hero-left-col {
-        width: 80px; /* Diminui o tamanho da foto. */
+        width: 150px; /* Mantém o retrato legível em telas menores. */
     }
     /* --- Ajuste na Coluna de Texto --- */
     .hero-right-col {
