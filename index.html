@@ -54,29 +54,30 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
         
 <section id="inicio" role="tabpanel" class="content-section active-content" aria-label="Início">
-  <div class="section-inner home-akkaron">
+  <div class="section-inner home-akkaron home-refined">
     <div class="home-lang" role="group" aria-label="Idioma / Language">
       <button type="button" class="home-lang-btn active" data-home-lang="pt" aria-pressed="true">PT</button>
       <button type="button" class="home-lang-btn" data-home-lang="en" aria-pressed="false">EN</button>
     </div>
-    <div class="home-akkaron-grid">
-      <div class="home-copy">
-        <div class="home-eyebrow" data-pt="ENGENHARIA DE DADOS · CIÊNCIA DE DADOS · IA" data-en="DATA ENGINEERING · DATA SCIENCE · AI">ENGENHARIA DE DADOS · CIÊNCIA DE DADOS · IA</div>
-        <p class="home-hello" data-pt="Olá, eu sou" data-en="Hello, I'm">Olá, eu sou</p>
-        <h1>Letícia <span>Malinowski Pacheco.</span></h1>
-        <p class="home-profession" data-pt="Engenheira de Dados Sênior" data-en="Senior Data Engineer">Engenheira de Dados Sênior</p>
-        <p class="home-slogan" data-pt="Engenharia de Dados. <strong>Inteligência Aplicada.</strong>" data-en="Data Engineering. <strong>Applied Intelligence.</strong>">Engenharia de Dados. <strong>Inteligência Aplicada.</strong></p>
-        <p class="home-pitch" data-pt="Conecto arquitetura, governança e inteligência artificial para transformar dados complexos em soluções confiáveis e escaláveis." data-en="I combine architecture, governance, and artificial intelligence to turn complex data into reliable, scalable solutions.">Conecto arquitetura, governança e inteligência artificial para transformar dados complexos em soluções confiáveis e escaláveis.</p>
-        <div class="home-actions">
-          <a class="home-button home-button-primary" href="#portfolio" data-open-tab="portfolio"><span data-pt="Ver projetos" data-en="View projects">Ver projetos</span><span aria-hidden="true">↗</span></a>
-          <a class="home-button home-button-secondary" href="#trajetoria" data-open-tab="trajetoria"><span data-pt="Minha experiência" data-en="My experience">Minha experiência</span><span aria-hidden="true">→</span></a>
+    <div class="home-intro-grid">
+      <div class="home-photo-column">
+        <div class="home-photo-circle">
+          <img class="home-avatar" src="images/foto-profissional-2026.webp" alt="Foto profissional de Letícia Malinowski Pacheco" width="320" height="320" fetchpriority="high">
         </div>
       </div>
-      <div class="home-portrait-wrap">
-        <div class="home-portrait-halo">
-          <img src="images/foto-profissional-2026.webp" class="home-portrait" alt="Retrato profissional de Letícia Malinowski Pacheco" width="320" height="320" fetchpriority="high">
+      <div class="home-text-column">
+        <div class="home-greeting">
+          <span class="home-hi">Hi,</span>
+          <img src="images/welcome.gif" alt="Welcome" class="home-welcome-gif" width="210" loading="lazy">
         </div>
+        <h1 data-pt="Sou Letícia Malinowski Pacheco." data-en="I'm Letícia Malinowski Pacheco.">Sou Letícia Malinowski Pacheco.</h1>
+        <p class="home-role-line" data-pt="Engenheira de Dados Sênior <span>·</span> Ciência de Dados <span>·</span> IA" data-en="Senior Data Engineer <span>·</span> Data Science <span>·</span> AI">Engenheira de Dados Sênior <span>·</span> Ciência de Dados <span>·</span> IA</p>
       </div>
+    </div>
+    <div class="home-personal-message">
+      <p data-pt="Este espaço é um convite para conhecer minha trajetória, os projetos que construí e um pouco de quem sou além da carreira. Seja bem-vindo(a)!" data-en="This space is an invitation to explore my journey, the projects I've built, and a little about who I am beyond my career. Welcome!">Este espaço é um convite para conhecer minha trajetória, os projetos que construí e um pouco de quem sou além da carreira. Seja bem-vindo(a)!</p>
+      <div class="home-topics"><span data-pt="Dados" data-en="Data">Dados</span><i></i><span data-pt="Estatística" data-en="Statistics">Estatística</span><i></i><span data-pt="Inteligência Artificial" data-en="Artificial Intelligence">Inteligência Artificial</span><i></i><span data-pt="Inovação" data-en="Innovation">Inovação</span></div>
+      <p class="home-daily-quote" id="frase-do-dia" aria-live="off">Carregando frase...</p>
     </div>
     <canvas class="home-data-wave" id="homeDataWave" aria-hidden="true"></canvas>
   </div>

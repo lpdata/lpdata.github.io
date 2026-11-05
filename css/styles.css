@@ -1303,3 +1303,42 @@ h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25
 #inicio .home-portrait-wrap{padding-bottom:110px}
 }
 @media(prefers-reduced-motion:reduce){#inicio .home-button{transition:none}}
+
+
+/* HOME 2.1: recupera a saudação e o clima acolhedor do portfólio original */
+#inicio .section-inner.home-refined{padding:66px max(5%,calc((100vw - 1100px)/2)) 165px;min-height:610px}
+#inicio .home-intro-grid{position:relative;z-index:3;display:grid;grid-template-columns:235px minmax(0,1fr);gap:50px;align-items:center;max-width:950px;margin:22px auto 0}
+#inicio .home-photo-column{display:flex;justify-content:center;align-items:center}
+#inicio .home-photo-circle{width:215px;height:215px;min-width:215px;min-height:215px;max-width:215px;max-height:215px;flex:0 0 215px;aspect-ratio:1/1;box-sizing:border-box;border-radius:50%;overflow:hidden;border:4px solid #f5f2ed;box-shadow:0 0 0 5px #b522327a,0 0 28px #c6233c55;background:#777}
+#inicio img.home-avatar{display:block;width:100%;height:100%;min-width:100%;min-height:100%;max-width:100%;max-height:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 38%;border:0;border-radius:50%;box-shadow:none;margin:0}
+#inicio .home-text-column{min-width:0}
+#inicio .home-greeting{display:flex;align-items:center;gap:20px;margin-bottom:11px}
+#inicio .home-hi{font:500 clamp(52px,6vw,84px)/1 Sora,Arial,sans-serif;letter-spacing:-.075em;color:#fff}
+#inicio .home-welcome-gif{display:block;width:clamp(130px,18vw,205px);max-width:205px;height:auto;object-fit:contain}
+#inicio .home-text-column h1{font:600 clamp(22px,2.65vw,35px)/1.35 Sora,Arial,sans-serif;letter-spacing:-.04em;color:#f5f2ed;text-shadow:none;margin:0 0 15px}
+#inicio .home-role-line{font:500 clamp(12px,1.35vw,16px)/1.8 'Plus Jakarta Sans',sans-serif;color:#ebdfe1;margin:0}
+#inicio .home-role-line span{color:#ff3653;font-weight:800}
+#inicio .home-personal-message{position:relative;z-index:3;max-width:860px;margin:45px auto 0;text-align:center}
+#inicio .home-personal-message>p:first-child{color:#ebdfe2;font:400 clamp(13px,1.3vw,16px)/1.9 'Plus Jakarta Sans',sans-serif;text-align:center;max-width:760px;margin:0 auto 21px}
+#inicio .home-topics{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;color:#ff6078;font:650 11px/1.5 'Plus Jakarta Sans',sans-serif;letter-spacing:.08em}
+#inicio .home-topics i{display:block;width:3px;height:3px;border-radius:50%;background:#f5f2ed99}
+#inicio .home-daily-quote{font:italic 400 13px/1.8 'Plus Jakarta Sans',sans-serif;color:#bdb2b7;max-width:690px;margin:25px auto 0;text-align:center}
+#inicio .home-data-wave{opacity:.83}
+@media(max-width:800px){
+#inicio .section-inner.home-refined{padding:65px 6% 140px}
+#inicio .home-intro-grid{grid-template-columns:1fr;gap:25px;margin-top:20px;text-align:center}
+#inicio .home-photo-circle{width:180px;height:180px;min-width:180px;min-height:180px;max-width:180px;max-height:180px;flex-basis:180px}
+#inicio .home-greeting{justify-content:center}
+#inicio .home-personal-message{margin-top:32px}
+}
+@media(max-width:460px){
+#inicio .section-inner.home-refined{padding-top:65px;padding-bottom:125px}
+#inicio .home-photo-circle{width:158px;height:158px;min-width:158px;min-height:158px;max-width:158px;max-height:158px;flex-basis:158px}
+#inicio .home-greeting{gap:10px}
+#inicio .home-hi{font-size:54px}
+#inicio .home-welcome-gif{width:140px}
+#inicio .home-text-column h1{font-size:23px}
+#inicio .home-personal-message>p:first-child{font-size:13px}
+#inicio .home-topics{gap:8px;font-size:10px;letter-spacing:0}
+#inicio .home-daily-quote{font-size:11px}
+}

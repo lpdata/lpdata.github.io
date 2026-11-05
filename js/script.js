@@ -132,6 +132,11 @@ document.addEventListener('DOMContentLoaded',()=>{
    if(lang!=='pt'&&lang!=='en')lang='pt';
    parts.forEach(el=>{el.innerHTML=el.getAttribute('data-'+lang)});
    buttons.forEach(btn=>{const active=btn.dataset.homeLang===lang;btn.classList.toggle('active',active);btn.setAttribute('aria-pressed',String(active))});
+   const quote=home.querySelector('#frase-do-dia');
+   if(quote){
+     if(lang==='en'){if(!quote.dataset.portuguese)quote.dataset.portuguese=quote.textContent;quote.textContent='“Do what you can, with what you have, where you are.” — Theodore Roosevelt';}
+     else if(quote.dataset.portuguese){quote.textContent=quote.dataset.portuguese;}
+   }
    try{localStorage.setItem('portfolio-home-language',lang)}catch(e){}
  }
  let lang='pt';try{lang=localStorage.getItem('portfolio-home-language')||'pt'}catch(e){}
