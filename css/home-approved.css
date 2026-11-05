@@ -73,3 +73,21 @@
 #inicio .home-wave-bottom{height:112px}
 }
 @media(prefers-reduced-motion:reduce){#inicio *{animation:none!important}}
+@media(min-width:801px){
+#inicio .home-final{display:flex;flex-direction:column;min-height:min(970px,calc(100vh - 72px));min-height:min(970px,calc(100svh - 72px));padding:24px 0 30px}
+#inicio .container-home{max-width:1060px;width:84%}
+#inicio .home-upper{flex:1 1 auto;min-height:0;padding-top:14px}
+#inicio .home-identity h1{font-size:clamp(36px,3.1vw,56px)!important;margin-bottom:12px}
+#inicio .home-designation{font-size:clamp(15px,1.4vw,22px);letter-spacing:.22em}
+#inicio .home-red-stroke{margin:18px 0 20px}
+#inicio .home-identity p{font-size:clamp(16px,1.35vw,20px);line-height:1.4}
+#inicio .home-person{padding:0}
+#inicio .home-person-ring{width:min(100%,36vh,360px)!important}
+#inicio .home-lower{margin-top:0}
+#inicio .home-keywords{font-size:clamp(13px,1.15vw,17px);gap:16px;letter-spacing:.1em}
+#inicio .home-quote{margin-top:20px;font-size:clamp(13px,1.1vw,17px);line-height:1.45;gap:10px}
+#inicio .home-quote .quote-symbol{font-size:34px}
+#inicio .home-visuals{top:48%;height:30%}
+#inicio .home-side-bars{height:175px}
+#inicio .home-wave-bottom{height:110px}
+}
