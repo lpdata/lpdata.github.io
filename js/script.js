@@ -121,3 +121,40 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mostra a seção inicial e define o estado ARIA correto no carregamento
     showSection('#inicio');
 });
+
+/* Home bilíngue: preserva navegação original por abas e as demais seções. */
+document.addEventListener('DOMContentLoaded',()=>{
+ const home=document.getElementById('inicio');
+ if(!home)return;
+ const buttons=[...home.querySelectorAll('[data-home-lang]')];
+ const parts=[...home.querySelectorAll('[data-pt][data-en]')];
+ function setHomeLanguage(lang){
+   if(lang!=='pt'&&lang!=='en')lang='pt';
+   parts.forEach(el=>{el.innerHTML=el.getAttribute('data-'+lang)});
+   buttons.forEach(btn=>{const active=btn.dataset.homeLang===lang;btn.classList.toggle('active',active);btn.setAttribute('aria-pressed',String(active))});
+   try{localStorage.setItem('portfolio-home-language',lang)}catch(e){}
+ }
+ let lang='pt';try{lang=localStorage.getItem('portfolio-home-language')||'pt'}catch(e){}
+ setHomeLanguage(lang);
+ buttons.forEach(btn=>btn.addEventListener('click',()=>setHomeLanguage(btn.dataset.homeLang)));
+ home.querySelectorAll('[data-open-tab]').forEach(link=>link.addEventListener('click',event=>{
+   const tab=document.querySelector('.tab-nav [data-tab="'+link.dataset.openTab+'"]');
+   if(tab){event.preventDefault();tab.click()}
+ }));
+ const canvas=document.getElementById('homeDataWave');const ctx=canvas?.getContext('2d');if(!ctx)return;
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;let last=0;
+ function draw(time){
+   const box=canvas.getBoundingClientRect(),w=box.width,h=box.height;if(!w||!h)return;
+   const d=Math.min(devicePixelRatio||1,2);if(canvas.width!==Math.round(w*d)||canvas.height!==Math.round(h*d)){canvas.width=Math.round(w*d);canvas.height=Math.round(h*d)}
+   ctx.setTransform(d,0,0,d,0,0);ctx.clearRect(0,0,w,h);
+   const shift=reduced?0:Math.sin(time*.00022)*.07;
+   function y(x,k){const n=x/w;return h*(.29+.55*k+.13*Math.sin(n*12+shift+k*2)+.07*Math.cos(n*23-k*3))}
+   const steps=Math.max(54,Math.ceil(w/13));
+   for(let k=0;k<26;k++){const p=k/25;ctx.beginPath();for(let i=0;i<=steps;i++){const x=w*i/steps;if(i===0)ctx.moveTo(x,y(x,p));else ctx.lineTo(x,y(x,p))}ctx.strokeStyle='rgba(255,40,75,'+(.32*(1-p)+.035)+')';ctx.lineWidth=k===0?2:.55;ctx.stroke()}
+   for(let i=0;i<=steps;i++){const x=w*i/steps;for(let k=0;k<26;k++){const p=k/25;ctx.fillStyle='rgba(255,54,83,'+(.6*(1-p)+.1)+')';ctx.beginPath();ctx.arc(x,y(x,p),p<.15?1.2:.7,0,Math.PI*2);ctx.fill()}}
+   ctx.save();ctx.shadowColor='#ff274a';ctx.shadowBlur=16;ctx.strokeStyle='#ff3656';ctx.lineWidth=2.5;ctx.beginPath();for(let i=0;i<=steps;i++){const x=w*i/steps;if(i===0)ctx.moveTo(x,y(x,0));else ctx.lineTo(x,y(x,0))}ctx.stroke();ctx.restore();
+ }
+ function frame(t){if(t-last>45){draw(t);last=t}requestAnimationFrame(frame)}
+ if(reduced)draw(0);else requestAnimationFrame(frame);
+ addEventListener('resize',()=>draw(performance.now()));
+});
