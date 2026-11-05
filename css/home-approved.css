@@ -91,3 +91,9 @@
 #inicio .home-side-bars{height:175px}
 #inicio .home-wave-bottom{height:110px}
 }
+#inicio .home-side-bars{opacity:.16!important;height:130px}
+#inicio .home-side-bars i{width:3px;border:0;box-shadow:none}
+#inicio .home-visuals{opacity:.24}
+#inicio .home-visuals .wave-first{filter:none}
+#inicio .home-visuals .wave-second{display:none}
+#inicio .home-wave-bottom{opacity:.2;filter:none}
