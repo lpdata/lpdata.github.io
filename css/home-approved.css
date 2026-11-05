@@ -1,0 +1,75 @@
+/* HOME APROVADA — identidade pessoal; sem marca corporativa. */
+:root{--home-red:#ff173d;--home-ivory:#f5f2ed}
+.tab-nav{background:rgba(10,8,11,.97)!important;box-shadow:none!important;border-bottom:1px solid #ffffff29}
+.tab-nav ul{justify-content:space-evenly;max-width:1400px;margin:auto}
+.tab-nav ul li a{font-family:'Plus Jakarta Sans',Arial,sans-serif!important;font-size:clamp(10px,1.06vw,15px)!important;padding:25px clamp(9px,1.1vw,22px)!important;color:#eae4e4!important;letter-spacing:0!important;border-bottom:2px solid transparent!important;font-weight:500!important}
+.tab-nav ul li a.active-tab{color:white!important;font-weight:750!important;border-bottom-color:#ff2144!important;box-shadow:0 4px 7px -5px #ff2c50}
+.tab-nav ul li a:hover{color:#ff4260!important}
+#inicio.content-section{padding:0!important;background:#070509!important}
+#inicio .home-final{font-family:'Plus Jakarta Sans',Arial,sans-serif;position:relative;isolation:isolate;width:100%;max-width:none;min-height:970px;overflow:hidden;background:radial-gradient(ellipse at 72% 30%,#5a071f55,transparent 41%),radial-gradient(ellipse at 8% 80%,#54001933,transparent 44%),linear-gradient(115deg,#09080c,#0b080d 55%,#050509);color:#fff;}
+#inicio .home-final:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 84% 8%,#8a092528,transparent 40%);pointer-events:none;z-index:-1}
+#inicio .home-final *{box-sizing:border-box}
+#inicio .container-home{max-width:1225px;width:87%;margin:0 auto}
+#inicio .home-languages{position:absolute;right:6.5%;top:16px;z-index:8;display:flex;align-items:center;gap:4px;color:#a6a0a4}
+#inicio .home-lang-btn{border:0!important;background:transparent!important;padding:5px 3px!important;font:600 13px 'Plus Jakarta Sans',Arial,sans-serif!important;color:#aaa5a3!important;cursor:pointer}
+#inicio .home-lang-btn.active{color:#ff2a4c!important;box-shadow:none!important}
+#inicio .home-ambient{pointer-events:none;position:absolute;inset:0;background:radial-gradient(ellipse at 73% 38%,#e3003333,transparent 30%),radial-gradient(ellipse at 10% 50%,#7f001a22,transparent 35%);z-index:0}
+#inicio .home-upper{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(290px,.86fr);column-gap:4%;align-items:center;min-height:570px;padding-top:42px;position:relative;z-index:3}
+#inicio .home-identity{padding-left:54px;border-left:2px solid #df1939;max-width:680px;}
+#inicio .home-identity h1{font-family:Sora,'Plus Jakarta Sans',sans-serif!important;font-weight:700;font-size:clamp(40px,4.15vw,67px)!important;line-height:1.1;letter-spacing:-.055em;color:#f9f7f8;text-shadow:none;margin:0 0 16px}
+#inicio .home-designation{font:400 clamp(16px,1.9vw,27px)/1.5 'Plus Jakarta Sans',Arial,sans-serif;letter-spacing:.3em;color:#f5f1f3}
+#inicio .home-red-stroke{display:block;width:64px;height:4px;background:var(--home-red);border-radius:2px;box-shadow:0 0 13px #ff244a;margin:25px 0 28px}
+#inicio .home-identity p{font:400 clamp(18px,1.85vw,27px)/1.48 'Plus Jakarta Sans',Arial,sans-serif;color:#ede6e8;max-width:560px;margin:0;text-align:left}
+#inicio .home-person{display:flex;justify-content:center;align-items:center;padding:30px 0 10px}
+#inicio .home-person-ring{display:block!important;width:min(100%,440px)!important;height:auto!important;aspect-ratio:1/1!important;flex:0 0 auto!important;border-radius:50%!important;padding:3px!important;background:linear-gradient(135deg,#fff0f4,#ff193c 40%,#ff2544 75%,#f9b6c6)!important;box-shadow:0 0 18px #ff2147aa,0 0 65px #ff123854,0 0 125px #9c072e4d!important;overflow:hidden!important;box-sizing:border-box!important}
+#inicio .home-person-ring img{display:block;width:100%!important;height:100%!important;aspect-ratio:1/1!important;object-fit:cover!important;object-position:center 35%;border-radius:50%!important;border:0!important;box-shadow:none!important;margin:0!important;max-width:none!important;max-height:none!important}
+#inicio .home-side-bars{position:absolute;pointer-events:none;z-index:1;display:flex;gap:18px;align-items:flex-end;bottom:38%;height:270px;opacity:.92}
+#inicio .home-side-bars.left-bars{left:0}
+#inicio .home-side-bars.right-bars{right:0;transform:scaleX(-1)}
+#inicio .home-side-bars i{display:block;width:6px;background:linear-gradient(to top,#aa0018,#fd1745 55%,#ff8398);border:1px solid #ff486276;box-shadow:0 0 14px #fa234d7b}
+#inicio .home-side-bars i:nth-child(1){height:93px;opacity:.35}#inicio .home-side-bars i:nth-child(2){height:168px;opacity:.8}#inicio .home-side-bars i:nth-child(3){height:236px}#inicio .home-side-bars i:nth-child(4){height:124px}#inicio .home-side-bars i:nth-child(5){height:65px;opacity:.75}#inicio .home-side-bars i:nth-child(6){height:150px;opacity:.65}#inicio .home-side-bars i:nth-child(7){height:35px;opacity:.32}
+#inicio .home-visuals{position:absolute;z-index:2;left:0;top:415px;width:100%;height:340px;pointer-events:none;overflow:hidden}
+#inicio .home-visuals .wave-first{position:absolute;width:112%;height:100%;max-width:none;left:-6%;top:0;object-fit:fill;filter:drop-shadow(0 0 13px #c4072f)}
+#inicio .home-visuals .wave-second{position:absolute;width:112%;height:100%;max-width:none;left:-6%;top:36px;object-fit:fill;opacity:.55;transform:scaleX(-1);filter:blur(.6px)}
+#inicio .home-lower{position:relative;z-index:4;margin-top:114px}
+#inicio .home-keywords{display:flex;gap:22px;align-items:center;white-space:nowrap;font:500 clamp(13px,1.3vw,20px) 'Plus Jakarta Sans',Arial,sans-serif;letter-spacing:.14em;color:#f5eded}
+#inicio .home-keywords b{color:#ff153e;font-size:19px;font-weight:800}
+#inicio .home-keywords i{flex:1;border-top:1px solid #baadb06b;margin-left:22px}
+#inicio .home-quote{display:flex;align-items:center;justify-content:center;gap:15px;margin:84px auto 0;max-width:1160px;text-align:center;color:#f0e7e8;font:italic 400 clamp(14px,1.45vw,22px)/1.7 'Plus Jakarta Sans',Arial,sans-serif}
+#inicio .home-quote .quote-symbol{font:700 44px Georgia,serif;line-height:1;color:#ff1a42}
+#inicio .home-wave-bottom{position:absolute;width:100%;height:190px;bottom:-22px;left:0;z-index:2;pointer-events:none;object-fit:fill;max-width:none;filter:drop-shadow(0 -3px 12px #bc0c30)}
+@media(max-width:1000px){#inicio .home-identity{padding-left:24px}#inicio .home-upper{grid-template-columns:minmax(0,1.2fr) minmax(255px,.8fr)}#inicio .home-upper{min-height:520px}#inicio .home-lower{margin-top:88px}#inicio .home-keywords{gap:12px;letter-spacing:.07em}}
+@media(max-width:800px){
+.tab-nav ul{justify-content:flex-start}
+#inicio .home-final{min-height:990px}
+#inicio .home-upper{grid-template-columns:1fr;display:flex;flex-direction:column-reverse;justify-content:flex-end;gap:20px;padding-top:65px;min-height:auto}
+#inicio .home-person{padding:0}
+#inicio .home-person-ring{width:clamp(175px,38vw,280px)!important}
+#inicio .home-identity{width:100%;border-left:2px solid #ec2345;max-width:600px;padding-left:19px}
+#inicio .home-identity h1{font-size:clamp(31px,7vw,49px)!important}
+#inicio .home-designation{font-size:clamp(13px,3vw,19px);letter-spacing:.17em}
+#inicio .home-red-stroke{margin:18px 0}
+#inicio .home-identity p{font-size:clamp(15px,3.3vw,19px)}
+#inicio .home-visuals{top:490px;height:270px}
+#inicio .home-side-bars{bottom:35%;opacity:.45;gap:10px}
+#inicio .home-side-bars i{width:3px}
+#inicio .home-lower{margin-top:210px}
+#inicio .home-keywords{flex-wrap:wrap;gap:9px 12px;white-space:normal;font-size:13px}
+#inicio .home-keywords i{display:none}
+#inicio .home-quote{margin-top:45px;font-size:15px;gap:7px}
+#inicio .home-quote .quote-symbol{font-size:30px}
+#inicio .home-wave-bottom{height:140px}
+}
+@media(max-width:460px){
+#inicio .home-final{min-height:855px}
+#inicio .home-upper{padding-top:62px}
+#inicio .home-person-ring{width:190px!important}
+#inicio .home-identity h1{font-size:30px!important}
+#inicio .home-designation{font-size:12px;letter-spacing:.15em}
+#inicio .home-identity p{font-size:15px}
+#inicio .home-visuals{top:435px;height:210px}
+#inicio .home-lower{margin-top:195px}
+#inicio .home-quote{margin-top:42px;font-size:13px}
+#inicio .home-wave-bottom{height:112px}
+}
+@media(prefers-reduced-motion:reduce){#inicio *{animation:none!important}}
