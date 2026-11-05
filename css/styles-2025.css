@@ -1,0 +1,1247 @@
+/*===============================================================================================
+  DECLARAÇÃO DA FONTE EXTERNA 'ORKNEY'
+=================================================================================================*/
+
+/* --- Variação: Normal (Peso 400) --- */
+@font-face {
+    font-family: 'Orkney'; /* Define o nome da família da fonte para ser usado no CSS. */
+    src: url('../fonts/Orkney Regular.woff2') format('woff2'), /* Caminho para o arquivo da fonte no formato woff2 (mais moderno e comprimido). */
+         url('../fonts/Orkney Regular.woff') format('woff'); /* Caminho para o arquivo da fonte no formato woff (maior compatibilidade). */
+    font-weight: 400; /* Associa este arquivo de fonte ao peso 'normal'. */
+    font-style: normal; /* Associa este arquivo ao estilo 'normal' (não itálico). */
+}
+/* --- Variação: Itálico (Peso 400) --- */
+@font-face {
+    font-family: 'Orkney'; /* Mesmo nome de família para agrupar as variações. */
+    src: url('../fonts/Orkney Regular Italic.woff2') format('woff2'),
+         url('../fonts/Orkney Regular Italic.woff') format('woff');
+    font-weight: 400; /* Associa ao peso 'normal'. */
+    font-style: italic; /* Associa ao estilo 'itálico'. */
+}
+/* --- Variação: Médio (Peso 500) --- */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Medium.woff2') format('woff2'),
+         url('../fonts/Orkney Medium.woff') format('woff');
+    font-weight: 500; /* Associa ao peso 'médio'. */
+    font-style: normal;
+}
+/* --- Variação: Médio Itálico (Peso 500) --- */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Medium Italic.woff2') format('woff2'),
+         url('../fonts/Orkney Medium Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+/* --- Variação: Leve (Peso 300) --- */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Light.woff2') format('woff2'),
+         url('../fonts/Orkney Light.woff') format('woff');
+    font-weight: 300; /* Associa ao peso 'leve' (light). */
+    font-style: normal;
+}
+/* --- Variação: Leve Itálico (Peso 300) --- */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Light Italic.woff2') format('woff2'),
+         url('../fonts/Orkney Light Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+/* --- Variação: Negrito (Peso 700) --- */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Bold.woff2') format('woff2'),
+         url('../fonts/Orkney Bold.woff') format('woff');
+    font-weight: 700; /* Associa ao peso 'negrito' (bold). */
+    font-style: normal;
+}
+/* --- Variação: Negrito Itálico (Peso 700) --- */
+@font-face {
+    font-family: 'Orkney';
+    src: url('../fonts/Orkney Bold Italic.woff2') format('woff2'),
+         url('../fonts/Orkney Bold Italic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/*===============================================================================================
+  DEFINIÇÃO DAS VARIÁVEIS DE CORES 
+=================================================================================================*/
+:root { /* Seletor que representa a raiz do documento (o <html>), onde as variáveis globais são declaradas. */
+    --color-stark: #FFFFFF; /* Define a variável '--color-stark' para a cor branca. */
+    --color-void: #000000; /* Define a variável '--color-void' para a cor preta. */
+    --color-azul-forte: #3abcf5; /* Define a variável '--color-azul-forte' para um tom de azul. */
+    --color-azul-cyan: #3abcf5; /* Define a variável '--color-azul-cyan' para o mesmo tom de azul. */
+    --color-jewl: #3abcf5; /* Define a variável '--color-jewl' para o mesmo tom de azul. */
+    --color-cinza-escuro: #000000; /* Define a variável '--color-cinza-escuro' para a cor preta. */
+}
+
+/*===============================================================================================
+  DEFINIÇÃO DE ESTILOS GERAIS E BODY
+=================================================================================================*/
+body {
+    font-family: 'Orkney', sans-serif; /* Define 'Orkney' como a fonte principal e 'sans-serif' como alternativa. */
+    font-weight: 300; /* Define o peso da fonte padrão como 'leve'. */
+    margin: 0; /* Remove a margem padrão do navegador para o body. */
+    padding: 0; /* Remove o preenchimento padrão do navegador para o body. */
+    background-color: var(--color-stark); /* Usa a variável de cor branca para o fundo do site. */
+    color: var(--color-void); /* Usa a variável de cor preta para o texto padrão do site. */
+}
+
+/* --- Estilo Padrão para Links --- */
+a {
+    color: var(--color-azul-cyan); /* Define a cor padrão de todos os links usando a variável azul. */
+    text-decoration: none; /* Remove o sublinhado padrão dos links. */
+    transition: color 0.3s ease; /* Adiciona uma transição suave de 0.3s para a mudança de cor. */
+}
+
+/* --- Estilo de Links ao Passar o Mouse (Hover) --- */
+a:hover {
+    color: var(--color-azul-forte); /* Altera a cor do link ao passar o mouse. */
+}
+
+/*===============================================================================================
+  DEFINIÇÃO DO SISTEMA DE TIPOGRAFIA
+=================================================================================================*/
+
+/* --- Estilo para Parágrafos --- */
+p {
+    font-size: 1rem; /* Define o tamanho da fonte (1rem = tamanho da fonte raiz, geralmente 16px). */
+    font-weight: 300; /* Define o peso da fonte como 'leve'. */
+    line-height: 1.7; /* Define a altura da linha para 1.7 vezes o tamanho da fonte, melhorando a legibilidade. */
+    margin-bottom: 20px; /* Adiciona um espaço de 20px abaixo de cada parágrafo. */
+}
+
+/* --- Estilos para Títulos --- */
+h1 { font-size: 2.5rem;  font-weight: 400; line-height: 1.2; margin-bottom: 0.5rem; }
+h2 { font-size: 2rem;    font-weight: 700; line-height: 1.3; margin-bottom: 1rem; }
+h3 { font-size: 1.5rem;  font-weight: 500; line-height: 1.4; margin-bottom: 0.75rem; }
+h4 { font-size: 1.25rem; font-weight: 500; line-height: 1.4; margin-bottom: 0.5rem; }
+h5 { font-size: 1rem;    font-weight: 700; line-height: 1.5; margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 0.5px; }
+h6 { font-size: 0.9rem;  font-weight: 700; line-height: 1.5; margin-bottom: 0.25rem; color: #555; }
+
+/* --- Classes Utilitárias de Tamanho de Texto --- */
+.texto-gg { font-size: 3rem; line-height: 1.1; } /* Classe para texto extra-grande. */
+.texto-g  { font-size: 1.25rem; } /* Classe para texto grande. */
+.texto-p  { font-size: 0.9rem; } /* Classe para texto pequeno. */
+.texto-pp { font-size: 0.8rem; } /* Classe para texto extra-pequeno. */
+
+/* --- Classes Utilitárias de Peso de Fonte --- */
+.peso-leve   { font-weight: 300; } /* Classe para forçar o peso leve. */
+.peso-normal { font-weight: 400; } /* Classe para forçar o peso normal. */
+.peso-medio  { font-weight: 500; } /* Classe para forçar o peso médio. */
+.peso-negrito{ font-weight: 700; } /* Classe para forçar o peso negrito. */
+
+/* --- Classes Utilitárias de Estilo de Texto --- */
+.texto-italico { font-style: italic; } /* Classe para forçar o estilo itálico. */
+.texto-maiusculo { text-transform: uppercase; letter-spacing: 1px; } /* Classe para transformar o texto em maiúsculas e adicionar espaçamento. */
+.text-justify { text-align: justify; } /*classe para texto justificado. */
+
+/*===============================================================================================
+ LAYOUT DA PÁGINA ÚNICA
+=================================================================================================*/
+.main-content-area {
+    flex-grow: 1; /* Permite que esta área cresça para ocupar o espaço disponível, útil em layouts flex. */
+}
+
+/*===============================================================================================
+  CONFIGURAÇÃO DO SISTEMA DE NAVEGAÇÃO POR ABAS (MENU SUPERIOR)
+=================================================================================================*/
+
+/* --- Container da Barra de Navegação --- */
+.tab-nav {
+    background-color: var(--color-void); /* Define a cor de fundo preta para a barra. */
+    position: sticky; /* Faz a barra de navegação "grudar" no topo da tela ao rolar a página. */
+    top: 0; /* Define a posição 'grudenta' no topo da viewport. */
+    width: 100%; /* Faz a barra ocupar toda a largura da tela. */
+    z-index: 1000; /* Garante que a barra fique na frente de outros elementos da página. */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adiciona uma sombra sutil abaixo da barra. */
+}
+
+/* --- Lista de Itens do Menu --- */
+.tab-nav ul {
+    list-style: none; /* Remove os marcadores (bolinhas) da lista. */
+    margin: 0; /* Remove a margem externa da lista. */
+    padding: 0; /* Remove o preenchimento interno da lista. */
+    display: flex; /* Transforma a lista em um container flex, alinhando os itens horizontalmente. */
+    justify-content: center; /* Centraliza os itens do menu horizontalmente. */
+    overflow-x: auto; /* Permite a rolagem horizontal caso os itens não caibam na tela (em telas pequenas). */
+    white-space: nowrap; /* Impede que os itens do menu quebrem para a linha de baixo. */
+}
+
+/* --- Links Individuais do Menu --- */
+.tab-nav ul li a {
+    display: block; /* Transforma o link em um bloco para que o padding funcione corretamente. */
+    padding: 30px 20px; /* Adiciona espaçamento interno (30px em cima/baixo, 20px nos lados). */
+    color: var(--color-stark); /* Define a cor do texto como branca. */
+    font-weight: 350; /* Define um peso de fonte entre leve e normal. */
+    font-size: 0.88rem; /* Define um tamanho de fonte um pouco menor que o padrão. */
+    letter-spacing: 0.6px; /* Adiciona um leve espaçamento entre as letras. */
+    border-bottom: 3px solid transparent; /* Cria uma borda inferior transparente para a animação. */
+    transition: background-color 0.3s, border-bottom 0.3s, color 0.3s; /* Animação suave para as mudanças de estilo. */
+}
+
+/* --- Efeito ao Passar o Mouse nos Links do Menu --- */
+.tab-nav ul li a:hover {
+    background-color: var(--color-cinza-escuro); /* Muda a cor de fundo ao passar o mouse. */
+    color: var(--color-azul-cyan); /* Muda a cor do texto para azul ao passar o mouse. */
+}
+
+/* --- Estilo do Link da Aba Ativa --- */
+.tab-nav ul li a.active-tab {
+    background-color: transparent; /* Garante que o fundo da aba ativa seja transparente. */
+    border-bottom: 2.5px solid var(--color-azul-cyan); /* Adiciona uma linha azul sólida na parte inferior. */
+    color: var(--color-azul-cyan); /* Muda a cor do texto da aba ativa para azul. */
+}
+
+/*===============================================================================================
+   SEÇÕES DE CONTEÚDO E COMPONENTES
+=================================================================================================*/
+
+/* --- Estilo Base das Seções de Conteúdo --- */
+.content-section {
+    display: none; /* Esconde todas as seções por padrão. */
+    background-color: transparent; /* Fundo transparente. */
+    padding: 15px 40px; /* Espaçamento interno (15px em cima/baixo, 40px nos lados). */
+}
+
+/* --- Estilo da Seção de Conteúdo Ativa --- */
+.content-section.active-content {
+    display: block; /* Mostra a seção que tem a classe 'active-content'. */
+}
+
+/* --- Container Interno das Seções --- */
+.section-inner {
+    max-width: 900px; /* Limita a largura máxima do conteúdo a 900px. */
+    margin: 0 auto; /* Centraliza o container horizontalmente na página. */
+}
+
+/* --- Estilo dos Títulos Principais de Seção --- */
+.section-title {
+    font-family: 'Orkney'; /* Define a fonte. */
+    font-weight: 600; /* Define um peso de fonte semi-negrito. */
+    font-size: 2rem; /* Define o tamanho da fonte. */
+    color: var(--color-void); /* Define a cor do texto como preta. */
+    background-color: transparent; /* Garante um fundo transparente. */
+    text-align: left; /* Alinha o texto à esquerda. */
+    display: block; /* Garante que o elemento ocupe toda a largura disponível. */
+    margin-bottom: 30px; /* Adiciona um espaço abaixo do título. */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Adiciona uma sombra sutil ao texto. */
+}
+
+/* --- Estilo para Títulos Internos (Sub-títulos) --- */
+.internal-title {
+    background-color: transparent; /* Fundo transparente. */
+    padding: 0; /* Remove o preenchimento. */
+    margin-top: 1em; /* Adiciona um espaço acima do título. */
+}
+
+/* --- Estilo para as Tags de Destaque (Highlights) --- */
+.highlights span {
+    display: inline-block; /* Permite aplicar padding e margin corretamente. */
+    background-color: var(--color-cinza-escuro); /* Cor de fundo preta. */
+    color: var(--color-stark); /* Cor do texto branca. */
+    padding: 5px 10px; /* Espaçamento interno. */
+    border-radius: 20px; /* Deixa as bordas completamente arredondadas (formato de pílula). */
+    margin: 5px; /* Espaço externo entre as tags. */
+    font-size: 0.9em; /* Tamanho da fonte um pouco menor. */
+}
+
+/* --- Estilo Comum para Caixas de Conteúdo (Cards) --- */
+.job-history article, .tech-block, .project-card, .certification-item, .expandable-item {
+    padding: 15px; /* Espaçamento interno. */
+    border-radius: 8px; /* Cantos arredondados. */
+    margin-bottom: 20px; /* Espaço abaixo de cada card. */
+}
+
+/* --- Estilo Específico para Cards de Histórico e Itens Expansíveis --- */
+.job-history article, .expandable-item {
+    background-color: #FFFFFF; /* Fundo branco para criar o efeito de "caixa". */
+    border: 1px solid #e0e0e0; /* Borda cinza sutil. */
+    border-radius: 8px; /* Mantém os cantos arredondados. */
+    padding: 15px; /* Espaçamento interno. */
+    margin-bottom: 25px; /* Espaço abaixo dos cards. */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade e efeito 3D. */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Animação suave para a sombra e a transformação. */
+}
+
+/* --- Efeito Hover para os Cards --- */
+.job-history article:hover, .expandable-item:hover {
+    transform: translateY(-3px); /* Move o card 3 pixels para cima ao passar o mouse. */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12); /* Aumenta a sombra para um efeito de "elevação". */
+}
+
+/* --- Estilo para Cards de Projeto --- */
+.project-card {
+    border-left: 4px solid var(--color-azul-cyan); /* Adiciona uma borda azul à esquerda para destaque. */
+}
+
+/* --- Estilo para o Texto de Período/Data --- */
+.periodo {
+    color: var(--color-void); /* Cor do texto preta. */
+    font-style: italic; /* Estilo de fonte itálico. */
+    margin-top: -10px; /* Margem superior negativa para aproximar do título acima. */
+}
+
+/* --- Botão "Saiba Mais" / "Fechar" --- */
+.expand-btn {
+    background-color: var(--color-azul-forte); /* Cor de fundo azul. */
+    color: var(--color-stark); /* Cor do texto branca. */
+    border: none; /* Remove a borda padrão. */
+    padding: 10px 15px; /* Espaçamento interno. */
+    border-radius: 5px; /* Cantos levemente arredondados. */
+    cursor: pointer; /* Muda o cursor para uma "mãozinha" para indicar que é clicável. */
+    font-size: 0.9em; /* Tamanho da fonte. */
+    transition: background-color 0.3s; /* Animação suave na mudança de cor de fundo. */
+    margin-top: 10px; /* Espaço acima do botão. */
+}
+
+/* --- Efeito Hover para o Botão "Saiba Mais" --- */
+.expand-btn:hover {
+    background-color: var(--color-azul-cyan); /* Escurece a cor de fundo ao passar o mouse. */
+}
+
+/* --- Container dos Detalhes Expansíveis --- */
+.details {
+    overflow: hidden; /* Esconde o conteúdo que transborda a altura do elemento. */
+    max-height: 0; /* Define a altura máxima como 0, escondendo o conteúdo. */
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* Animação suave para a altura e o padding. */
+}
+
+/* --- Classe para Mostrar os Detalhes --- */
+.details.visible {
+    max-height: 1000px; /* Define uma altura máxima grande o suficiente para revelar todo o conteúdo. */
+    padding-top: 15px; /* Adiciona um espaçamento no topo quando o conteúdo está visível. */
+}
+
+/*===============================================================================================
+   ESTILOS PARA A SEÇÃO HOME
+=================================================================================================*/
+
+/* --- Importação de Fonte para o Título Principal "Hi," --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+
+/* --- Layout Principal da Seção Home (Foto + Texto) --- */
+.home-hero-layout {
+    display: flex; /* Ativa o layout flexbox, colocando os itens lado a lado. */
+    align-items: center; /* Alinha a foto e o texto verticalmente ao centro. */
+    gap: 40px; /* Cria um espaço de 40px entre a foto e o bloco de texto. */
+    margin-bottom: 30px; /* Adiciona um espaço abaixo do layout principal. */
+}
+
+/* --- Coluna da Esquerda (Foto) --- */
+.hero-left-col {
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    top: 0;
+}
+
+/* --- Foto de Perfil (recorte circular estilo LinkedIn) --- */
+.my-profile-pic {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center 35%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Coluna da Direita (Texto) --- */
+.hero-right-col {
+    flex-grow: 1; /* Permite que a coluna de texto cresça para ocupar o espaço restante. */
+    display: flex; /* Ativa o flexbox para os itens dentro desta coluna. */
+    flex-direction: column; /* Empilha os itens verticalmente. */
+    justify-content: center; /* Centraliza os itens verticalmente. */
+}
+
+/* --- Container da Saudação Principal ("Hi," + GIF) --- */
+.hero-main-greeting {
+    display: flex; /* Alinha o "Hi," e o GIF lado a lado. */
+    align-items: center; /* Alinha verticalmente ao centro. */
+    gap: 10px; /* Espaço entre o "Hi," e o GIF. */
+    margin-bottom: -2px; /* Margem negativa para aproximar o subtítulo. */
+}
+
+/* --- Título "Hi," --- */
+.hero-title {
+    font-family: 'Playfair Display', serif; /* Usa a fonte serifada importada. */
+    font-size: 8rem; /* Tamanho de fonte bem grande. */
+    font-weight: 400; /* Peso normal. */
+    margin: 0; /* Remove todas as margens. */
+    line-height: 1; /* Altura de linha compacta. */
+    color: var(--color-void); /* Cor preta. */
+    padding: 0; /* Remove todo o preenchimento. */
+}
+
+/* --- GIF "Welcome" --- */
+.welcome-gif {
+    width: 280px; /* Largura do GIF. */
+    height: auto; /* Altura automática para manter proporção. */
+    position: relative; /* Ativa o posicionamento relativo. */
+    top: 10px; /* Desloca o GIF 10px para baixo. */
+    left: 0; /* Posição horizontal inicial. */
+}
+
+/* --- Subtítulo (Nome) --- */
+.hero-subtitle {
+    font-family: 'Orkney', sans-serif; /* Fonte padrão. */
+    font-size: 1.5rem; /* Tamanho da fonte. */
+    font-weight: 500; /* Peso médio. */
+    margin: 0; /* Remove margens. */
+    color: var(--color-void); /* Cor preta. */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra suave no texto. */
+}
+
+/* --- Cargo (Data Scientist & AI Engineer) --- */
+.hero-role {
+    font-family: 'Orkney', sans-serif; /* Fonte padrão. */
+    font-size: 1.2rem; /* Tamanho da fonte. */
+    font-weight: 300; /* Peso leve. */
+    margin: 5px 0 0 0; /* Adiciona uma pequena margem no topo. */
+    color: #555; /* Cor cinza escuro. */
+}
+
+/* --- Parágrafo de Descrição na Home --- */
+.hero-description {
+    font-family: 'Orkney', sans-serif; /* Fonte padrão. */
+    font-size: 1.1rem; /* Tamanho da fonte. */
+    font-weight: 300; /* Peso leve. */
+    line-height: 1.8; /* Altura da linha aumentada para melhor legibilidade. */
+    margin-top: 30px; /* Espaço acima do parágrafo. */
+    max-width: 800px; /* Largura máxima do parágrafo. */
+    margin-left: 0; /* Remove margem à esquerda. */
+    text-align: justify; /* Alinha o texto nas duas margens (esquerda e direita). */
+}
+
+/* --- Container das Tags de Destaque --- */
+.highlights {
+    text-align: center; /* Centraliza o conteúdo (as tags). */
+    margin-top: 20px; /* Espaço acima do container. */
+}
+
+/* --- Estilo das Tags de Destaque --- */
+.highlights span {
+    display: inline-block; /* Permite aplicar estilos de bloco. */
+    background-color: var(--color-azul-forte); /* Fundo azul. */
+    color: var(--color-stark); /* Texto branco. */
+    padding: 5px 10px; /* Espaçamento interno. */
+    border-radius: 20px; /* Bordas arredondadas. */
+    margin: 5px; /* Espaçamento externo. */
+    font-size: 0.9em; /* Tamanho da fonte. */
+    font-weight: 350; /* Peso de fonte. */
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar volume. */
+}
+
+/* --- Correção de Espaçamento no Topo da Seção Home --- */
+#inicio.content-section {
+    padding-top: 15px; /* Reduz o espaçamento superior padrão para esta seção específica. */
+}
+
+/* --- Força a Centralização do Conteúdo na Home --- */
+#inicio .section-inner {
+    display: flex; /* Ativa o flexbox. */
+    flex-direction: column; /* Empilha os itens verticalmente. */
+    align-items: center; /* Centraliza todos os itens filhos horizontalmente. */
+}
+
+/* --- Ajuste no Parágrafo de Descrição --- */
+.hero-description {
+    text-align: justify; /* Mantém o alinhamento justificado. */
+}
+
+/*===============================================================================================
+   ESTILOS PARA A SEÇÃO HISTÓRIA
+=================================================================================================*/
+
+/* --- Estilo Comum para as Caixas de Título e Conteúdo --- */
+.content-box {
+    background-color: #ffffff; /* Fundo branco. */
+    border-radius: 8px; /* Cantos arredondados. */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade. */
+}
+
+/* --- Caixa do Conteúdo --- */
+.content-box {
+    padding: 15px; /* Espaçamento interno. */
+    color: #000000; /* Cor do texto preta. */
+    justify-content: justify; /* Justifica o conteúdo (não é uma propriedade válida aqui, mas a intenção é clara). */
+}
+
+/*--formatação especifica de texto para seção história*/
+
+#historia .content-box {
+    text-align: justify;
+}
+
+/* --- Correção para Layouts com "Float" (Clearfix) --- */
+.content-box::after {
+    content: ""; /* Adiciona um pseudo-elemento vazio. */
+    display: table; /* Cria um novo contexto de formatação. */
+    clear: both; /* Limpa os elementos flutuantes (float) anteriores. */
+}
+
+/* --- Estilo Base para Imagens Flutuantes --- */
+.image-floated {
+    border: 5px solid white; /* Borda branca grossa. */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* Sombra para destacar a imagem. */
+    border-radius: 6px; /* Cantos levemente arredondados. */
+}
+
+/* --- Tamanho da Foto da Infância --- */
+#foto-infancia {
+    max-width: 145px; /* Largura máxima da imagem. */
+}
+
+/* --- Tamanho da Foto da Formatura --- */
+#foto-formatura {
+    max-width: 250px; /* Largura máxima da imagem. */
+}
+
+/* --- Classe para Flutuar Imagem à Esquerda --- */
+.img-float-left {
+    float: left; /* Faz a imagem flutuar à esquerda do texto. */
+    margin: 5px 20px 10px 0; /* Define as margens (topo, direita, baixo, esquerda). */
+}
+
+/* --- Classe para Flutuar Imagem à Direita --- */
+.img-float-right {
+    float: right; /* Faz a imagem flutuar à direita do texto. */
+    margin: 5px 0 10px 20px; /* Define as margens. */
+}
+
+/* --- Correção Clearfix para a Seção História --- */
+#historia .section-inner::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*===============================================================================================
+   ESTILOS PARA A SEÇÃO FORMAÇÃO 
+=================================================================================================*/
+
+/* --- Container da Linha do Tempo --- */
+#formacao .timeline-container {
+    position: relative; /* Ativa o posicionamento relativo para a linha vertical. */
+    padding-left: 30px; /* Cria espaço à esquerda para a linha e o ícone. */
+}
+
+/* --- Linha Vertical da Timeline --- */
+#formacao .timeline-container::before {
+    content: ''; /* Adiciona um pseudo-elemento vazio. */
+    position: absolute; /* Posiciona a linha em relação ao .timeline-container. */
+    left: 5px;   /* Distância da borda esquerda. */
+    top: 0;      /* Começa no topo do container. */
+    bottom: 0;   /* Termina no final do container. */
+    width: 2px; /* Espessura da linha. */
+    background-color: var(--color-azul-forte); /* Cor da linha. */
+    border-radius: 1px; /* Arredonda as pontas da linha. */
+}
+
+/* --- Layout Flex para o Resumo da Formação (Logo + Texto) --- */
+#formacao .summary {
+    display: flex; /* Ativa o layout flexbox. */
+    align-items: center; /* Alinha o logo e o texto verticalmente. */
+    gap: 20px; /* Espaço entre o logo e o texto. */
+}
+
+/* --- Container do Logo --- */
+.logo-container {
+    flex-shrink: 0; /* Impede que o container do logo encolha. */
+}
+
+/* --- Imagem do Logo --- */
+.logo-container img {
+    width: 60px; /* Largura fixa para os logos. */
+    height: auto; /* Mantém a proporção da imagem. */
+    display: block; /* Remove espaços extras. */
+}
+
+/* --- Container de Informações (Texto + Botão) --- */
+.info-container {
+    flex-grow: 1; /* Permite que este container cresça. */
+    display: flex; /* Ativa o flexbox. */
+    justify-content: space-between; /* Empurra o texto para a esquerda e o botão para a direita. */
+    align-items: center; /* Alinha verticalmente ao centro. */
+    gap: 20px; /* Espaço mínimo entre o texto e o botão. */
+}
+
+/* --- Estilo do Botão "Saiba Mais" na Seção Formação --- */
+#formacao .expand-btn {
+    background-color: var(--color-azul-forte); /* Fundo azul. */
+    color: #ffffff; /* Texto branco. */
+    border: none; /* Sem borda. */
+    padding: 10px 15px; /* Espaçamento interno. */
+    border-radius: 5px; /* Cantos arredondados. */
+    cursor: pointer; /* Cursor de mão. */
+    font-size: 0.9em; /* Tamanho da fonte. */
+    font-weight: 500; /* Peso médio. */
+    white-space: nowrap; /* Impede que o texto do botão quebre linha. */
+    margin: 0; /* Remove margens. */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20); /* Sombra para profundidade. */
+    transition: all 0.2s ease-in-out; /* Animação suave para todas as propriedades. */
+}
+
+/* --- Efeito Hover para o Botão "Saiba Mais" --- */
+#formacao .expand-btn:hover {
+    background-color: var(--color-azul-cyan); /* Muda a cor de fundo. */
+    transform: translateY(-2px); /* Efeito de elevação. */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta a sombra. */
+}
+
+/* Modificações para atender área de publicações */
+
+.publications .timeline-container {
+    position: relative;
+    padding-left: 30px;
+}
+
+.publications .timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--color-azul-forte);
+    border-radius: 1px;
+}
+
+.publications .summary {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.publications .logo-container {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.publications .logo-icon {
+    font-size: 26px;
+    line-height: 1;
+    color: var(--color-azul-forte);
+}
+
+.publications .info-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.publications .expand-btn {
+    background-color: var(--color-azul-forte);
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    white-space: nowrap;
+    margin: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);
+    transition: all 0.2s ease-in-out;
+}
+
+.publications .expand-btn:hover {
+    background-color: var(--color-azul-cyan);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+    .publications .info-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+/* ===============================================================================================
+   EXPERIÊNCIA 
+=================================================================================================*/
+
+#trajetoria .timeline-container {
+  position: relative;
+  padding-left: 30px;
+}
+
+#trajetoria .timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-azul-forte);
+  border-radius: 1px;
+}
+
+#trajetoria .summary {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#trajetoria .logo-container {
+  flex-shrink: 0;
+}
+
+#trajetoria .logo-container img {
+  width: 60px;
+  height: auto;
+  display: block;
+}
+
+#trajetoria .info-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#trajetoria .expand-btn {
+  background-color: var(--color-azul-forte);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+#trajetoria .expand-btn:hover {
+  background-color: var(--color-azul-cyan);
+  transform: translateY(-2px);
+}
+
+/* CLIENTES — grid de logos */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.clients-grid img {
+  max-width: 120px;
+  height: auto;
+  opacity: 0.9;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.clients-grid img:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+/* ===============================================================================================
+   SEÇÃO HABILIDADES 
+=================================================================================================*/
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* duas colunas fixas */
+  gap: 50px 60px; /* espaço entre linhas e colunas */
+  margin-top: 40px;
+  align-items: start;
+}
+
+.tech-category {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.tech-category h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--color-void);
+  margin-bottom: 15px;
+}
+
+.skill-image {
+  width: 100%;
+  max-width: 400px; /* evita que estoure */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.skill-image:hover {
+  transform: scale(1.03);
+}
+
+/* CERTIFICAÇÕES & RECONHECIMENTOS */
+
+.certification-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* --- Card principal --- */
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* --- Imagem do certificado --- */
+.cert-image {
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.cert-image:hover {
+  transform: scale(1.02);
+}
+
+/* --- Bloco de texto à direita --- */
+.cert-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.cert-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e91e63; /* rosa forte */
+  margin-bottom: 8px;
+}
+
+.cert-institution {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #26a69a; /* verde suave */
+  margin-bottom: 12px;
+}
+
+.cert-description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+  border-left: 4px solid #3abcf5; /* linha azul lateral */
+  padding-left: 15px;
+  text-align: justify;
+}
+
+/* ===============================================================================================
+   PORTFÓLIO 
+=================================================================================================*/
+/* ===================== PORTFÓLIO (tab oficial #portfolio) ===================== */
+
+/* lista em 1 coluna */
+#portfolio .portfolio-list{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+  margin-top:16px;
+}
+
+/* card único, limpo (um retângulo só) */
+#portfolio .portfolio-item{
+  display:flex;
+  align-items:flex-start;
+  gap:18px;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 6px 12px rgba(0,0,0,.10);
+  border:1px solid rgba(226,232,240,.6);
+  padding:20px 22px;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+#portfolio .portfolio-item:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,.14);
+}
+
+/* ícone circular centralizado */
+#portfolio .pi-logo{
+  width:60px;height:60px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:#f5f9ff;border:1px solid #e2e8f0;
+  flex-shrink:0;
+}
+#portfolio .pi-logo i{font-size:22px;color:var(--color-azul-forte,#1976d2);}
+
+/* corpo do card */
+#portfolio .pi-body{flex:1;}
+
+/* título do projeto em AZUL */
+#portfolio .pi-title{
+  margin:0 0 6px 0;
+  font-size:1.15rem;
+  font-weight:800;
+  color:var(--color-azul-forte,#1976d2);
+  letter-spacing:.2px;
+}
+
+/* badge ao lado do título (neutro) */
+#portfolio .pi-badge{
+  margin-left:6px;
+  font-size:.92rem;
+  font-weight:600;
+  color:#616161;
+  opacity:.95;
+}
+
+/* linhas de texto */
+#portfolio .pi-row{
+  margin:.35rem 0;
+  font-size:1rem;
+  color:#333;
+  text-align:justify;
+  line-height:1.65;
+}
+#portfolio .pi-row strong{font-weight:800;color:#111;}
+#portfolio .pi-tools{opacity:.97;margin-top:6px;}
+
+/* responsivo */
+@media (max-width:900px){
+  #portfolio .portfolio-item{padding:18px;}
+  #portfolio .pi-logo{width:54px;height:54px;}
+  #portfolio .pi-title{font-size:1.08rem;}
+}
+@media (max-width:520px){
+  #portfolio .portfolio-item{gap:14px;}
+  #portfolio .pi-logo{width:50px;height:50px;}
+  #portfolio .pi-title{font-size:1.04rem;}
+  #portfolio .pi-badge{font-size:.88rem;}
+}
+
+/* ===============================================================================================
+   SEÇÃO DE CONTEUDO BLOG 
+=================================================================================================*/
+
+.content-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.blog-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* --- zigue-zague: cards pares invertem a direção --- */
+.content-posts .blog-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* --- texto --- */
+.blog-text {
+  flex: 1;
+  text-align: left;
+}
+
+.blog-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #f7b801; /* amarelo */
+  margin-bottom: 12px;
+}
+
+.blog-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* --- link (laranja) --- */
+.blog-link {
+  display: inline-block;
+  font-weight: 600;
+  color: #ff6f00;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.blog-link:hover { color: #e65100; text-decoration: underline; }
+
+/* --- mídia (imagem/vídeo) --- */
+.blog-media {
+  width: 40%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-image, .blog-video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/*===============================================================================================
+   ESTILOS PARA SEÇÃO DE CONTATO
+=================================================================================================*/
+
+/* --- Grid de Contatos --- */
+.contact-grid {
+    display: grid; /* Ativa o layout de grid. */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas responsivas: cada uma terá no mínimo 250px e elas se ajustarão automaticamente. */
+    gap: 30px; /* Espaço de 30px entre os itens do grid. */
+    margin-top: 40px; /* Espaço acima do grid. */
+    text-align: center; /* Centraliza o texto dentro de cada item. */
+}
+
+/* --- Item Individual de Contato --- */
+.contact-item {
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco semi-transparente. */
+    padding: 25px; /* Espaçamento interno. */
+    border-radius: 8px; /* Cantos arredondados. */
+    border: 1px solid #ddd; /* Borda cinza clara. */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave para elevação e sombra. */
+}
+
+/* --- Efeito Hover no Item de Contato --- */
+.contact-item:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse. */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra mais pronunciada no hover. */
+}
+
+/* --- Ícone do Item de Contato --- */
+.contact-item i {
+    font-size: 2.5rem; /* Tamanho grande para o ícone. */
+    color: var(--color-azul-forte); /* Cor azul para o ícone. */
+    margin-bottom: 15px; /* Espaço abaixo do ícone. */
+}
+
+/* --- Título (h4) do Item de Contato --- */
+.contact-item h4 {
+    margin-bottom: 5px; /* Espaço abaixo do título. */
+}
+
+/* --- Link do Item de Contato --- */
+.contact-item a {
+    font-weight: 500; /* Peso de fonte médio para o link. */
+}
+
+/* --- Seção de Download do Currículo --- */
+.resume-download {
+    text-align: center; /* Centraliza o conteúdo. */
+    margin-top: 60px; /* Espaço acima da seção. */
+    padding-top: 30px; /* Espaçamento interno no topo. */
+    border-top: 1px solid #ccc; /* Linha cinza para separar a seção. */
+}
+
+/* --- Botão de Download --- */
+.button-download {
+    display: inline-block; /* Permite aplicar padding e margin. */
+    background-color: var(--color-azul-forte); /* Fundo azul. */
+    color: var(--color-stark); /* Texto branco. */
+    padding: 12px 25px; /* Espaçamento interno. */
+    border-radius: 5px; /* Cantos arredondados. */
+    text-decoration: none; /* Remove sublinhado. */
+    font-weight: 700; /* Texto em negrito. */
+    margin-top: 10px; /* Espaço acima do botão. */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação suave. */
+}
+
+/* --- Efeito Hover no Botão de Download --- */
+.button-download:hover {
+    background-color: var(--color-void); /* Muda o fundo para preto. */
+    transform: translateY(-2px); /* Efeito de elevação. */
+}
+
+/* --- Ícone dentro do Botão de Download --- */
+.button-download i {
+    margin-right: 8px; /* Adiciona espaço à direita do ícone. */
+}
+
+/*=====================================
+  MEDIA QUERIES PARA RESPONSIVIDADE (MOBILE)
+=====================================*/
+@media (max-width: 800px) {
+    /* --- Ajuste no Padding das Seções --- */
+    .content-section {
+        padding: 40px 20px; /* Aumenta o padding vertical e diminui o horizontal. */
+    }
+    /* --- Ajuste na Barra de Navegação --- */
+    .tab-nav ul {
+        justify-content: flex-start; /* Alinha os itens do menu à esquerda. */
+        padding-left: 10px; /* Adiciona um pequeno padding à esquerda. */
+    }
+    /* --- Ajuste nos Links do Menu --- */
+    .tab-nav ul li a {
+        padding: 12px 15px; /* Diminui o padding para os links caberem melhor. */
+        font-size: 0.9em; /* Diminui o tamanho da fonte. */
+    }
+    /* --- Layout da Seção Home para Mobile --- */
+    .home-hero-layout {
+        flex-direction: column; /* Empilha a foto e o texto verticalmente. */
+        align-items: center; /* Centraliza os itens. */
+        text-align: center; /* Centraliza todo o texto. */
+        gap: 30px; /* Define o espaço entre a foto e o texto. */
+    }
+    /* --- Ajuste na Coluna da Foto --- */
+    .hero-left-col {
+        width: 150px; /* Mantém o retrato legível em telas menores. */
+    }
+    /* --- Ajuste na Coluna de Texto --- */
+    .hero-right-col {
+        align-items: center; /* Centraliza o conteúdo. */
+    }
+    /* --- Ajuste na Saudação Principal --- */
+    .hero-main-greeting {
+        flex-direction: row; /* Mantém "Hi" e o GIF lado a lado. */
+        flex-wrap: wrap; /* Permite que quebre a linha se não couber. */
+        justify-content: center; /* Centraliza. */
+        gap: 8px; /* Diminui o espaço. */
+    }
+    /* --- Ajuste no Título "Hi," --- */
+    .hero-title {
+        font-size: 4.5rem; /* Diminui o tamanho da fonte. */
+    }
+    /* --- Ajuste no GIF "Welcome" --- */
+    .welcome-gif {
+        width: 180px; /* Diminui o tamanho do GIF. */
+        top: 0; /* Reseta o posicionamento. */
+        left: 0; /* Reseta o posicionamento. */
+    }
+    /* --- Ajuste no Subtítulo e Cargo --- */
+    .hero-subtitle, .hero-role {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte. */
+        text-align: center; /* Centraliza o texto. */
+    }
+    /* --- Ajuste no Parágrafo de Descrição --- */
+    .hero-description {
+        font-size: 1.05rem; /* Diminui o tamanho da fonte. */
+        text-align: center; /* Centraliza o texto. */
+    }
+    /* --- Ajuste nas Imagens Flutuantes da História --- */
+    .image-floated {
+        float: none; /* Remove a flutuação da imagem. */
+        display: block; /* Transforma a imagem em um bloco. */
+        margin: 20px auto; /* Centraliza a imagem horizontalmente e adiciona espaço vertical. */
+        max-width: 80%; /* Limita a largura da imagem. */
+    }
+    /* --- Ajuste na Seção Formação --- */
+    #formacao .summary {
+        gap: 15px; /* Diminui o espaço entre o logo e o texto. */
+    }
+    
+    .logo-container img {
+        width: 50px; /* Diminui o tamanho dos logos. */
+    }
+
+  @media (max-width: 900px) {
+    .cert-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .cert-image {
+      width: 100%;
+      max-width: 500px;
+    }
+  
+    .cert-info {
+      text-align: center;
+    }
+  
+    .cert-description {
+      border-left: none;
+      border-top: 3px solid #3abcf5;
+      padding-top: 10px;
+    }
+  
+  @media (max-width: 900px) {
+    .tech-grid {
+      grid-template-columns: 1fr;
+      gap: 35px;
+    }
+ 
+  @media (max-width: 900px) {
+    .blog-card,
+    .content-posts .blog-card:nth-child(even) {
+      flex-direction: column; /* no mobile vira coluna para todos */
+    }
+    .blog-media { width: 100%; }
+    .blog-text { text-align: center; }
+  }
+
+  @media (max-width: 900px) {
+    .clients-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    #trajetoria .info-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+
+}
